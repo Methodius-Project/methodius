@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<predicates>
+  <predicate fact="default-base">
+    <expression id="default-base" aggregation-allowed="before" generation="generate">
+      <arg-one type="basic" refexp="default"/>
+      <arg-two type="basic" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="type">
+    <expression id="type1" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="proximal-pronoun"/>
+      <arg-two type="exhibit" refexp="indef"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+    </expression>
+    <expression id="type2" aggregation-allowed="true" generation="generate">
+      <arg-one type="person" refexp="default"/>
+      <arg-two type="person" refexp="indef"/>
+      <verb tense="past" voice="active" pred="be-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="opposite-technique">
+    <expression id="opposite-technique" aggregation-allowed="true" generation="generate">
+      <arg-one type="technique" refexp="default"/>
+      <arg-two type="technique" refexp="default"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+      <preposition id="the_opposite_of"/>
+    </expression>
+  </predicate>
+  <predicate fact="technique-description">
+    <expression id="technique-description" aggregation-allowed="before" generation="strings">
+      <arg-one type="technique" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="creation-period" comparison="true">
+    <expression id="creation-period" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="historical-period" refexp="default"/>
+      <preposition id="during"/>
+      <verb tense="past" voice="passive" pred="create-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="current-location" comparison="true">
+    <expression id="current-location1" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="museum" refexp="default"/>
+      <verb tense="pres" voice="passive" pred="locate-verb"/>
+<!--      <adverb id="today"/>-->
+      <preposition id="in"/>
+    </expression>
+    <expression id="current-location2" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="museum" refexp="default"/>
+      <adverb id="currently"/>
+      <preposition id="in"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+    </expression>
+    <expression id="current-location3" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="museum" refexp="default"/>
+      <adverb id="now"/>
+      <preposition id="in"/>
+      <verb tense="pres" voice="passive" pred="exhibit-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="location-found" comparison="true">
+    <expression id="location-found" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <preposition id="in"/>
+      <verb tense="past" voice="passive" pred="find-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="original-location" comparison="true">
+    <expression id="original-location1" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <preposition id="from"/>
+      <verb tense="pres" voice="active" pred="originate-verb"/>
+    </expression>
+    <expression id="original-location2" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <preposition id="from"/>
+      <verb tense="past" voice="active" pred="be-verb"/>
+      <adverb id="originally"/>
+    </expression>
+  </predicate>
+  <predicate fact="made-of" comparison="true">
+    <expression id="made-of" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="material" refexp="default"/>
+      <preposition id="of"/>
+      <verb tense="pres" voice="passive" pred="make-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-height">
+    <expression id="exhibit-height" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+      <adverb id="high"/>
+    </expression>
+  </predicate>
+  <predicate fact="creation-time" comparison="true">
+    <expression id="creation-time" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <verb tense="past" voice="passive" pred="create-verb"/>
+      <preposition id="in"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-form">
+    <expression id="exhibit-form" aggregation-allowed="before" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-purpose">
+    <expression id="exhibit-purpose" aggregation-allowed="before" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-depicts">
+    <expression id="exhibit-depicts1" aggregation-allowed="false" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <verb tense="pres" voice="active" pred="depict-verb"/>
+    </expression>
+    <expression id="exhibit-depicts2" aggregation-allowed="false" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <verb tense="pres" voice="active" pred="show-verb"/>
+    </expression>
+    <expression id="exhibit-depicts3" aggregation-allowed="false" generation="strings">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default">
+	<owner-of type="picture-np" refexp="indef" num="sg"/>
+      </arg-two>
+      <verb tense="pres" voice="active" pred="have-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-portrays" comparison="true">
+    <expression id="exhibit-portrays" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="person" refexp="default"/>
+      <verb tense="pres" voice="active" pred="portray-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-characteristics">
+    <expression id="exhibit-characteristics" aggregation-allowed="before" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="copy-info">
+    <expression id="copy-info1" aggregation-allowed="true" generation="strings">
+      <arg-one type="exhibit" refexp="default"/>
+      <text>is only</text>
+      <arg-two type="copy" refexp="indef"/>
+      <text>of the original</text>
+    </expression>
+    <expression id="copy-info2" aggregation-allowed="true" generation="strings">
+      <arg-one type="exhibit" refexp="default"/>
+      <text>is not the original object, it is</text>
+      <arg-two type="copy" refexp="indef"/>
+    </expression>
+    <expression id="copy-info3" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="copy" refexp="indef"/>
+      <verb pred="be-verb" tense="pres" voice="active"/>
+    </expression>
+  </predicate>
+  <predicate fact="donate-by" comparison="true">
+    <expression id="donate-by" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="donor" refexp="default"/>
+      <preposition id="by"/>
+      <verb tense="past" voice="passive" pred="donate-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="references">
+    <expression id="references" aggregation-allowed="false" generation="strings">
+<!--      <text>For further information, see</text>-->
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="inscription-says">
+    <expression id="inscription-says1" aggregation-allowed="false" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <preposition id="with"/>
+      <verb tense="pres" voice="passive" pred="inscribe-verb"/>
+    </expression>
+    <expression id="inscription-says2" aggregation-allowed="false" generation="strings">
+      <text>The inscription on</text>
+      <arg-one type="exhibit" refexp="default"/>
+      <text>reads</text>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-story">
+    <expression id="exhibit-story" aggregation-allowed="false" generation="generate">
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="painting-style" comparison="true">
+    <expression id="painting-style" aggregation-allowed="true" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="style" refexp="default"/>
+      <preposition id="in"/>
+      <verb tense="past" voice="passive" pred="decorate-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-definition">
+    <expression id="exhibit-definition" aggregation-allowed="before" generation="generate">
+      <arg-one type="exhibit" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="ruler-of" comparison="true">
+    <expression id="ruler-of1" aggregation-allowed="true" generation="generate">
+      <arg-one type="king" refexp="default"/>
+      <arg-two type="location" refexp="default">
+	<owner-of type="king-np" refexp="def" num="sg"/>
+      </arg-two>
+      <verb tense="past" voice="active" pred="be-verb"/>
+    </expression>
+    <expression id="ruler-of2" aggregation-allowed="true" generation="generate">
+      <arg-one type="king" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <verb tense="past" voice="active" pred="rule-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="person-information">
+    <expression id="person-information" aggregation-allowed="before" generation="generate">
+      <arg-one type="person" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="person-country" comparison="true">
+    <expression id="person-country" aggregation-allowed="true" generation="generate">
+      <arg-one type="person" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <verb tense="past" voice="active" pred="be-verb"/>
+      <preposition id="from"/>
+    </expression>
+  </predicate>
+  <predicate fact="other-work">
+    <expression id="other-work" aggregation-allowed="false" generation="generate">
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="person-story">
+    <expression id="person-story" aggregation-allowed="before" generation="generate">
+      <arg-one type="person" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="university" comparison="true">
+    <expression id="university" aggregation-allowed="true" generation="generate">
+      <arg-one type="museum" refexp="default"/>
+      <arg-two type="university" refexp="default"/>
+      <verb tense="pres" voice="passive" pred="be-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="city" comparison="true">
+    <expression id="city" aggregation-allowed="true" generation="generate">
+      <arg-one type="location" refexp="default"/>
+      <arg-two type="city" refexp="default"/>
+      <preposition id="in"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="region" comparison="true">
+    <expression id="region" aggregation-allowed="true" generation="generate">
+      <arg-one type="location" refexp="default"/>
+      <arg-two type="location" refexp="default"/>
+      <preposition id="in"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="country" comparison="true">
+    <expression id="country" aggregation-allowed="true" generation="generate">
+      <arg-one type="location" refexp="default"/>
+      <arg-two type="country" refexp="default"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+      <preposition id="in"/>
+    </expression>
+  </predicate>
+  <predicate fact="island" comparison="true">
+    <expression id="island" aggregation-allowed="true" generation="generate">
+      <arg-one type="location" refexp="default"/>
+      <arg-two type="island" refexp="default"/>
+      <verb tense="pres" voice="active" pred="be-verb"/>
+      <preposition id="on"/>
+    </expression>
+  </predicate>
+  <predicate fact="location-information">
+    <expression id="location-informationzzzz" aggregation-allowed="before" generation="generate">
+      <arg-one type="location" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="location-definition">
+    <expression id="location-definition" aggregation-allowed="false" generation="generate">
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="created-by" comparison="true">
+    <expression id="created-by" aggregation-allowed="true" generation="generate">
+      <arg-one type="relief" refexp="default"/>
+      <arg-two type="sculptor" refexp="default"/>
+      <verb tense="past" voice="passive" pred="sculpt-verb"/>
+      <preposition id="by"/>
+    </expression>
+  </predicate>
+  <predicate fact="sculpted-by" comparison="true">
+    <expression id="sculpted-by" aggregation-allowed="true" generation="generate">
+      <arg-one type="statue" refexp="default"/>
+      <arg-two type="sculptor" refexp="default"/>
+      <preposition id="by"/>
+      <verb tense="past" voice="passive" pred="sculpt-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-shows" comparison="true">
+    <expression id="exhibit-shows" aggregation-allowed="true" generation="generate">
+      <arg-one type="statue" refexp="default"/>
+      <arg-two type="person" refexp="default"/>
+      <verb tense="pres" voice="active" pred="depict-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="style-time">
+    <expression id="style-time" aggregation-allowed="true" generation="generate">
+      <arg-one type="style" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <verb tense="past" voice="passive" pred="develop-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="style-description">
+    <expression id="style-description" aggregation-allowed="before" generation="generate">
+      <arg-one type="style" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="helmet-type" comparison="true">
+    <expression id="helmet-type" aggregation-allowed="true" generation="generate">
+      <arg-one type="helmet" refexp="default"/>
+      <arg-two type="style" refexp="default"/>
+      <preposition id="to"/>
+      <verb tense="pres" voice="active" pred="belong-verb"/>
+    </expression>
+  </predicate>
+  <predicate fact="exhibit-style" comparison="true">
+    <expression id="exhibit-style" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="style" refexp="default"/>
+      <verb tense="pres" voice="active" pred="belong-verb"/>
+      <preposition id="to"/>
+    </expression>
+  </predicate>
+  <predicate fact="painting-technique-used" comparison="true">
+    <expression id="painting-technique-used1" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="painting-technique" refexp="default"/>
+      <preposition id="with"/>
+      <verb tense="past" voice="passive" pred="paint-verb"/>
+    </expression>
+    <expression id="painting-technique-used2" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="painting-technique" refexp="default"/>
+      <verb tense="past" voice="passive" pred="decorate-verb"/>
+      <preposition id="with"/>
+    </expression>
+  </predicate>
+  <predicate fact="painted-by" comparison="true">
+    <expression id="painted-by1" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="painter" refexp="default"/>
+      <verb tense="past" voice="passive" pred="paint-verb"/>
+      <preposition id="by"/>
+    </expression>
+    <expression id="painted-by2" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="painter" refexp="default"/>
+      <verb tense="past" voice="passive" pred="decorate-verb"/>
+      <preposition id="by"/>
+    </expression>
+  </predicate>
+  <predicate fact="potter-is" comparison="true">
+    <expression id="potter-is" aggregation-allowed="true" generation="generate">
+      <arg-one type="vessel" refexp="default"/>
+      <arg-two type="potter" refexp="default"/>
+      <verb tense="past" voice="passive" pred="make-verb"/>
+      <preposition id="by"/>
+    </expression>
+  </predicate>
+  <predicate fact="historical-period-description">
+    <expression id="historical-period-description" aggregation-allowed="before" generation="generate">
+      <arg-one type="historical-period" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+  <predicate fact="historical-period-time">
+    <expression id="historical-period-time1" aggregation-allowed="true" generation="generate">
+      <arg-one type="historical-period" refexp="default"/>
+      <arg-two type="string" refexp="default"/>
+      <preposition id="between"/>
+      <verb tense="past" voice="active" pred="range-verb"/>
+    </expression>
+    <expression id="historical-period-time2" aggregation-allowed="true" generation="strings">
+      <arg-one type="historical-period" refexp="default"/>
+      <text>covers the time between</text>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+    <expression id="historical-period-time3" aggregation-allowed="true" generation="strings">
+      <arg-one type="historical-period" refexp="default"/>
+      <text>is the period between</text>
+      <arg-two type="string" refexp="default"/>
+    </expression>
+  </predicate>
+</predicates>

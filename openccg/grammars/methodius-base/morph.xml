@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<morph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../morph.xsd" name="crag">
+  <entry pos="Dummy" word="*dummy*"/>
+  <entry class="date" pos="NNP" word="[*DATE*]"/>
+  <entry class="time" pos="NNP" word="[*TIME*]"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="[*NUM*]"/>
+  <entry class="amt" pos="NNP" word="[*AMT*]"/>
+  <entry class="dur" pos="NNP" word="[*DUR*]"/>
+  <entry pos="," word=","/>
+  <entry pos="." word="."/>
+  <entry pos="?" word="?"/>
+  <entry pos="Comp" word="that"/>
+  <entry macros="@X-thing" pos="RelPro" word="that"/>
+  <entry pos="Pro" word="i" stem="pro1" class="animate-being" macros="@1st @sg @nom"/>
+  <entry pos="Pro" word="me" stem="pro1" class="animate-being" macros="@1st @sg @acc"/>
+  <entry pos="Pro" word="we" stem="pro1" class="animate-being" macros="@1st @pl @nom"/>
+  <entry pos="Pro" word="us" stem="pro1" class="animate-being" macros="@1st @pl @acc"/>
+  <entry pos="PossPro" word="my" stem="pro1" class="animate-being" macros="@sg-P"/>
+  <entry pos="PossPro" word="our" stem="pro1" class="animate-being" macros="@pl-P"/>
+  <entry macros="@2nd" class="animate-being" pos="Pro" stem="pro2" word="you"/>
+  <entry class="animate-being" pos="PossPro" stem="pro2" word="your"/>
+  <entry pos="Pro" word="she" stem="pro3f" macros="@3rd @sg @nom"/>
+  <entry pos="Pro" word="her" stem="pro3f" macros="@3rd @sg @acc"/>
+  <entry macros="@sg-P" pos="PossPro" stem="pro3f" word="her"/>
+  <entry pos="Pro" word="he" stem="pro3m" macros="@3rd @sg @nom"/>
+  <entry pos="Pro" word="him" stem="pro3m" macros="@3rd @sg @acc"/>
+  <entry macros="@sg-P" pos="PossPro" stem="pro3m" word="his"/>
+  <entry pos="Pro" word="it" stem="pro3n" macros="@3rd @sg"/>
+  <entry pos="Pro" word="they" stem="pro3n" macros="@3rd @pl @nom"/>
+  <entry pos="Pro" word="them" stem="pro3n" macros="@3rd @pl @acc"/>
+  <entry pos="PossPro" word="its" stem="pro3n" macros="@sg-P"/>
+  <entry pos="PossPro" word="their" stem="pro3n" macros="@pl-P"/>
+  <entry pos="Pro" word="this" macros="@3rd @sg"/>
+  <entry pos="Pro" word="these" stem="this" macros="@3rd @pl"/>
+  <entry pos="Pro" word="that" macros="@3rd @sg"/>
+  <entry pos="Pro" word="those" stem="that" macros="@3rd @pl"/>
+  <entry pos="N" word="one" stem="pro_one" macros="@sg"/>
+  <entry pos="N" word="ones" stem="pro_one" macros="@pl"/>
+  <entry pos="Expl" word="it"/>
+  <entry pos="Expl" word="there"/>
+  <entry pos="Expl" word="here"/>
+  <entry pos="Conj" word="and"/>
+  <entry pos="Conj" word="or"/>
+  <entry pos="Conj" word="but"/>
+  <entry pos="Conj" word="although"/>
+  <entry pos="Conj" word="if"/>
+  <entry pos="Conj" word="while"/>
+  <entry pos="Conj" word="whereas"/>
+  <entry pos="Adv" word="however"/>
+  <entry macros="@sg-2" pos="QNP" word="everyone"/>
+  <entry macros="@pl-2" pos="QNP" word="both"/>
+  <entry macros="@sg-2" pos="QNP" word="neither"/>
+  <entry macros="@pl-2" pos="QNP" word="none"/>
+  <entry macros="@pl-or-mass-2" pos="QNP" word="all"/>
+  <entry pos="WhNP" word="what"/>
+  <entry macros="@X-location" pos="WhNP" word="where"/>
+  <entry macros="@X-person" pos="WhNP" word="who"/>
+  <entry macros="@X-time" pos="WhNP" word="when"/>
+  <entry pos="Det" word="a" stem="indef" macros="@sg-2"/>
+  <entry pos="Det" word="an" stem="indef" macros="@sg-2"/>
+  <entry pos="Det" word="some" stem="indef" macros="@pl-2"/>
+  <entry pos="Det" word="the" stem="def" class="the"/>
+  <entry macros="@sg-2" pos="Det" word="another"/>
+  <entry pos="Det" word="this" stem="dem-prox" macros="@sg-or-mass-2"/>
+  <entry pos="Det" word="these" stem="dem-prox" macros="@pl-2"/>
+  <entry pos="Det" word="that" stem="dem-nonprox" macros="@sg-or-mass-2"/>
+  <entry pos="Det" word="those" stem="dem-nonprox" macros="@pl-2"/>
+  <entry pos="PossS" word="'s"/>
+  <entry macros="@pl-or-mass-2" pos="QDet" word="all"/>
+  <entry macros="@pl-2" pos="QDet" word="both"/>
+  <entry macros="@sg-2" pos="QDet" word="every"/>
+  <entry macros="@sg-2" pos="QDet" word="neither"/>
+  <entry pos="QDet" word="no"/>
+  <entry pos="Wh" word="what"/>
+  <entry pos="Wh" word="which"/>
+  <entry pos="Adv" word="also"/>
+  <entry pos="Adv" word="either"/>
+  <entry pos="Adv" word="though"/>
+  <entry pos="Prep" word="with"/>
+  <entry pos="V" word="can"/>
+  <entry pos="V" word="may"/>
+  <entry pos="V" word="should"/>
+  <entry pos="V" word="would"/>
+  <entry pos="V" word="'d" stem="would"/>
+  <entry pos="V" word="will"/>
+  <entry pos="V" word="'ll" stem="will"/>
+  <entry pos="V" word="not" macros="@base @base6"/>
+  <entry pos="V" word="n't" stem="not" macros="@base @base6"/>
+  <entry pos="V" word="not" macros="@adj @adj6"/>
+  <entry pos="V" word="n't" stem="not" macros="@adj @adj6"/>
+  <entry pos="V" word="do" macros="@pres @sg-agr @non-3rd-agr @active"/>
+  <entry pos="V" word="does" stem="do" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="do" macros="@pres @pl-agr @active"/>
+  <entry pos="V" word="did" stem="do" macros="@past @active"/>
+  <entry pos="V" word="be" stem="be-verb" macros="@base" excluded="Inverted"/>
+  <entry pos="V" word="am" stem="be-verb" macros="@pres @active @sg-agr @1st-agr"/>
+  <entry pos="V" word="are" stem="be-verb" macros="@pres @active @sg-agr @2nd-agr"/>
+  <entry pos="V" word="is" stem="be-verb" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="are" stem="be-verb" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="was" stem="be-verb" macros="@past @active @sg-agr @1st-agr"/>
+  <entry pos="V" word="were" stem="be-verb" macros="@past @active @sg-agr @2nd-agr"/>
+  <entry pos="V" word="was" stem="be-verb" macros="@past @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="were" stem="be-verb" macros="@past @active @pl-agr"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@base" excluded="Inverted"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="has" stem="have-verb" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="had" stem="have-verb" macros="@active @past"/>
+  <entry pos="V" word="mention" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="mentions" stem="mention" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="mention" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="mentioned" stem="mention" macros="@past @active"/>
+  <entry pos="V" word="mentioned" stem="mention" macros="@ppart"/>
+  <entry pos="V" word="say" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="says" stem="say" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="say" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="said" stem="say" macros="@past @active"/>
+  <entry pos="V" word="said" stem="say" macros="@ppart"/>
+  <entry macros="@sg-2" class="num" pos="Num" word="one"/>
+  <entry macros="@sg-2" class="num" pos="Num" word="1"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="several"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="two"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="three"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="four"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="five"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="six"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="seven"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="eight"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="nine"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="ten"/>
+  <entry pos="Conj" word="and"/>
+  <entry pos="Conj" word=";"/>
+  <entry macros="@X-thing" pos="RelPro" word="which"/>
+  <entry macros="@X-person" pos="RelPro" word="who"/>
+  <entry pos="Prep" word="from"/>
+  <entry pos="Prep" word="between"/>
+  <entry pos="Prep" word="to"/>
+  <entry pos="Prep" word="of"/>
+  <entry pos="Prep" word="by"/>
+  <entry pos="Prep" word="during"/>
+  <entry pos="Prep" word="in"/>
+  <entry pos="Prep" word="on"/>
+  <entry pos="Prep" word="using"/>
+  <entry pos="Prep" word="with"/>
+  <entry pos="Prep" word="the_opposite_of"/>
+  <entry pos="Adv" word="currently"/>
+  <entry pos="Adv" word="now"/>
+  <entry pos="Adv" word="just"/>
+  <entry pos="Adv" word="recently"/>
+  <entry pos="Adv" word="high"/>
+  <entry pos="Adv" word="today"/>
+  <entry pos="Adv" word="happily"/>
+  <entry pos="Adv" word="originally"/>
+  <entry pos="Adv" word="initially"/>
+  <entry pos="Adv" word="later"/>
+  <entry pos="Comparator" word="like"/>
+  <entry pos="Comparator" word="unlike"/>
+  <entry pos="Adj" word="previous"/>
+  <entry pos="Adj" word="other"/>
+  <entry pos="Adj" word="last"/>
+  <entry pos="Aux" word="be" stem="be-aux" macros="@base" excluded="Inverted"/>
+  <entry pos="Aux" word="are" stem="be-aux" macros="@pres @sg-agr @2nd-agr"/>
+  <entry pos="Aux" word="is" stem="be-aux" macros="@pres @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="Aux" word="are" stem="be-aux" macros="@pres @pl-agr"/>
+  <entry pos="Aux" word="was" stem="be-aux" macros="@past @sg-agr @1st-agr"/>
+  <entry pos="Aux" word="were" stem="be-aux" macros="@past @sg-agr @2nd-agr"/>
+  <entry pos="Aux" word="was" stem="be-aux" macros="@past @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="Aux" word="were" stem="be-aux" macros="@past @pl-agr"/>
+  <entry pos="V" word="missing_verb" stem="missing-verb-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="rule" stem="rule-verb" macros="@base"/>
+  <entry pos="V" word="rules" stem="rule-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="rule" stem="rule-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="ruled" stem="rule-verb" macros="@past @active"/>
+  <entry pos="V" word="ruled" stem="rule-verb" macros="@ppart"/>
+  <entry pos="V" word="construct" stem="construct-verb" macros="@base"/>
+  <entry pos="V" word="constructs" stem="construct-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="construct" stem="construct-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="constructed" stem="construct-verb" macros="@past @active"/>
+  <entry pos="V" word="constructed" stem="construct-verb" macros="@ppart"/>
+  <entry pos="V" word="is_near" stem="be-near-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="are_near" stem="be-near-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="was_near" stem="be-near-verb" macros="@past @active"/>
+  <entry pos="V" word="attribute" stem="attribute-verb" macros="@base"/>
+  <entry pos="V" word="attributes" stem="attribute-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="attribute" stem="attribute-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="attributed" stem="attribute-verb" macros="@past @active"/>
+  <entry pos="V" word="attributed" stem="attribute-verb" macros="@ppart"/>
+  <entry pos="V" word="belong" stem="belong-verb" macros="@base"/>
+  <entry pos="V" word="belongs" stem="belong-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="belong" stem="belong-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="belonged" stem="belong-verb" macros="@past @active"/>
+  <entry pos="V" word="comes" stem="come-verb" macros="@pres @sg-agr @3rd-agr @active"/>
+  <entry pos="V" word="come" stem="come-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="came" stem="come-verb" macros="@past @active"/>
+  <entry pos="V" word="cover" stem="cover-verb" macros="@base"/>
+  <entry pos="V" word="covers" stem="cover-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="cover" stem="cover-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="covered" stem="cover-verb" macros="@past @active"/>
+  <entry pos="V" word="covered" stem="cover-verb" macros="@ppart"/>
+  <entry pos="V" word="create" stem="create-verb" macros="@base"/>
+  <entry pos="V" word="creates" stem="create-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="create" stem="create-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="created" stem="create-verb" macros="@past @active"/>
+  <entry pos="V" word="created" stem="create-verb" macros="@ppart"/>
+  <entry pos="V" word="date" stem="date-verb" macros="@base"/>
+  <entry pos="V" word="dates" stem="date-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="date" stem="date-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="dated" stem="date-verb" macros="@past @active"/>
+  <entry pos="V" word="decorate" stem="decorate-verb" macros="@base"/>
+  <entry pos="V" word="decorates" stem="decorate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="decorate" stem="decorate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="decorated" stem="decorate-verb" macros="@past @active"/>
+  <entry pos="V" word="decorated" stem="decorate-verb" macros="@ppart"/>
+  <entry pos="V" word="depict" stem="depict-verb" macros="@base"/>
+  <entry pos="V" word="depicts" stem="depict-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="depict" stem="depict-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="depicted" stem="depict-verb" macros="@past @active"/>
+  <entry pos="V" word="depicted" stem="depict-verb" macros="@ppart"/>
+  <entry pos="V" word="develop" stem="develop-verb" macros="@base"/>
+  <entry pos="V" word="develops" stem="develop-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="develop" stem="develop-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="developed" stem="develop-verb" macros="@past @active"/>
+  <entry pos="V" word="developed" stem="develop-verb" macros="@ppart"/>
+  <entry pos="V" word="donate" stem="donate-verb" macros="@base"/>
+  <entry pos="V" word="donates" stem="donate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="donate" stem="donate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="donated" stem="donate-verb" macros="@past @active"/>
+  <entry pos="V" word="donated" stem="donate-verb" macros="@ppart"/>
+  <entry pos="V" word="exhibit" stem="exhibit-verb" macros="@base"/>
+  <entry pos="V" word="exhibits" stem="exhibit-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="exhibit" stem="exhibit-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="exhibited" stem="exhibit-verb" macros="@past @active"/>
+  <entry pos="V" word="exhibited" stem="exhibit-verb" macros="@ppart"/>
+  <entry pos="V" word="find" stem="find-verb" macros="@base"/>
+  <entry pos="V" word="finds" stem="find-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="find" stem="find-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="found" stem="find-verb" macros="@past @active"/>
+  <entry pos="V" word="found" stem="find-verb" macros="@ppart"/>
+  <entry pos="V" word="follow" stem="follow-verb" macros="@base"/>
+  <entry pos="V" word="follows" stem="follow-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="follow" stem="follow-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="followed" stem="follow-verb" macros="@past @active"/>
+  <entry pos="V" word="followed" stem="follow-verb" macros="@ppart"/>
+  <entry pos="V" word="inscribe" stem="inscribe-verb" macros="@base"/>
+  <entry pos="V" word="inscribes" stem="inscribe-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="inscribe" stem="inscribe-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="inscribed" stem="inscribe-verb" macros="@past @active"/>
+  <entry pos="V" word="inscribed" stem="inscribe-verb" macros="@ppart"/>
+  <entry pos="V" word="last" stem="last-verb" macros="@base"/>
+  <entry pos="V" word="lasts" stem="last-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="last" stem="last-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="lasted" stem="last-verb" macros="@past @active"/>
+  <entry pos="V" word="locate" stem="locate-verb" macros="@base"/>
+  <entry pos="V" word="locates" stem="locate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="locate" stem="locate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="located" stem="locate-verb" macros="@past @active"/>
+  <entry pos="V" word="located" stem="locate-verb" macros="@ppart"/>
+  <entry pos="V" word="make" stem="make-verb" macros="@base"/>
+  <entry pos="V" word="makes" stem="make-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="make" stem="make-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="made" stem="make-verb" macros="@past @active"/>
+  <entry pos="V" word="made" stem="make-verb" macros="@ppart"/>
+  <entry pos="V" word="originate" stem="originate-verb" macros="@base"/>
+  <entry pos="V" word="originates" stem="originate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="originate" stem="originate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="originated" stem="originate-verb" macros="@past @active"/>
+  <entry pos="V" word="paint" stem="paint-verb" macros="@base"/>
+  <entry pos="V" word="paints" stem="paint-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="paint" stem="paint-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="painted" stem="paint-verb" macros="@past @active"/>
+  <entry pos="V" word="painted" stem="paint-verb" macros="@ppart"/>
+  <entry pos="V" word="portray" stem="portray-verb" macros="@base"/>
+  <entry pos="V" word="portrays" stem="portray-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="portray" stem="portray-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="portrayed" stem="portray-verb" macros="@past @active"/>
+  <entry pos="V" word="portrayed" stem="portray-verb" macros="@ppart"/>
+  <entry pos="V" word="range" stem="range-verb" macros="@base"/>
+  <entry pos="V" word="ranges" stem="range-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="range" stem="range-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="ranged" stem="range-verb" macros="@past @active"/>
+  <entry pos="V" word="reads" stem="read-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="reads" stem="read-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="read" stem="read-verb" macros="@past @active"/>
+  <entry pos="V" word="read" stem="read-verb" macros="@ppart"/>
+  <entry pos="V" word="sculpt" stem="sculpt-verb" macros="@base"/>
+  <entry pos="V" word="sculpts" stem="sculpt-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="sculpt" stem="sculpt-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="sculpted" stem="sculpt-verb" macros="@past @active"/>
+  <entry pos="V" word="sculpted" stem="sculpt-verb" macros="@ppart"/>
+  <entry pos="V" word="see" stem="see-verb" macros="@base"/>
+  <entry pos="V" word="sees" stem="see-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="see" stem="see-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="saw" stem="see-verb" macros="@past @active"/>
+  <entry pos="V" word="seen" stem="see-verb" macros="@ppart"/>
+  <entry pos="V" word="show" stem="show-verb" macros="@base"/>
+  <entry pos="V" word="shows" stem="show-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="show" stem="show-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="showed" stem="show-verb" macros="@past @active"/>
+  <entry pos="V" word="shown" stem="show-verb" macros="@ppart"/>
+  <macro name="@mass">
+    <fs val="mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg">
+    <fs val="sg" attr="num" id="2"/>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sg-agr">
+    <fs val="sg" attr="num" id="1"/>
+    <fs val="sg" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-or-mass-agr">
+    <fs id="1">
+      <feat attr="num">
+        <featvar name="NUM:sg-or-mass"/>
+      </feat>
+    </fs>
+    <fs id="2">
+      <feat attr="num">
+        <featvar name="NUM:sg-or-mass"/>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@sg-2">
+    <fs val="sg" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-or-mass-2">
+    <fs val="sg-or-mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-P">
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <fs val="pl" attr="num" id="2"/>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl-agr">
+    <fs val="pl" attr="num" id="1"/>
+    <fs val="pl" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-2">
+    <fs val="pl" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-or-mass-2">
+    <fs val="pl-or-mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-P">
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@1st">
+    <fs val="1st" attr="pers" id="2"/>
+  </macro>
+  <macro name="@1st-agr">
+    <fs val="1st" attr="pers" id="1"/>
+    <fs val="1st" attr="pers" id="2"/>
+  </macro>
+  <macro name="@2nd">
+    <fs val="2nd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@2nd-agr">
+    <fs val="2nd" attr="pers" id="1"/>
+    <fs val="2nd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@non-3rd-agr">
+    <fs id="1">
+      <feat attr="pers">
+        <featvar name="PERS:non-3rd"/>
+      </feat>
+    </fs>
+    <fs id="2">
+      <feat attr="pers">
+        <featvar name="PERS:non-3rd"/>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs val="3rd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@3rd-agr">
+    <fs val="3rd" attr="pers" id="1"/>
+    <fs val="3rd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@nom">
+    <fs val="nom" attr="case" id="2"/>
+  </macro>
+  <macro name="@acc">
+    <fs val="acc" attr="case" id="2"/>
+  </macro>
+  <macro name="@pp-from">
+    <fs val="from" attr="lex" id="3"/>
+  </macro>
+  <macro name="@pp-to">
+    <fs val="to" attr="lex" id="3"/>
+  </macro>
+  <macro name="@prt-up">
+    <fs val="up" attr="lex" id="4"/>
+  </macro>
+  <macro name="@prt-with">
+    <fs val="with" attr="lex" id="4"/>
+  </macro>
+  <macro name="@ng">
+    <fs val="ng" attr="form" id="1"/>
+  </macro>
+  <macro name="@base">
+    <fs val="base" attr="form" id="1"/>
+  </macro>
+  <macro name="@base6">
+    <fs val="base" attr="form" id="6"/>
+  </macro>
+  <macro name="@dcl">
+    <fs id="1">
+      <feat val="dcl" attr="form"/>
+    </fs>
+  </macro>
+  <macro name="@adj">
+    <fs val="adj" attr="form" id="1"/>
+  </macro>
+  <macro name="@ppart">
+    <fs val="ppart" attr="form" id="1"/>
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="passive"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@adj6">
+    <fs val="adj" attr="form" id="6"/>
+  </macro>
+  <macro name="@X-location">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:location"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-time">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:time"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-person">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:person"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-thing">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:inanimate"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@active">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="active"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@passive">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="passive"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+</morph>

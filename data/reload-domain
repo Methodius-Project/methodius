@@ -1,0 +1,5 @@
+#!/bin/bash
+
+java -classpath ../jars/jdom.jar:../jars/je.jar:../jars/trove.jar:../jars/openccg.jar:../dist/methodius.jar uk/ac/ed/methodius/Command -q $1 loadXml
+java -classpath ../jars/jdom.jar:../jars/je.jar:../jars/trove.jar:../jars/openccg.jar:../dist/methodius.jar uk/ac/ed/methodius/Command -q $1 createCP
+

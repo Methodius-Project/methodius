@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types name="amy-greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../types.xsd">
+  <type name="case"/>
+  <type name="nom" parents="case"/>
+  <type name="acc" parents="case"/>
+  <type name="dat" parents="case"/>
+  <type name="gen" parents="case"/>
+  <type name="ontology"/>
+  <type name="sem-obj" parents="ontology"/>
+  <type name="phys-obj" parents="sem-obj"/>
+  <type name="situation" parents="sem-obj"/>
+  <type name="animate-being" parents="phys-obj"/>
+  <type name="thing" parents="phys-obj"/>
+  <type name="person" parents="animate-being"/>
+  <type name="exhibit" parents="thing"/>
+  <type name="change" parents="situation"/>
+  <type name="state" parents="situation"/>
+  <type name="action" parents="change"/>
+  <type name="form"/>
+  <type name="fin" parents="form"/>
+  <type name="nonfin" parents="form"/>
+  <type name="dcl" parents="fin"/>
+  <type name="int" parents="fin"/>
+  <type name="marked" parents="fin"/>
+  <type name="imp" parents="fin"/>
+  <type name="exc" parents="fin"/>
+  <type name="q-base" parents="fin"/>
+  <type name="quant" parents="fin"/>
+  <type name="q" parents="q-base"/>
+  <type name="wh" parents="q-base"/>
+  <type name="base" parents="nonfin"/>
+  <type name="nfh" parents="nonfin"/>
+  <type name="inf" parents="nonfin"/>
+  <type name="part" parents="nonfin"/>
+  <type name="ppart" parents="nonfin"/>
+  <type name="adj" parents="nonfin"/>
+  <type name="det"/>
+  <type name="def" parents="det"/>
+  <type name="indef" parents="det"/>
+  <type name="dem" parents="det"/>
+  <type name="pers"/>
+  <type name="1st" parents="pers"/>
+  <type name="2nd" parents="pers"/>
+  <type name="3rd" parents="pers"/>
+  <type name="1st-2" parents="pers"/>
+  <type name="2nd-2" parents="pers"/>
+  <type name="3rd-2" parents="pers"/>
+  <type name="1st-agr" parents="pers"/>
+  <type name="2nd-agr" parents="pers"/>
+  <type name="3rd-agr" parents="pers"/>
+  <type name="num"/>
+  <type name="sg" parents="num"/>
+  <type name="pl" parents="num"/>
+  <type name="sg-agr" parents="num"/>
+  <type name="pl-agr" parents="num"/>
+  <type name="sg-2" parents="num"/>
+  <type name="pl-2" parents="num"/>
+  <type name="tense"/>
+  <type name="past" parents="tense"/>
+  <type name="pres" parents="tense"/>
+  <type name="presperf" parents="tense"/>
+  <type name="pastperf" parents="tense"/>
+  <type name="gend"/>
+  <type name="masc" parents="gend"/>
+  <type name="fem" parents="gend"/>
+  <type name="neut" parents="gend"/>
+  <type name="masc-agr" parents="gend"/>
+  <type name="fem-agr" parents="gend"/>
+  <type name="neut-agr" parents="gend"/>
+  <type name="masc-2" parents="gend"/>
+  <type name="fem-2" parents="gend"/>
+  <type name="neut-2" parents="gend"/>
+  <type name="voice"/>
+  <type name="active" parents="voice"/>
+  <type name="passive" parents="voice"/>
+</types>

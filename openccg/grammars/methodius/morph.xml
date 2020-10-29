@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?><morph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="morph.xsd" name="crag">
+  <entry pos="Dummy" word="*dummy*"/>
+  <entry class="date" pos="NNP" word="[*DATE*]"/>
+  <entry class="time" pos="NNP" word="[*TIME*]"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="[*NUM*]"/>
+  <entry class="amt" pos="NNP" word="[*AMT*]"/>
+  <entry class="dur" pos="NNP" word="[*DUR*]"/>
+  <entry pos="," word=","/>
+  <entry pos="." word="."/>
+  <entry pos="?" word="?"/>
+  <entry pos="Comp" word="that"/>
+  <entry macros="@X-thing" pos="RelPro" word="that"/>
+  <entry pos="Pro" word="i" stem="pro1" class="animate-being" macros="@1st @sg @nom"/>
+  <entry pos="Pro" word="me" stem="pro1" class="animate-being" macros="@1st @sg @acc"/>
+  <entry pos="Pro" word="we" stem="pro1" class="animate-being" macros="@1st @pl @nom"/>
+  <entry pos="Pro" word="us" stem="pro1" class="animate-being" macros="@1st @pl @acc"/>
+  <entry pos="PossPro" word="my" stem="pro1" class="animate-being" macros="@sg-P"/>
+  <entry pos="PossPro" word="our" stem="pro1" class="animate-being" macros="@pl-P"/>
+  <entry macros="@2nd" class="animate-being" pos="Pro" stem="pro2" word="you"/>
+  <entry class="animate-being" pos="PossPro" stem="pro2" word="your"/>
+  <entry pos="Pro" word="she" stem="pro3f" macros="@3rd @sg @nom"/>
+  <entry pos="Pro" word="her" stem="pro3f" macros="@3rd @sg @acc"/>
+  <entry macros="@sg-P" pos="PossPro" stem="pro3f" word="her"/>
+  <entry pos="Pro" word="he" stem="pro3m" macros="@3rd @sg @nom"/>
+  <entry pos="Pro" word="him" stem="pro3m" macros="@3rd @sg @acc"/>
+  <entry macros="@sg-P" pos="PossPro" stem="pro3m" word="his"/>
+  <entry pos="Pro" word="it" stem="pro3n" macros="@3rd @sg"/>
+  <entry pos="Pro" word="they" stem="pro3n" macros="@3rd @pl @nom"/>
+  <entry pos="Pro" word="them" stem="pro3n" macros="@3rd @pl @acc"/>
+  <entry pos="PossPro" word="its" stem="pro3n" macros="@sg-P"/>
+  <entry pos="PossPro" word="their" stem="pro3n" macros="@pl-P"/>
+  <entry pos="Pro" word="this" macros="@3rd @sg"/>
+  <entry pos="Pro" word="these" stem="this" macros="@3rd @pl"/>
+  <entry pos="Pro" word="that" macros="@3rd @sg"/>
+  <entry pos="Pro" word="those" stem="that" macros="@3rd @pl"/>
+  <entry pos="N" word="one" stem="pro_one" macros="@sg"/>
+  <entry pos="N" word="ones" stem="pro_one" macros="@pl"/>
+  <entry pos="Expl" word="it"/>
+  <entry pos="Expl" word="there"/>
+  <entry pos="Expl" word="here"/>
+  <entry pos="Conj" word="and"/>
+  <entry pos="Conj" word="or"/>
+  <entry pos="Conj" word="but"/>
+  <entry pos="Conj" word="although"/>
+  <entry pos="Conj" word="if"/>
+  <entry pos="Conj" word="while"/>
+  <entry pos="Conj" word="whereas"/>
+  <entry pos="Adv" word="however"/>
+  <entry macros="@sg-2" pos="QNP" word="everyone"/>
+  <entry macros="@pl-2" pos="QNP" word="both"/>
+  <entry macros="@sg-2" pos="QNP" word="neither"/>
+  <entry macros="@pl-2" pos="QNP" word="none"/>
+  <entry macros="@pl-or-mass-2" pos="QNP" word="all"/>
+  <entry pos="WhNP" word="what"/>
+  <entry macros="@X-location" pos="WhNP" word="where"/>
+  <entry macros="@X-person" pos="WhNP" word="who"/>
+  <entry macros="@X-time" pos="WhNP" word="when"/>
+  <entry pos="Det" word="a" stem="indef" macros="@sg-2"/>
+  <entry pos="Det" word="an" stem="indef" macros="@sg-2"/>
+  <entry pos="Det" word="some" stem="indef" macros="@pl-2"/>
+  <entry pos="Det" word="the" stem="def" class="the"/>
+  <entry macros="@sg-2" pos="Det" word="another"/>
+  <entry pos="Det" word="this" stem="dem-prox" macros="@sg-or-mass-2"/>
+  <entry pos="Det" word="these" stem="dem-prox" macros="@pl-2"/>
+  <entry pos="Det" word="that" stem="dem-nonprox" macros="@sg-or-mass-2"/>
+  <entry pos="Det" word="those" stem="dem-nonprox" macros="@pl-2"/>
+  <entry pos="PossS" word="'s"/>
+  <entry macros="@pl-or-mass-2" pos="QDet" word="all"/>
+  <entry macros="@pl-2" pos="QDet" word="both"/>
+  <entry macros="@sg-2" pos="QDet" word="every"/>
+  <entry macros="@sg-2" pos="QDet" word="neither"/>
+  <entry pos="QDet" word="no"/>
+  <entry pos="Wh" word="what"/>
+  <entry pos="Wh" word="which"/>
+  <entry pos="Adv" word="also"/>
+  <entry pos="Adv" word="either"/>
+  <entry pos="Adv" word="though"/>
+  <entry pos="Prep" word="with"/>
+  <entry pos="V" word="can"/>
+  <entry pos="V" word="may"/>
+  <entry pos="V" word="should"/>
+  <entry pos="V" word="would"/>
+  <entry pos="V" word="'d" stem="would"/>
+  <entry pos="V" word="will"/>
+  <entry pos="V" word="'ll" stem="will"/>
+  <entry pos="V" word="not" macros="@base @base6"/>
+  <entry pos="V" word="n't" stem="not" macros="@base @base6"/>
+  <entry pos="V" word="not" macros="@adj @adj6"/>
+  <entry pos="V" word="n't" stem="not" macros="@adj @adj6"/>
+  <entry pos="V" word="do" macros="@pres @sg-agr @non-3rd-agr @active"/>
+  <entry pos="V" word="does" stem="do" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="do" macros="@pres @pl-agr @active"/>
+  <entry pos="V" word="did" stem="do" macros="@past @active"/>
+  <entry pos="V" word="be" stem="be-verb" macros="@base" excluded="Inverted"/>
+  <entry pos="V" word="am" stem="be-verb" macros="@pres @active @sg-agr @1st-agr"/>
+  <entry pos="V" word="are" stem="be-verb" macros="@pres @active @sg-agr @2nd-agr"/>
+  <entry pos="V" word="is" stem="be-verb" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="are" stem="be-verb" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="was" stem="be-verb" macros="@past @active @sg-agr @1st-agr"/>
+  <entry pos="V" word="were" stem="be-verb" macros="@past @active @sg-agr @2nd-agr"/>
+  <entry pos="V" word="was" stem="be-verb" macros="@past @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="were" stem="be-verb" macros="@past @active @pl-agr"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@base" excluded="Inverted"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="has" stem="have-verb" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="have" stem="have-verb" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="had" stem="have-verb" macros="@active @past"/>
+  <entry pos="V" word="mention" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="mentions" stem="mention" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="mention" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="mentioned" stem="mention" macros="@past @active"/>
+  <entry pos="V" word="mentioned" stem="mention" macros="@ppart"/>
+  <entry pos="V" word="say" macros="@pres @active @sg-agr @non-3rd-agr"/>
+  <entry pos="V" word="says" stem="say" macros="@pres @active @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="V" word="say" macros="@pres @active @pl-agr"/>
+  <entry pos="V" word="said" stem="say" macros="@past @active"/>
+  <entry pos="V" word="said" stem="say" macros="@ppart"/>
+  <entry macros="@sg-2" class="num" pos="Num" word="one"/>
+  <entry macros="@sg-2" class="num" pos="Num" word="1"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="several"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="two"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="three"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="four"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="five"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="six"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="seven"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="eight"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="nine"/>
+  <entry macros="@pl-2" class="num" pos="Num" word="ten"/>
+  <entry pos="Conj" word="and"/>
+  <entry pos="Conj" word=";"/>
+  <entry macros="@X-thing" pos="RelPro" word="which"/>
+  <entry macros="@X-person" pos="RelPro" word="who"/>
+  <entry pos="Prep" word="from"/>
+  <entry pos="Prep" word="between"/>
+  <entry pos="Prep" word="to"/>
+  <entry pos="Prep" word="of"/>
+  <entry pos="Prep" word="by"/>
+  <entry pos="Prep" word="during"/>
+  <entry pos="Prep" word="in"/>
+  <entry pos="Prep" word="on"/>
+  <entry pos="Prep" word="using"/>
+  <entry pos="Prep" word="with"/>
+  <entry pos="Prep" word="the_opposite_of"/>
+  <entry pos="Adv" word="currently"/>
+  <entry pos="Adv" word="now"/>
+  <entry pos="Adv" word="just"/>
+  <entry pos="Adv" word="recently"/>
+  <entry pos="Adv" word="high"/>
+  <entry pos="Adv" word="today"/>
+  <entry pos="Adv" word="happily"/>
+  <entry pos="Adv" word="originally"/>
+  <entry pos="Comparator" word="like"/>
+  <entry pos="Comparator" word="unlike"/>
+  <entry pos="Adj" word="previous"/>
+  <entry pos="Adj" word="other"/>
+  <entry pos="Adj" word="last"/>
+  <entry pos="Aux" word="be" stem="be-aux" macros="@base" excluded="Inverted"/>
+  <entry pos="Aux" word="are" stem="be-aux" macros="@pres @sg-agr @2nd-agr"/>
+  <entry pos="Aux" word="is" stem="be-aux" macros="@pres @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="Aux" word="are" stem="be-aux" macros="@pres @pl-agr"/>
+  <entry pos="Aux" word="was" stem="be-aux" macros="@past @sg-agr @1st-agr"/>
+  <entry pos="Aux" word="were" stem="be-aux" macros="@past @sg-agr @2nd-agr"/>
+  <entry pos="Aux" word="was" stem="be-aux" macros="@past @sg-or-mass-agr @3rd-agr"/>
+  <entry pos="Aux" word="were" stem="be-aux" macros="@past @pl-agr"/>
+  <entry pos="N" word="έκθεμα" class="exhibit" macros="@sg"/>
+  <entry pos="N" word="έκθεματα" stem="έκθεμα" class="exhibit" macros="@pl"/>
+  <entry pos="N" word="picture" stem="picture-np" class="sem-obj" macros="@sg"/>
+  <entry pos="N" word="pictures" stem="picture-np" class="sem-obj" macros="@pl"/>
+  <entry pos="N" word="king" stem="king-np" class="sem-obj" macros="@sg"/>
+  <entry pos="N" word="kings" stem="king-np" class="sem-obj" macros="@pl"/>
+  <entry pos="N" word="thing" stem="thing-np" class="sem-obj" macros="@sg"/>
+  <entry pos="N" word="things" stem="thing-np" class="sem-obj" macros="@pl"/>
+  <entry pos="N" word="amphora_handle" stem="amphora-handle-np" class="amphora-handle" macros="@sg"/>
+  <entry pos="N" word="amphora_handles" stem="amphora-handle-np" class="amphora-handle" macros="@pl"/>
+  <entry pos="N" word="amphora" stem="amphora-np" class="amphora" macros="@sg"/>
+  <entry pos="N" word="amphoras" stem="amphora-np" class="amphora" macros="@pl"/>
+  <entry pos="N" word="amphora_with_a_neck" stem="amphora-with-a-neck-np" class="amphora-with-a-neck" macros="@sg"/>
+  <entry pos="N" word="amphoras_with_a_neck" stem="amphora-with-a-neck-np" class="amphora-with-a-neck" macros="@pl"/>
+  <entry pos="N" word="archaeological_site" stem="archaeological-site-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="N" word="archaeological_sites" stem="archaeological-site-np" class="archaeological-site" macros="@pl"/>
+  <entry pos="N" word="aryballos" stem="aryballos-np" class="aryballos" macros="@sg"/>
+  <entry pos="N" word="aryballoses" stem="aryballos-np" class="aryballos" macros="@pl"/>
+  <entry pos="N" word="black_kantharos" stem="black-kantharos-np" class="black-kantharos" macros="@sg"/>
+  <entry pos="N" word="black_kantharoi" stem="black-kantharos-np" class="black-kantharos" macros="@pl"/>
+  <entry pos="NNP" word="bronze" stem="bronze-material-np" class="bronze-material" macros="@sg"/>
+  <entry pos="NNP" word="bronze" stem="bronze-material-np" class="bronze-material" macros="@mass"/>
+  <entry pos="N" word="cauldron" stem="cauldron-np" class="cauldron" macros="@sg"/>
+  <entry pos="N" word="cauldrons" stem="cauldron-np" class="cauldron" macros="@pl"/>
+  <entry pos="N" word="city" stem="city-np" class="city" macros="@sg"/>
+  <entry pos="N" word="cities" stem="city-np" class="city" macros="@pl"/>
+  <entry pos="NNP" word="clay" stem="clay-material-np" class="clay-material" macros="@sg"/>
+  <entry pos="NNP" word="clay" stem="clay-material-np" class="clay-material" macros="@mass"/>
+  <entry pos="N" word="coin" stem="coin-np" class="coin" macros="@sg"/>
+  <entry pos="N" word="coins" stem="coin-np" class="coin" macros="@pl"/>
+  <entry pos="N" word="complex" stem="complex-statue-np" class="complex-statue" macros="@sg"/>
+  <entry pos="N" word="complexes" stem="complex-statue-np" class="complex-statue" macros="@pl"/>
+  <entry pos="N" word="continuous_outline_hydria" stem="continuous-outline-hydria-np" class="continuous-outline-hydria" macros="@sg"/>
+  <entry pos="N" word="continuous_outline_hydrias" stem="continuous-outline-hydria-np" class="continuous-outline-hydria" macros="@pl"/>
+  <entry pos="N" word="copy" stem="copy-np" class="copy" macros="@sg"/>
+  <entry pos="N" word="copies" stem="copy-np" class="copy" macros="@pl"/>
+  <entry pos="N" word="country" stem="country-np" class="country" macros="@sg"/>
+  <entry pos="N" word="countries" stem="country-np" class="country" macros="@pl"/>
+  <entry pos="N" word="decorative_artefact" stem="decorative-artefact-np" class="decorative-artefact" macros="@sg"/>
+  <entry pos="N" word="decorative_artefacts" stem="decorative-artefact-np" class="decorative-artefact" macros="@pl"/>
+  <entry pos="N" word="department" stem="department-np" class="government-department" macros="@sg"/>
+  <entry pos="N" word="departments" stem="department-np" class="government-department" macros="@pl"/>
+  <entry pos="N" word="donor" stem="donor-np" class="donor" macros="@sg"/>
+  <entry pos="N" word="donors" stem="donor-np" class="donor" macros="@pl"/>
+  <entry pos="N" word="drachma" stem="drachma-np" class="drachma" macros="@sg"/>
+  <entry pos="N" word="drachmas" stem="drachma-np" class="drachma" macros="@pl"/>
+  <entry pos="N" word="earring" stem="earring-np" class="earrings" macros="@sg"/>
+  <entry pos="N" word="earrings" stem="earring-np" class="earrings" macros="@pl"/>
+  <entry pos="N" word="emperor" stem="emperor-np" class="emperor" macros="@sg"/>
+  <entry pos="N" word="emperors" stem="emperor-np" class="emperor" macros="@pl"/>
+  <entry pos="N" word="exhibit" stem="exhibit-np" class="exhibit" macros="@sg"/>
+  <entry pos="N" word="exhibits" stem="exhibit-np" class="exhibit" macros="@pl"/>
+  <entry pos="N" word="figurine" stem="figurine-np" class="figurine" macros="@sg"/>
+  <entry pos="N" word="figurines" stem="figurine-np" class="figurine" macros="@pl"/>
+  <entry pos="N" word="god" stem="god-np" class="god" macros="@sg"/>
+  <entry pos="N" word="gods" stem="god-np" class="god" macros="@pl"/>
+  <entry pos="N" word="goddess" stem="goddess-np" class="goddess" macros="@sg"/>
+  <entry pos="N" word="goddesses" stem="goddess-np" class="goddess" macros="@pl"/>
+  <entry pos="NNP" word="gold" stem="gold-material-np" class="gold-material" macros="@sg"/>
+  <entry pos="NNP" word="gold" stem="gold-material-np" class="gold-material" macros="@mass"/>
+  <entry pos="N" word="relief_tomb_stele" stem="grave-np" class="grave" macros="@sg"/>
+  <entry pos="N" word="relief_tomb_steles" stem="grave-np" class="grave" macros="@pl"/>
+  <entry pos="N" word="helmet" stem="helmet-np" class="helmet" macros="@sg"/>
+  <entry pos="N" word="helmets" stem="helmet-np" class="helmet" macros="@pl"/>
+  <entry pos="N" word="historical_period" stem="historical-period-np" class="historical-period" macros="@sg"/>
+  <entry pos="N" word="historical_periods" stem="historical-period-np" class="historical-period" macros="@pl"/>
+  <entry pos="N" word="hadra_ware_hydria" stem="hydria-hadra-np" class="hydria-hadra" macros="@sg"/>
+  <entry pos="N" word="hadra_ware_hydrias" stem="hydria-hadra-np" class="hydria-hadra" macros="@pl"/>
+  <entry pos="N" word="hydria" stem="hydria-np" class="hydria" macros="@sg"/>
+  <entry pos="N" word="hydrias" stem="hydria-np" class="hydria" macros="@pl"/>
+  <entry pos="N" word="imperial_portrait" stem="imperial-portrait-np" class="imperial-portrait" macros="@sg"/>
+  <entry pos="N" word="imperial_portraits" stem="imperial-portrait-np" class="imperial-portrait" macros="@pl"/>
+  <entry pos="N" word="island" stem="island-np" class="island" macros="@sg"/>
+  <entry pos="N" word="islands" stem="island-np" class="island" macros="@pl"/>
+  <entry pos="NNP" word="ivory" stem="ivory-material-np" class="ivory-material" macros="@sg"/>
+  <entry pos="NNP" word="ivory" stem="ivory-material-np" class="ivory-material" macros="@mass"/>
+  <entry pos="N" word="jewel" stem="jewel-np" class="jewel" macros="@sg"/>
+  <entry pos="N" word="jewels" stem="jewel-np" class="jewel" macros="@pl"/>
+  <entry pos="N" word="kantharos" stem="kantharos-np" class="kantharos" macros="@sg"/>
+  <entry pos="N" word="kantharoses" stem="kantharos-np" class="kantharos" macros="@pl"/>
+  <entry pos="N" word="king" stem="king-np" class="king" macros="@sg"/>
+  <entry pos="N" word="kings" stem="king-np" class="king" macros="@pl"/>
+  <entry pos="N" word="kouros" stem="kouros-np" class="kouros" macros="@sg"/>
+  <entry pos="N" word="kouroi" stem="kouros-np" class="kouros" macros="@pl"/>
+  <entry pos="N" word="kylix" stem="kylix-np" class="kylix" macros="@sg"/>
+  <entry pos="N" word="kylixes" stem="kylix-np" class="kylix" macros="@pl"/>
+  <entry pos="N" word="league" stem="league-np" class="league" macros="@sg"/>
+  <entry pos="N" word="leagues" stem="league-np" class="league" macros="@pl"/>
+  <entry pos="N" word="lekythos" stem="lekythos-np" class="lekythos" macros="@sg"/>
+  <entry pos="N" word="lekythoses" stem="lekythos-np" class="lekythos" macros="@pl"/>
+  <entry pos="N" word="location" stem="location-np" class="location" macros="@sg"/>
+  <entry pos="N" word="locations" stem="location-np" class="location" macros="@pl"/>
+  <entry pos="NNP" word="marble" stem="marble-material-np" class="marble-material" macros="@sg"/>
+  <entry pos="NNP" word="marble" stem="marble-material-np" class="marble-material" macros="@mass"/>
+  <entry pos="N" word="marriage_cauldron" stem="marriage-cauldron-np" class="marriage-cauldron" macros="@sg"/>
+  <entry pos="N" word="marriage_cauldrons" stem="marriage-cauldron-np" class="marriage-cauldron" macros="@pl"/>
+  <entry pos="NNP" word="material" stem="material-np" class="material" macros="@sg"/>
+  <entry pos="NNP" word="materials" stem="material-np" class="material" macros="@pl"/>
+  <entry pos="N" word="military_artefact" stem="military-artefact-np" class="military" macros="@sg"/>
+  <entry pos="N" word="military_artefacts" stem="military-artefact-np" class="military" macros="@pl"/>
+  <entry pos="N" word="museum" stem="museum-np" class="museum" macros="@sg"/>
+  <entry pos="N" word="museums" stem="museum-np" class="museum" macros="@pl"/>
+  <entry pos="N" word="painter" stem="painter-np" class="painter" macros="@sg"/>
+  <entry pos="N" word="painters" stem="painter-np" class="painter" macros="@pl"/>
+  <entry pos="N" word="painting" stem="painting-np" class="painting" macros="@sg"/>
+  <entry pos="N" word="paintings" stem="painting-np" class="painting" macros="@pl"/>
+  <entry pos="N" word="painting_technique" stem="painting-technique-np" class="painting-technique" macros="@sg"/>
+  <entry pos="N" word="painting_techniques" stem="painting-technique-np" class="painting-technique" macros="@pl"/>
+  <entry pos="N" word="panathenaic_amphora" stem="panathenaic-amphora-np" class="panathenaic-amphora" macros="@sg"/>
+  <entry pos="N" word="panathenaic_amphoras" stem="panathenaic-amphora-np" class="panathenaic-amphora" macros="@pl"/>
+  <entry pos="N" word="portrait" stem="portrait-np" class="portrait" macros="@sg"/>
+  <entry pos="N" word="portraits" stem="portrait-np" class="portrait" macros="@pl"/>
+  <entry pos="N" word="potsherd" stem="potsherd-np" class="potsherd" macros="@sg"/>
+  <entry pos="N" word="potsherds" stem="potsherd-np" class="potsherd" macros="@pl"/>
+  <entry pos="N" word="potter" stem="potter-np" class="potter" macros="@sg"/>
+  <entry pos="N" word="potters" stem="potter-np" class="potter" macros="@pl"/>
+  <entry pos="N" word="prochous" stem="prochous-np" class="prochous" macros="@sg"/>
+  <entry pos="N" word="prochouses" stem="prochous-np" class="prochous" macros="@pl"/>
+  <entry pos="N" word="quadriga" stem="quadriga-np" class="quadriga" macros="@sg"/>
+  <entry pos="N" word="quadriga" stem="quadriga-np" class="quadriga" macros="@mass"/>
+  <entry pos="N" word="region" stem="region-np" class="region" macros="@sg"/>
+  <entry pos="N" word="regions" stem="region-np" class="region" macros="@pl"/>
+  <entry pos="N" word="relief" stem="relief-np" class="relief" macros="@sg"/>
+  <entry pos="N" word="reliefs" stem="relief-np" class="relief" macros="@pl"/>
+  <entry pos="N" word="rhyton" stem="rhyton-np" class="rhyton" macros="@sg"/>
+  <entry pos="N" word="rhytons" stem="rhyton-np" class="rhyton" macros="@pl"/>
+  <entry pos="N" word="roman_copy" stem="roman-copy-type-np" class="roman-copy-type" macros="@sg"/>
+  <entry pos="N" word="roman_copies" stem="roman-copy-type-np" class="roman-copy-type" macros="@pl"/>
+  <entry pos="N" word="roman_emperor" stem="roman-emperor-np" class="roman-emperor" macros="@sg"/>
+  <entry pos="N" word="roman_emperors" stem="roman-emperor-np" class="roman-emperor" macros="@pl"/>
+  <entry pos="N" word="sculptor" stem="sculptor-np" class="sculptor" macros="@sg"/>
+  <entry pos="N" word="sculptors" stem="sculptor-np" class="sculptor" macros="@pl"/>
+  <entry pos="NNP" word="silver" stem="silver-material-np" class="silver-material" macros="@sg"/>
+  <entry pos="NNP" word="silver" stem="silver-material-np" class="silver-material" macros="@mass"/>
+  <entry pos="N" word="stamnos" stem="stamnos-np" class="stamnos" macros="@sg"/>
+  <entry pos="N" word="stamnoses" stem="stamnos-np" class="stamnos" macros="@pl"/>
+  <entry pos="N" word="stater" stem="stater-np" class="stater" macros="@sg"/>
+  <entry pos="N" word="staters" stem="stater-np" class="stater" macros="@pl"/>
+  <entry pos="N" word="statue" stem="statue-np" class="statue" macros="@sg"/>
+  <entry pos="N" word="statues" stem="statue-np" class="statue" macros="@pl"/>
+  <entry pos="N" word="style" stem="style-np" class="style" macros="@sg"/>
+  <entry pos="N" word="styles" stem="style-np" class="style" macros="@pl"/>
+  <entry pos="N" word="suit_of_armour" stem="suit-of-armour-np" class="suit-of-armour" macros="@sg"/>
+  <entry pos="N" word="suit_of_armours" stem="suit-of-armour-np" class="suit-of-armour" macros="@pl"/>
+  <entry pos="N" word="technique" stem="technique-np" class="technique" macros="@sg"/>
+  <entry pos="N" word="techniques" stem="technique-np" class="technique" macros="@pl"/>
+  <entry pos="N" word="tetradrachm" stem="tetradrachm-np" class="tetradrachm" macros="@sg"/>
+  <entry pos="N" word="tetradrachms" stem="tetradrachm-np" class="tetradrachm" macros="@pl"/>
+  <entry pos="N" word="university" stem="university-np" class="university" macros="@sg"/>
+  <entry pos="N" word="universities" stem="university-np" class="university" macros="@pl"/>
+  <entry pos="N" word="vessel" stem="vessel-np" class="vessel" macros="@sg"/>
+  <entry pos="N" word="vessels" stem="vessel-np" class="vessel" macros="@pl"/>
+  <entry pos="N" word="white_lekythos" stem="white-lekythos-np" class="white-lekythos" macros="@sg"/>
+  <entry pos="N" word="white_lekythoi" stem="white-lekythos-np" class="white-lekythos" macros="@pl"/>
+  <entry pos="NNP" word="wood" stem="wood-material-np" class="wood-material" macros="@sg"/>
+  <entry pos="NNP" word="wood" stem="wood-material-np" class="wood-material" macros="@mass"/>
+  <entry pos="NNP" word="Pennsylvania" stem="pennsylvania-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Argos" stem="archaeological-argos-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Philadelphia" stem="philadelphia-usa-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Mantiklos" stem="mantiklos-np" class="donor" macros="@sg"/>
+  <entry pos="NNP" word="Florina" stem="florina-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Florina" stem="archaeological-florina-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_National_Museum,_Copenhagen,_Department_of_Classical_and_Near_Eastern_Antiquities" stem="national-copenhagen-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_National_Museum" stem="national-copenhagen-short-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Amphipolis" stem="amphipolis-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Polykleitos" stem="polyklitus-np" class="sculptor" macros="@sg"/>
+  <entry pos="NNP" word="Croton" stem="croton-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Italy" stem="italy-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="the_Aetolian_league" stem="aetolian-league-np" class="league" macros="@sg"/>
+  <entry pos="NNP" word="the_Hellenic_Ministry_of_Culture" stem="hellenic-ministry-of-culture-np" class="government-department" macros="@sg"/>
+  <entry pos="NNP" word="Rome" stem="rome-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Rhodes" stem="rhodes-archaeological-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Boeotia" stem="boeotia-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Olympia" stem="archaeological-olympia-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Thessaloniki" stem="archaeological-thessaloniki-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Temple_of_Sarapis" stem="temple-sarapis-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Kavala" stem="kavala-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Corinth" stem="korinth-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Aristocles" stem="aristocles-np" class="sculptor" macros="@sg"/>
+  <entry pos="NNP" word="the_Sanctuary_of_Zeus" stem="sanctuary-zeus-olympia-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_Sanctuary" stem="sanctuary-zeus-olympia-short-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Alexander_the_Great" stem="alexander-the-great-np" class="king" macros="@sg"/>
+  <entry pos="NNP" word="A_Fake_King" stem="fake-king-np" class="king" macros="@sg"/>
+  <entry pos="NNP" word="Another_Fake_King" stem="other-fake-king-np" class="king" macros="@sg"/>
+  <entry pos="NNP" word="Alexander" stem="alexander-the-great-short-np" class="king" macros="@sg"/>
+  <entry pos="NNP" word="Ipeiros" stem="ipeiros-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="the_painter_of_Kleofrades" stem="painter-of-kleofrades-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="Athens" stem="athens-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Museum_Fur_Kunst_und_Gewerbe_Hamburg" stem="museum-fur-kunst-hamb-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_National_Archaeological_Museum_of_Athens" stem="national-archaeological-athens-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Patras" stem="patrae-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_red_figure_technique" stem="red-figure-technique-np" class="painting-technique" macros="@sg"/>
+  <entry pos="NNP" word="New_York" stem="newyork-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_black_figure_technique" stem="black-figure-technique-np" class="painting-technique" macros="@sg"/>
+  <entry pos="NNP" word="The_National_Archaeological_Museum_of_Taranto" stem="archaeologico-taranto-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Kavala" stem="archaeological-kavala-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_National_Archaeological_Museum_of_Florence" stem="national-archaeological-florence-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Apollo" stem="apollo-np" class="god" macros="@sg"/>
+  <entry pos="NNP" word="Taranto" stem="taranto-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Acropolis_Museum" stem="acropolis-museum-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Ancient_Agora_of_Athens" stem="agora-athens-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Attalus" stem="attalus-np" class="donor" macros="@sg"/>
+  <entry pos="NNP" word="Ismenion" stem="ismenion-thebes-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_West_slope_technique" stem="west-sl-technique-np" class="painting-technique" macros="@sg"/>
+  <entry pos="NNP" word="Thessaloniki" stem="thessaloniki-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Soprinteendenza_Archaeologica_per_la_Toscana_Firenze" stem="soprinteendenza-firenze-np" class="government-department" macros="@sg"/>
+  <entry pos="NNP" word="the_painter_of_Dinos" stem="painter-of-dinos-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="Wurzburg" stem="wurzburg-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="University_Museum_of_Pensylvania" stem="un-museum-pensylvania-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="California" stem="california-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="The_John_Paul_Getty_Museum" stem="getty-california-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Getty" stem="getty-california-short-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Napoli" stem="arch-museo-napoli-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Agora_Museum" stem="athens-agora-museum-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Pergamos" stem="pergamos-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Florence" stem="florence-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Copenhagen" stem="copenhagen-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Corinth" stem="archaeological-corinth-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Painter_of_Achilles" stem="painter-of-achilles-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="the_Grave_of_the_warrior_at_Argos" stem="grave-warrior-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_grave" stem="grave-warrior-short-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Aquileia" stem="archaeological-aquileia-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Delos" stem="delos-np" class="island" macros="@sg"/>
+  <entry pos="NNP" word="the_New_York_Metropolitan_Museum_of_Art" stem="new-york-metropolitan-art-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Met" stem="new-york-metropolitan-art-short-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_University_of_Wurzburg" stem="uniwurzburg-np" class="university" macros="@sg"/>
+  <entry pos="NNP" word="Naples" stem="napoli-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_classical_period" stem="classical-period-np" class="historical-period" macros="@sg"/>
+  <entry pos="NNP" word="Denmark" stem="denmark-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="Boston" stem="boston-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Ioannina" stem="arch-mus-ioannina-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Macedonia" stem="macedonia-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="Greece" stem="greece-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="the_corinthian_type" stem="corinthian-type-np" class="style" macros="@sg"/>
+  <entry pos="NNP" word="Paris" stem="paris-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="Germany" stem="germany-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="the_Numismatic_Museum_of_Athens" stem="athens-numismatic-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Temple_of_Hera" stem="iraion-delos-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Argos" stem="argos-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_rich_(or_ornate)_style" stem="rich-style-np" class="style" macros="@sg"/>
+  <entry pos="NNP" word="the_rich_style" stem="rich-style-short-np" class="style" macros="@sg"/>
+  <entry pos="NNP" word="Eucharides" stem="eucharides-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="Ioannina" stem="ioannina-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Acropolis" stem="acropolis-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_Epigraphical_Museum_of_Athens" stem="epigraphical-athens-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Spain" stem="spain-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="Potnia_Theron" stem="potnia-np" class="goddess" macros="@sg"/>
+  <entry pos="NNP" word="Vergina" stem="vergina-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Attica" stem="attica-np" class="region" macros="@sg"/>
+  <entry pos="NNP" word="the_painter_of_Sotades" stem="painter-of-sotades-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="Rhodes" stem="rhodes-np" class="island" macros="@sg"/>
+  <entry pos="NNP" word="Leucius_Caesar" stem="leucius-caesar-np" class="roman-emperor" macros="@sg"/>
+  <entry pos="NNP" word="Leucius" stem="leucius-caesar-short-np" class="roman-emperor" macros="@sg"/>
+  <entry pos="NNP" word="the_roman_period" stem="roman-period-np" class="historical-period" macros="@sg"/>
+  <entry pos="NNP" word="Olympia" stem="olympia-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_archaic_period" stem="archaic-period-np" class="historical-period" macros="@sg"/>
+  <entry pos="NNP" word="the_National_Archaeological_Museum_of_Napoli" stem="national-archaeological-napoli-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Hamburg" stem="hamburg-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_hellenistic_period" stem="hellenistic-period-np" class="historical-period" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Delos" stem="archaeological-delos-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Cave_of_Pitsa,_near_Sikyon" stem="cave-pitsa-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_cave_of_Pitsa" stem="cave-pitsa-short-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Thebes" stem="thebes-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_manner_of_Meidias" stem="meidias-style-np" class="style" macros="@sg"/>
+  <entry pos="NNP" word="the_painter_of_Meidias" stem="painter-of-meidias-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="the_Museum_of_Art" stem="museum-of-art-toledo-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Museum_Nationale_Romano" stem="nationale-romano-roma-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Vitsa_Zagoriou" stem="vitsa-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Vitsa" stem="vitsa-short-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="Anavyssos" stem="anavyssos-np" class="archaeological-site" macros="@sg"/>
+  <entry pos="NNP" word="the_USA" stem="usa-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="France" stem="france-np" class="country" macros="@sg"/>
+  <entry pos="NNP" word="Sotades" stem="sotades-np" class="potter" macros="@sg"/>
+  <entry pos="NNP" word="Amasis" stem="amasis-np" class="painter" macros="@sg"/>
+  <entry pos="NNP" word="Toledo" stem="toledo-np" class="city" macros="@sg"/>
+  <entry pos="NNP" word="the_Musee_du_Petit_Palais" stem="musee-du-petit-palais-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Museum_of_Fine_Arts" stem="mfa-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_MFA" stem="mfa-short-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="Octavian_Augustus" stem="octavian-augustus-np" class="roman-emperor" macros="@sg"/>
+  <entry pos="NNP" word="Octavian" stem="octavian-augustus-short-np" class="roman-emperor" macros="@sg"/>
+  <entry pos="NNP" word="the_Martin_von_Wagner_Museum" stem="martin-von-wagner-museum-np" class="museum" macros="@sg"/>
+  <entry pos="NNP" word="the_Archaeological_Museum_of_Thassos" stem="thassos-archaeological-np" class="museum" macros="@sg"/>
+  <entry pos="NP" class="creation-time" word="circa_460_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_the_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_1st_century_A.D."/>
+  <entry pos="NP" class="creation-time" word="between_440_and_420_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_530_and_510_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_440_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_late_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_530_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_early_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_336_and_330_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_420_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_2nd_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_the_third_quarter_of_the_4th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="320_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_510_and_500_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_470_and_460_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_475_and_470_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_750_and_700_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_177_A.D._and_192_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_440_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_480_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_the_third_quarter_of_the_2nd_century_A.D."/>
+  <entry pos="NP" class="creation-time" word="between_circa_398_and_397_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_circa_530_and_520_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_first_quarter_of_the_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_second_quarter_of_the_3rd_century_A.D."/>
+  <entry pos="NP" class="creation-time" word="the_second_quarter_of_the_5th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_third_quarter_of_the_7th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_470_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_313_and_312_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_late_7th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="circa_700_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_500_and_480_B.C."/>
+  <entry pos="NP" class="creation-time" word="510_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_late_4th_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_circa_230_and_220_B.C."/>
+  <entry pos="NP" class="creation-time" word="490_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_17_and_34_A.D."/>
+  <entry pos="NP" class="creation-time" word="between_100_and_200_A.D."/>
+  <entry pos="NP" class="creation-time" word="circa_550_B.C."/>
+  <entry pos="NP" class="creation-time" word="the_2nd_century_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_220_and_189_B.C."/>
+  <entry pos="NP" class="creation-time" word="between_420_and_410_B.C."/>
+  <entry pos="V" word="rule" stem="rule-verb" macros="@base"/>
+  <entry pos="V" word="rules" stem="rule-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="rule" stem="rule-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="ruled" stem="rule-verb" macros="@past @active"/>
+  <entry pos="V" word="ruled" stem="rule-verb" macros="@ppart"/>
+  <entry pos="V" word="attribute" stem="attribute-verb" macros="@base"/>
+  <entry pos="V" word="attributes" stem="attribute-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="attribute" stem="attribute-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="attributed" stem="attribute-verb" macros="@past @active"/>
+  <entry pos="V" word="attributed" stem="attribute-verb" macros="@ppart"/>
+  <entry pos="V" word="belong" stem="belong-verb" macros="@base"/>
+  <entry pos="V" word="belongs" stem="belong-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="belong" stem="belong-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="belonged" stem="belong-verb" macros="@past @active"/>
+  <entry pos="V" word="comes" stem="come-verb" macros="@pres @sg-agr @3rd-agr @active"/>
+  <entry pos="V" word="come" stem="come-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="came" stem="come-verb" macros="@past @active"/>
+  <entry pos="V" word="cover" stem="cover-verb" macros="@base"/>
+  <entry pos="V" word="covers" stem="cover-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="cover" stem="cover-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="covered" stem="cover-verb" macros="@past @active"/>
+  <entry pos="V" word="covered" stem="cover-verb" macros="@ppart"/>
+  <entry pos="V" word="create" stem="create-verb" macros="@base"/>
+  <entry pos="V" word="creates" stem="create-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="create" stem="create-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="created" stem="create-verb" macros="@past @active"/>
+  <entry pos="V" word="created" stem="create-verb" macros="@ppart"/>
+  <entry pos="V" word="date" stem="date-verb" macros="@base"/>
+  <entry pos="V" word="dates" stem="date-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="date" stem="date-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="dated" stem="date-verb" macros="@past @active"/>
+  <entry pos="V" word="decorate" stem="decorate-verb" macros="@base"/>
+  <entry pos="V" word="decorates" stem="decorate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="decorate" stem="decorate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="decorated" stem="decorate-verb" macros="@past @active"/>
+  <entry pos="V" word="decorated" stem="decorate-verb" macros="@ppart"/>
+  <entry pos="V" word="depict" stem="depict-verb" macros="@base"/>
+  <entry pos="V" word="depicts" stem="depict-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="depict" stem="depict-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="depicted" stem="depict-verb" macros="@past @active"/>
+  <entry pos="V" word="depicted" stem="depict-verb" macros="@ppart"/>
+  <entry pos="V" word="develop" stem="develop-verb" macros="@base"/>
+  <entry pos="V" word="develops" stem="develop-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="develop" stem="develop-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="developed" stem="develop-verb" macros="@past @active"/>
+  <entry pos="V" word="developed" stem="develop-verb" macros="@ppart"/>
+  <entry pos="V" word="donate" stem="donate-verb" macros="@base"/>
+  <entry pos="V" word="donates" stem="donate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="donate" stem="donate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="donated" stem="donate-verb" macros="@past @active"/>
+  <entry pos="V" word="donated" stem="donate-verb" macros="@ppart"/>
+  <entry pos="V" word="exhibit" stem="exhibit-verb" macros="@base"/>
+  <entry pos="V" word="exhibits" stem="exhibit-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="exhibit" stem="exhibit-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="exhibited" stem="exhibit-verb" macros="@past @active"/>
+  <entry pos="V" word="exhibited" stem="exhibit-verb" macros="@ppart"/>
+  <entry pos="V" word="find" stem="find-verb" macros="@base"/>
+  <entry pos="V" word="finds" stem="find-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="find" stem="find-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="found" stem="find-verb" macros="@past @active"/>
+  <entry pos="V" word="found" stem="find-verb" macros="@ppart"/>
+  <entry pos="V" word="follow" stem="follow-verb" macros="@base"/>
+  <entry pos="V" word="follows" stem="follow-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="follow" stem="follow-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="followed" stem="follow-verb" macros="@past @active"/>
+  <entry pos="V" word="followed" stem="follow-verb" macros="@ppart"/>
+  <entry pos="V" word="inscribe" stem="inscribe-verb" macros="@base"/>
+  <entry pos="V" word="inscribes" stem="inscribe-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="inscribe" stem="inscribe-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="inscribed" stem="inscribe-verb" macros="@past @active"/>
+  <entry pos="V" word="inscribed" stem="inscribe-verb" macros="@ppart"/>
+  <entry pos="V" word="last" stem="last-verb" macros="@base"/>
+  <entry pos="V" word="lasts" stem="last-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="last" stem="last-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="lasted" stem="last-verb" macros="@past @active"/>
+  <entry pos="V" word="locate" stem="locate-verb" macros="@base"/>
+  <entry pos="V" word="locates" stem="locate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="locate" stem="locate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="located" stem="locate-verb" macros="@past @active"/>
+  <entry pos="V" word="located" stem="locate-verb" macros="@ppart"/>
+  <entry pos="V" word="make" stem="make-verb" macros="@base"/>
+  <entry pos="V" word="makes" stem="make-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="make" stem="make-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="made" stem="make-verb" macros="@past @active"/>
+  <entry pos="V" word="made" stem="make-verb" macros="@ppart"/>
+  <entry pos="V" word="originate" stem="originate-verb" macros="@base"/>
+  <entry pos="V" word="originates" stem="originate-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="originate" stem="originate-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="originated" stem="originate-verb" macros="@past @active"/>
+  <entry pos="V" word="paint" stem="paint-verb" macros="@base"/>
+  <entry pos="V" word="paints" stem="paint-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="paint" stem="paint-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="painted" stem="paint-verb" macros="@past @active"/>
+  <entry pos="V" word="painted" stem="paint-verb" macros="@ppart"/>
+  <entry pos="V" word="portray" stem="portray-verb" macros="@base"/>
+  <entry pos="V" word="portrays" stem="portray-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="portray" stem="portray-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="portrayed" stem="portray-verb" macros="@past @active"/>
+  <entry pos="V" word="portrayed" stem="portray-verb" macros="@ppart"/>
+  <entry pos="V" word="range" stem="range-verb" macros="@base"/>
+  <entry pos="V" word="ranges" stem="range-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="range" stem="range-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="ranged" stem="range-verb" macros="@past @active"/>
+  <entry pos="V" word="reads" stem="read-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="reads" stem="read-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="read" stem="read-verb" macros="@past @active"/>
+  <entry pos="V" word="read" stem="read-verb" macros="@ppart"/>
+  <entry pos="V" word="sculpt" stem="sculpt-verb" macros="@base"/>
+  <entry pos="V" word="sculpts" stem="sculpt-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="sculpt" stem="sculpt-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="sculpted" stem="sculpt-verb" macros="@past @active"/>
+  <entry pos="V" word="sculpted" stem="sculpt-verb" macros="@ppart"/>
+  <entry pos="V" word="see" stem="see-verb" macros="@base"/>
+  <entry pos="V" word="sees" stem="see-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="see" stem="see-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="saw" stem="see-verb" macros="@past @active"/>
+  <entry pos="V" word="seen" stem="see-verb" macros="@ppart"/>
+  <entry pos="V" word="show" stem="show-verb" macros="@base"/>
+  <entry pos="V" word="shows" stem="show-verb" macros="@pres @sg-or-mass-agr @3rd-agr @active"/>
+  <entry pos="V" word="show" stem="show-verb" macros="@pres @pl-agr @3rd-agr @active"/>
+  <entry pos="V" word="showed" stem="show-verb" macros="@past @active"/>
+  <entry pos="V" word="shown" stem="show-verb" macros="@ppart"/>
+  <entry pos="S" class="exhibit-story" word="Marriages_in_Ancient_Athens_served_to_establish_the_family_unit,_the_oikos,_which_ensured_civic_rights_in_Athenian_society_and_produced_legitimate_children._The_festivities_lasted_for_three_days._The_various_stages_of_the_wedding_ceremony_are_all_shown_on_Classical_Attic_pots"/>
+  <entry pos="V" class="exhibit-definition" word="were_a_special_type_of_cauldron_used_only_for_wedding_ceremonies"/>
+  <entry pos="S" class="other-work" word="Another_very_popular_work_of_Polykleitos,_known_only_through_copies,_was_the_'Diadumenos'"/>
+  <entry pos="V" class="person-story" word="was_with_Phidias_the_most_important_sculptors_of_their_time._Their_figures_expressed,_through_their_beauty,_the_spirituality_and_the_anthropocentric_attitude_of_the_Classical_world"/>
+  <entry pos="V" class="location-information" word="was_a_Greek_colony_in_Southern_Italy"/>
+  <entry pos="V" class="location-information" word="was_among_the_leagues_that_played_an_important_political_role_in_ancient_Greece"/>
+  <entry pos="V" class="exhibit-characteristics" word="is_representative_of_Early_Classical_vase_painting,_a_period_when_the_archaic_models_had_not_yet_been_totally_abandoned,_but_some_significant_differences_were_starting_to_appear-_among_these_differences_are_a_substantial_increase_in_the_variety_and_naturalness_of_figure_poses,_and_the_appearance_of_well_studied_and_harmonious_compositions"/>
+  <entry pos="V" class="exhibit-form" word="has_the_form_of_a_crocodile_tearing_apart_an_African"/>
+  <entry pos="V" class="exhibit-purpose" word="was_enough_for_a_metic_(that_is,_a_foreigner_that_stayed_in_Athens),_to_pay_the_'metic_tax'_each_month"/>
+  <entry pos="S" class="references" word="American_School_of_Classical_Studies_at_Athens,_Greek_and_Roman_Coins_in_the_Athenian_Agora,_Princeton,_New_Jersey_1975,_fig._9"/>
+  <entry pos="V" class="exhibit-form" word="has_an_image_of_Athena_crowned_with_a_branch_of_olive,_her_tree,_on_its_obverse._On_the_other_side_there_is_a_picture_of_her_owl"/>
+  <entry pos="V" class="exhibit-form" word="is_rendered_with_youthful_features_and_an_athletic_bearing,_similar_to_the_poses_that_the_classic_sculptor_Polykleitos_was_using_in_his_statues"/>
+  <entry pos="S" class="references" word="Oikonomidis,_M.,_Elliniki_Techni-_Archaia_Nomismata,_Ekdotiki_Athinon_plc,_Athens_1996,_pp.106-107,_ill.79"/>
+  <entry pos="V" class="exhibit-form" word="has_an_image_of_Athena_crowned_with_a_branch_of_olive,_her_tree,_on_its_obverse._On_the_reverse_there_is_a_picture_of_her_owl"/>
+  <entry pos="V" class="exhibit-form" word="has_a_picture_of_a_tripod_on_each_side._A_tripod_is_a_vessel_with_three_legs_and_it_was_the_sacred_symbol_of_the_god_Apollo"/>
+  <entry pos="NP" class="exhibit-height" word="2.12_metres"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_group_of_Nymphs"/>
+  <entry pos="S" class="exhibit-story" word="There_were_two_types_of_hydria-_one_with_a_continuous_outline_and_one_where_the_neck_was_separate_from_the_rest_of_the_body._This_one_belongs_to_the_first_type"/>
+  <entry pos="NP" class="exhibit-height" word="1.94_metres"/>
+  <entry pos="V" class="exhibit-purpose" word="honours_the_memory_of_Kroissos,_a_young_man_who_died_in_battle"/>
+  <entry pos="S" class="references" word="Greek_Sculpture,_the_Archaic_period,_Thames_and_Hudson_1978,_fig_107"/>
+  <entry pos="NP" class="inscription-says" word="`Stand_and_cry_in_front_of_the_grave_of_dead_Kroissos_who_found_death_by_Ares,_as_he_was_fighting_on_the_front`"/>
+  <entry pos="V" class="exhibit-form" word="was_secretly_cut_in_two_pieces_and_transported_to_Paris_in_1937,_before_it_was_returned_to_Greece"/>
+  <entry pos="S" class="exhibit-story" word="Kourosses_evolved_gradually-_as_the_years_went_by,_the_form_of_the_anatomy_and_the_muscles_became_more_realistic_and_a_discreet_smile_(meidiama)_was_added_as_a_stereotypical_feature_of_the_face._This_Kouros_effectively_demonstrates_these_gradual_changes"/>
+  <entry pos="S" class="references" word="Boardman_J-_Athenian_red_figure_vases,_the_Archaic_period,_Thames_and_Hudson,_1975"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_warrior_performing_splachnoscopy_before_leaving_for_battle._Splachnoscopy_is_the_study_of_animal_entrails,_through_which_people_tried_to_predict_the_future._It_was_one_of_the_most_common_divination_methods_used_in_the_archaic_period"/>
+  <entry pos="V" class="person-story" word="was_one_of_the_most_important_subjects_of_painting_and_sculpture_during_the_Hellenistic_period._The_evidence_that_we_have_for_what_his_face_looked_like_comes_from_copies_created_after_his_death._These_elements_greatly_influenced_the_depictions_of_the_other_Hellenistic_rulers"/>
+  <entry pos="V" class="exhibit-definition" word="are_pots_which_were_mostly_used_for_storing_and_mixing._They_have_two_small_horizontal_handles_on_the_side_and_a_round_body_with_a_short_neck"/>
+  <entry pos="S" class="location-definition" word="Leagues_were_formed_after_the_merging_of_many_cities_into_a_unified_political_association"/>
+  <entry pos="V" class="technique-description" word="has_a_black-painted_background._The_figures,_which_were_predesigned,_had_the_natural_color_of_the_clay"/>
+  <entry pos="V" class="exhibit-definition" word="were_coins_with_the_value_of_four_drachmas"/>
+  <entry pos="V" class="technique-description" word="uses_decoration,_usually_floral,_which_is_made_of_added_clay._This_is_a_technique_typically_used_on_vases_of_the_Hellenistic_period._Its_name_comes_from_the_west_slopes_of_the_Acropolis,_where_several_of_these_vases_were_found"/>
+  <entry pos="V" class="exhibit-definition" word="represent_young_men,_usually_naked,_always_standing_up_straight,_with_their_palms_forming_fists_and_their_left_foot_slightly_in_front_of_the_right._They_were_used_as_burial_monuments,_or_offerings_to_temples,_especially_those_of_the_God_Apollo._They_usually_have_inscriptions_on_their_bases"/>
+  <entry pos="V" class="exhibit-definition" word="are_vessels_which_were_used_for_pouring_liquids._They_have_one_handle,_a_large_belly_and_a_rim_that_projects_so_that_the_liquid_comes_out_easily"/>
+  <entry pos="V" class="exhibit-form" word="has_a_seal_on_which_there_is_a_representation_of_Helios_on_his_four-horsed_chariot"/>
+  <entry pos="V" class="exhibit-definition" word="are_sculptures_consisting_of_shapes_carved_on_a_surface_so_as_to_stand_out_from_the_surrounding_background"/>
+  <entry pos="V" class="exhibit-purpose" word="probably_belonged_in_the_decoration_of_Philip_II's_death_bed,_in_the_large_grave_at_the_tomb_of_Vergina"/>
+  <entry pos="V" class="exhibit-form" word="is_thought_to_depict_Philip_II"/>
+  <entry pos="S" class="references" word="Vokotopoulou,I.,_Elliniki_Techni-_Argyra_kai_Chalkina_Erga_Technis,_Ekdotiki_Athinon,_Athens_1997,_p._108,_fig._96"/>
+  <entry pos="NP" class="exhibit-depicts" word="Dionysus_(centre)_being_garlanded_by_maenads_in_a_state_of_ecstasy._One_maenad_(left)_is_filling_a_skyphos_with_wine,_another_(right)_is_playing_a_drum"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_shield_with_a_bust_in_its_centre,_as_was_customary_on_macedonian_coins"/>
+  <entry pos="S" class="exhibit-story" word="From_168_BC,_after_the_defeat_of_Perseus,_king_of_Macedonia,_by_the_Roman_Aemilius_Paulus_in_Pydna,_Macedonia_devolved_to_Roman_control._The_Romans_divided_the_region_into_four_smaller_administrative_districts,_the_so-called_merides_(sectors)._This_coin_comes_from_the_`first_merida'_of_Macedonia"/>
+  <entry pos="NP" class="exhibit-depicts" word="an_actor_playing_a_slave._He_is_standing_on_a_pedestal_with_his_right_hand_on_his_mask_and_the_left_one_behind_his_back"/>
+  <entry pos="S" class="exhibit-story" word="Constant_wars_during_the_Hellenistic_period_resulted_in_an_increase_in_the_number_of_slaves_in_the_entire_Mediterranean"/>
+  <entry pos="S" class="exhibit-story" word="On_this_amphora_you_can_see_athletes_running_naked,_as_was_customary,_except_for_during_the_`race_in_armour',_in_which_athletes_ran_wearing_their_helmets,_shields_and_greaves_(armour_which_protected_the_bottom_half_of_the_leg)._The_sport_of_running_is_so_ancient_that_it_is_impossible_to_find_out_exactly_when_and_how_it_started._Its_importance_was_never_in_doubt,_however;_during_antiquity_it_was_one_of_the_most_important_parts_of_a_child's_education._There_were_many_running_events,_in_which_the_athletes_ran_different_distances"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_discus_thrower_preparing_to_throw_the_discus"/>
+  <entry pos="S" class="exhibit-story" word="The_discus_thrower_on_this_kylix_is_weighing_the_discus_in_his_hands_as_he_gets_ready_to_throw_it._Discus_throwing_techniques_have_changed_little_since_ancient_times,_but_the_discus_itself,_had_various_differences._In_antiquity_it_was_initially_made_of_stone,_and_later_of_bronze,_lead_or_iron._It_weighed_between_1.3_and_6.6_kilos_and_so_the_athlete_required_both_strength_and_precision_to_direct_its_course"/>
+  <entry pos="NP" class="exhibit-depicts" word="an_athlete_preparing_to_throw_his_javelin"/>
+  <entry pos="S" class="exhibit-story" word="In_antiquity,_javelin_throwing_was_intimately_bound_up_with_the_Greek_way_of_life._Before_it_became_a_feature_of_sporting_life,_the_javelin_was_one_of_the_weapons_used_by_ancient_Greeks_in_war_and_hunting._A_javelin_is_a_sharp,_wooden_spear_about_the_height_of_a_tall_man"/>
+  <entry pos="NP" class="exhibit-depicts" word="an_athlete_preparing_to_perform_a_jump"/>
+  <entry pos="S" class="exhibit-story" word="The_origin_of_the_long_jump_lies_in_the_challenge_presented_by_traversing_the_cliffs,_ravines_and_rough_terrain_of_the_Greek_countryside,_and,_accordingly,_by_the_challenge_of_waging_war_on_this_terrain._It_was_a_complicated_sport_in_which_the_athletes_used_special_weights,_the_halteres,_to_increase_their_momentum_and_the_distance_of_the_jump._On_this_lekythos,_the_athlete_holds_the_weights_in_his_hands_and_is_about_to_jump_away_from_the_springboard._In_order_to_win,_he_needs_not_only_great_speed_and_strong_legs_but_also_precise_coordination_between_his_hands_and_feet_as_they_make_contact_with_the_springboard._This_is_why_the_long_jump_was_occasionally_accompanied_by_music,_which_helped_the_jumper_pace_his_rhythm"/>
+  <entry pos="V" class="exhibit-form" word="consists_of_a_helmet_and_a_cuirass_(which_covered_the_chest_and_back)"/>
+  <entry pos="NP" class="historical-period-time" word="480_and_323_B.C."/>
+  <entry pos="V" class="historical-period-description" word="was_defined_by_the_rise_in_the_political_supremacy_of_Athens_(its_'golden_age')_and_the_expansion_of_the_Greek_world_under_the_rule_of__Alexander_the_Great_of_Macedonia"/>
+  <entry pos="V" class="exhibit-definition" word="are_made_of_fine_quality_clay_and_have_painted_decoration_on_a_white_background._They_took_their_name_from_the_Hadra_Necropolis,_near_Alexandria,_where_a_large_number_of_them_were_found._They_were_produced_between_the_end_of_the_4th_and_the_beginning_of_the_2nd_century_BC._Their_shape_and_decoration_was_replicated_by_many_workshops"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_view_of_the_harbour_of_Patras_from_the_sea._In_the_background_there_are_rows_of_columns,_temples_and_other_buildings;in_the_foreground_there_is_a_ship_and_a_statue_of_a_male_form"/>
+  <entry pos="V" class="exhibit-characteristics" word="is_possibly_the_helmet_of_the_famous_Miltiades,_who_donated_it_to_the_sanctuary_of_Zeus_after_the_battle_of_Marathon"/>
+  <entry pos="NP" class="inscription-says" word="&quot;MILTIADES_ETHEKEN_TO_DII&quot;_(Miltiades_offered_to_Zeus)"/>
+  <entry pos="NP" class="exhibit-depicts" word="an_Athenian_warrior_bidding_his_wife_farewell;_she_is_seated_on_a_klismos,_which_is_a_type_of_chair"/>
+  <entry pos="S" class="exhibit-story" word="Scenes_related_to_war_were_quite_frequent_in_Athenian_art_during_this_period"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_young_woman_in_the_act_of_sacrificing_at_an_altar._She_is_carrying_a_basket_in_her_left_hand,_and_pouring_wine_on_the_blazing_altar_with_her_right"/>
+  <entry pos="NP" class="inscription-says" word="'EUKARPOS_PHILOXENOU_MEILESIOS_PHILOXENOS_MEILESIOY'"/>
+  <entry pos="NP" class="exhibit-depicts" word="two_farmers,_as_can_be_seen_from_the_ploughshare_depicted_on_the_pediment"/>
+  <entry pos="NP" class="exhibit-depicts" word="the_goddess_Athena_shaking_the_hand_of_a_thoughtful_man_(representing_the_deme_(area)_of_Athens)"/>
+  <entry pos="V" class="exhibit-form" word="is_the_best_preserved_painting_among_the_ones_that_were_found_in_the_Pitsa_Cave._All_of_them_are_covered_with_a_white_coating_and_their_figures_are_decorated_in_several_colours"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_sacrifice"/>
+  <entry pos="V" class="exhibit-definition" word="were_special_drinking_cups._They_had_a_high_base_and_projecting_handles_that_stretched_from_the_rim_to_the_bottom_of_the_cup._An_ancient_myth_said_that_Dionysus,_the_god_of_wine,_invented_them_himself!"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_carpenter_at_work"/>
+  <entry pos="V" class="exhibit-purpose" word="was_used_in_religious_worship"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_woman_raising_the_cover_of_a_chest,_in_order_to_take_out_a_folded_cloth._A_basket,_a_mirror,_a_lekythos_and_a_kantharos_are_hanging_on_the_wall"/>
+  <entry pos="V" class="exhibit-definition" word="are_broken_fragments_of_pottery"/>
+  <entry pos="V" class="exhibit-definition" word="were_large_jars_used_mostly_for_carrying_water._They_had_three_handles,_two_horizontal_and_one_vertical"/>
+  <entry pos="NP" class="exhibit-depicts" word="seven_relief_busts_of_the_members_of_a_family"/>
+  <entry pos="S" class="exhibit-story" word="The_family_was_the_basic_social_unit_of_Roman_society,_since_wealth_and_social_status_were_transmitted_through_it._Roman_private_law_is_our_main_source_of_information_for_the_Roman_family_(familia),_the_members_of_which_were_under_the_control_of_one_individual,_the_father,_known_as_the_pater_familias"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_Greek_hunting_a_Persian"/>
+  <entry pos="V" word="end_in_a_conical_fitting" stem="exhibit27-exhibit-form" class="exhibit-form" macros="@pl-agr"/>
+  <entry pos="V" class="exhibit-definition" word="are_wine_cups_with_a_shallow_bowl_placed_on_top_of_a_base.__They_have_two_horizontal_handles"/>
+  <entry pos="NP" class="exhibit-depicts" word="&quot;Mourning_Athena&quot;._The_goddess_is_clad_in_an_Attic_peplos_(gown)_with_a_belt,_leaning_on_her_spear_looking_melancholically_at_a_rectangular_stele_(gravestone),_which_according_to_some_scholars_bears_the_names_of_those_killed_in_a_battle"/>
+  <entry pos="NP" class="exhibit-depicts" word="Dionysos_seated_and_wearing_a_crown_of_olives._In_front_of_him_stands_a_satyr_with_an_oinochoe_(wine_jug)_in_his_hands._Hanging_on_the_architrave_are_five_masks,_of_(from_left)-_the_Tetchy_Father;_the_Old_Woman;_the_Crafty_Slave;_the_Beardless_Youth;_and_the_Young_Woman_with_Short_Hair"/>
+  <entry pos="V" class="exhibit-form" word="is_spherical_in_shape"/>
+  <entry pos="S" class="exhibit-story" word="On_the_body_a_wide_zone_is_distinguished_with_pairs_of_comastes_among_supplementary_patterns,_mainly_rosettes_(jewels_representing_roses_with_open_radiate_leaves)._&quot;Comastes&quot;_were_the_participants_in_&quot;comous&quot;,_feasts_in_honour_of_Dionysus"/>
+  <entry pos="NP" class="inscription-says" word="'Mantiklos_dedicated_me_as_a_tithe_(tax)_to_the_Archer_God_of_the_Silver_Bow._And_you,_Phoebus_(Apollo),_return_the_favour!'"/>
+  <entry pos="V" class="exhibit-form" word="has_an_inscription_on_its_thigh_in_the_shape_of_a_horseshoe"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_young_man_who_is_sitting_down_and_writing_with_a_stylus_(pen)"/>
+  <entry pos="S" class="exhibit-story" word="During_the_archaic_period,_the_most_poular_method_of_writing_must_have_been_wooden_tablets_coated_with_wax,_on_which_letters_were_written_with_the_stylus_and_could_easily_be_rubbed_out_and_rewritten"/>
+  <entry pos="V" class="exhibit-form" word="states_the_names_of_the_people_depicted_and_the_sculptor"/>
+  <entry pos="NP" class="exhibit-depicts" word="the_Athenian_hoplite_(soldier)_Aristion"/>
+  <entry pos="S" class="exhibit-story" word="The_burial_customs_of_the_Archaic_period_make_it_clear_that_the_place_of_the_individual_was_beginning_to_be_defined_in_his_city"/>
+  <entry pos="S" class="exhibit-story" word="The_&quot;West_Slope&quot;_decoration_is_obvious_on_the_neck_of_this_kantharos"/>
+  <entry pos="V" class="style-description" word="introduced_a_decoration_that_is_much_more_ornamental_than_Attic_vase_painting_of_previous_periods._Multi-level_compositions_also_became_more_frequent"/>
+  <entry pos="NP" class="exhibit-depicts" word="the_leader_of_the_Galatians_committing_suicide_after_having_already_killed_his_wife"/>
+  <entry pos="S" class="exhibit-story" word="The_original_statue_was_part_of_a_larger_bronze_synthesis,_placed_in_the_yard_of_Athena's_sanctuary"/>
+  <entry pos="V" class="exhibit-form" word="is_one_of_the_best_examples_of_a_propaganda_statue"/>
+  <entry pos="S" class="exhibit-story" word="In_keeping_with_the_classical_models,_the_emperor_is_shown_half_nude,_as_a_heroized_leader"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_banker_in_front_of_&quot;mensa_nummularia&quot;,_which_was_a_table_used_for_counting_out_coins"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_wedding_scene-_two_newlyweds_on_a_carriage_escorted_by_relatives_and_friends._The_event_of_the_bride's_transport_to_her_new_house_was_very_important,_because_a_marriage_was_considered_valid_only_after_the_bride_and_the_groom_started_living_together"/>
+  <entry pos="NP" class="exhibit-height" word="1.94_metres"/>
+  <entry pos="NP" class="exhibit-depicts" word="an_old_woman_carrying_a_basket_of_fruit_and_vegetables"/>
+  <entry pos="S" class="exhibit-story" word="Compared_to_the_idealistic_portraits_of_the_classical_period,_the_hellenistic_ones_express_the_features_of_the_face_with_a_more_intense_realism._The_gradual_replacement_of_the_classical_idealisation_by_a_more_individualistic_realism_became_one_of_the_most_typical_characteristics_of_hellenistic_art"/>
+  <entry pos="V" class="exhibit-form" word="has_the_head_of_Athena_with_a_Corinthian_helmet_on_the_reverse_side,_as_was_common_in_coins_of_the_Ancient_World._On_the_obverse_side_is_a_female_figure,_the_personification_of_Aetolia,_seated_on_Macedonian_and_Galatic_shields._The_scene_refers_to_the_fight_of_the_Aetolians_against_the_Macedonians_and_the_Galatians"/>
+  <entry pos="NP" class="exhibit-depicts" word="a_wedding_scene,_showing_a_bride_in_nymphides,_that_is_'bridal_footwear'._In_many_scenes_related_to_the_adorning_of_the_bride,_the_sandals_receive_especially_detailed_treatment"/>
+  <entry pos="NP" class="historical-period-time" word="31_B.C._and_the_4th_century_A.D"/>
+  <entry pos="V" class="historical-period-description" word="represents_a_period_when_the_Greek_world_was_under_the_rule_of_the_Romans,_for_whom_and_under_whose_patronage_many_Greek_artists_worked"/>
+  <entry pos="S" class="exhibit-story" word="In_imperial_portraits,_all_the_Emperors,_even_the_older_ones,_were_portrayed_youthfully._These_portraits_were_strongly_inspired_by_the_classical_statues_of_the_5th_century_BC,_especially_the_ones_made_by_Polykleitus._Imperial_portraits_first_appeared_in_the_capital,_Rome,_but_later_they_spread_all_over_the_Empire,_with_the_help_of_casts,_known_as_&quot;imagines&quot;"/>
+  <entry pos="NP" class="historical-period-time" word="700_and_480_B.C."/>
+  <entry pos="V" class="historical-period-description" word="marked_the_beginnings_of_Greek_monumental_stone_sculpture_and_other_developments_in_the_naturalistic_representation_of_the_human_figure"/>
+  <entry pos="S" class="exhibit-story" word="The_side_of_a_coin_which_displays_the_principal_symbol_(`heads'_in_`heads_or_tails')_is_known_as_the_obverse"/>
+  <entry pos="NP" class="historical-period-time" word="323_and_31_B.C."/>
+  <entry pos="V" class="historical-period-description" word="covers_the_chaotic_period_from_the_Death_of_Alexander_the_Great_and_the_subsequent_dissolution_of_his_empire_to_the_victory_of_the_Romans_over_the_Greeks_at_the_Battle_of_Actium,_comprising_a_truly_cosmopolitan_or_international_range_of_artistic_trends"/>
+  <entry pos="V" class="exhibit-definition" word="are_basically_oil_bottles._They_are_vessels_with_a_tall_shape,_usually_forming_an_ellipse;_they_have_a_base,_a_single_vertical_handle,_a_narrow_neck_and_a_small_mouth"/>
+  <entry pos="V" class="exhibit-definition" word="have_an_ovoid_body_and_two_looped_handles,_reaching_from_the_shoulders_up._This_was_a_very_common_shape_in_ancient_times"/>
+  <entry pos="V" class="exhibit-definition" word="are_a_special_sort_of_relief,_which_ancient_people_used_in_order_to_commemorate_members_of_their_family_and_friends_who_had_died._These_reliefs_were_placed_in_grave_areas._Many_of_them_depict_scenes_from_the_life_of_the_deceased_and_have_inscriptions_that_give_interesting_information_about_them._The_quality_of_the_relief_was_dependent_on_the_social_class_and_the_economic_status_of_the_deceased"/>
+  <entry pos="V" class="person-story" word="is_the_most_typical_representative_of_the_rich_style._His_figures_are_graceful;_they_are_often_posed_as_though_dancing,_with_expressions_that_range_from_tenderness_to_melancholy._The_atmosphere_is_low-key,_avoiding_drama_-_a_long_way_from_the_Classical_models_of_the_previous_generation._The_clothing_on_this_painter's_pots_is_always_very_carefully_drawn-_it_has_patterns_of_plant_motifs_or_stars._His_compositions_are_well_balanced;_They_manage_to_give_a_'lift'_to_the_hydria_and_other_kinds_of_pot_awkward_to_decorate"/>
+  <entry pos="S" class="exhibit-story" word="The_decoration_of_ancient_Greek_vessels_provides_a_lot_of_information_about_the_life,_the_habits_and_the_beliefs_of_the_Ancient_Greeks._Decoration_of_Ancient_Greek_pottery_began_with_simple_linear_drawings_but_gradually,_potters_started_to_depict_scenes_from_nature,_including_plants,_animals_and_finally_human_figures_on_their_vases._There_was_not_usually_any_decoration_on_pots_used_every_day_in_poor_households_and_in_shops._The_colours_and_decorations_used_on_vessels_help_to_determine_their_period_of_creation"/>
+  <entry pos="V" class="exhibit-definition" word="were_large_open_globular_pots,_perhaps_based_on_bronze_originals._They_had_many_uses,_but_it_seems_that_they_was_mostly_used_for_mixing_wine_and_water_for_ritual_and_festival_events"/>
+  <entry pos="V" class="exhibit-definition" word="were_pots_used_by_athletes_to_hold_oil,_with_which_they_cleaned_themselves_after_exercising._Each_athlete_probably_had_his_personal_aryballos._They_are_usually_ball_shaped_with_one_or_two_handles._Some_have_the_shape_of_animals,_birds,_or_human_heads"/>
+  <entry pos="S" class="exhibit-story" word="The_handles_of_Rhodian_amphoras,_which_have_been_found_dispersed_in_the_Mediterranean,_reveal_the_island's_trade_relations_with_different_regions_in_that_area"/>
+  <entry pos="V" class="exhibit-definition" word="were_special_cups_for_wine,_mostly_used_in_rituals._They_were_made_in_a_variety_of_shapes,_resembling_a_horn,_the_head_of_an_animal,_or_the_figure_of_a_person"/>
+  <entry pos="V" class="exhibit-definition" word="were_amphoras_given_as_prizes_to_the_winners_of_the_Panathenaic_games,_which_were_held_in_Athens_in_honor_of_the_city's_patron_godess,_Athena"/>
+  <entry pos="V" class="person-information" word="made_a_major_contribution_to_art_through_his_studies_of_the_proportions_and_symmetry_of_the_human_body._He_summed_up_his_conclusions_in_a_written_text,_'the_Canon'._This_text,_together_with_his_sculptures_was_to_be_a_decisive_influence_in_the_centuries_which_followed._Since_Polykleitos_embodied_his_theoretical_observations_in_a_sculpture_called_Doryphorus,_this_sculpture_itself_is_also_known_as_the_Canon"/>
+  <entry pos="V" class="person-information" word="was_given_this_title_because_his_actual_name_is_not_known,_but_we_know_that_he_used_to_decorate_vases_made_by_a_pot_maker_named_Kleofrades._He_can_be_distinguished_among_the_painters_who_decorated_big_vases;_his_works_are_characterised_by_tension,_dynamism_and_dramatic_movement;_these_attributes_clearly_show_the_influences_of_Euthimides_and_the_school_of_Pioneers._He_placed_emphasis_on_the_details_of_the_eyes,_the_nose_and_the_ears._Among_his_most_interesting_works_are_a_krater_(a_type_of_bowl)_and_an_amphora_with_dionysian_scenes_and_a_kalpis_(a_sort_of_hydria)_with_scenes_from_Iliou_Persis,_a_lost_epic_poem_about_the_fall_of_Troy_by_the_Greeks.__This_scene_has_strong_symbolic_value,_because_at_the_time_is_was_painted,_Greece_was_facing_the_Persian_Invasion"/>
+  <entry pos="V" class="person-information" word="was_one_of_the_12_olympian_gods._The_myth_tells_us_that_he_was_born_in_Delos,_and_was_the_son_of_Zeus_and_Leto._He_had_a_twin_sister,_Artemis,_who_was_also_an_Olympian_goddess._Apollo_was_the_god_of_music_and_light_and_symbolized_the_sun._He_was_very_dear_to_ancient_Greeks,_who_devoted_some_very_important_sacred_places_to_him"/>
+  <entry pos="V" class="person-information" word="was_known_as_the_protector_of_the_animals._Her_cult_came_from_the_East_and_in_Greece_it_was_identified_with_the_goddess_Artemis"/>
+  <entry pos="V" class="person-information" word="was_given_this_title_because_his_exact_name_is_not_known,_but_he_decorated_a_pot_signed_by_the_pot_maker_Meidias"/>
+  <entry pos="V" class="person-information" word="is_considered_to_be_one_of_the_most_successful_craftsmen_of_his_period._His_work_is_marked_by_imagination_and_grace,_elegance_and_originality._He_mainly_made_moulded_vessels_shaped_like_animal_heads._(A_moulded_vessel_is_a_vessel_in_the_shape_of_some_human_or_animal_figure.)_At_the_same_time_he_was_producing_other_types_of_pots,_like_kylixes,_with_unusually_slender_handles._He_was_in_long_term_partnership_with_a_painter,_known_to_us_as_the_Painter_of_Sotades"/>
+  <entry pos="V" class="person-information" word="is_thought_to_have_been_both_a_maker_and_a_painter_of_pots"/>
+  <entry word="In" class="string" pos="Adv"/>
+  <entry word="has_a_picture_of" class="string" pos="Adv"/>
+  <entry word="is_only" class="string" pos="Adv"/>
+  <entry word="of_the_original." class="string" pos="Adv"/>
+  <entry word="is_not_the_original_object," class="string" pos="Adv"/>
+  <entry word="it_is" class="string" pos="Adv"/>
+  <entry word="name_means" class="string" pos="Adv"/>
+  <entry word="For_further_information,_see" class="string" pos="Adv"/>
+  <entry word="The_inscription_on" class="string" pos="Adv"/>
+  <entry word="was_the_king_of" class="string" pos="Adv"/>
+  <entry word="covers_the_time" class="string" pos="Adv"/>
+  <entry word="is_the_period" class="string" pos="Adv"/>
+  <macro name="@mass">
+    <fs val="mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg">
+    <fs val="sg" attr="num" id="2"/>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sg-agr">
+    <fs val="sg" attr="num" id="1"/>
+    <fs val="sg" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-or-mass-agr">
+    <fs id="1">
+      <feat attr="num">
+        <featvar name="NUM:sg-or-mass"/>
+      </feat>
+    </fs>
+    <fs id="2">
+      <feat attr="num">
+        <featvar name="NUM:sg-or-mass"/>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@sg-2">
+    <fs val="sg" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-or-mass-2">
+    <fs val="sg-or-mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@sg-P">
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <fs val="pl" attr="num" id="2"/>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl-agr">
+    <fs val="pl" attr="num" id="1"/>
+    <fs val="pl" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-2">
+    <fs val="pl" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-or-mass-2">
+    <fs val="pl-or-mass" attr="num" id="2"/>
+  </macro>
+  <macro name="@pl-P">
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@1st">
+    <fs val="1st" attr="pers" id="2"/>
+  </macro>
+  <macro name="@1st-agr">
+    <fs val="1st" attr="pers" id="1"/>
+    <fs val="1st" attr="pers" id="2"/>
+  </macro>
+  <macro name="@2nd">
+    <fs val="2nd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@2nd-agr">
+    <fs val="2nd" attr="pers" id="1"/>
+    <fs val="2nd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@non-3rd-agr">
+    <fs id="1">
+      <feat attr="pers">
+        <featvar name="PERS:non-3rd"/>
+      </feat>
+    </fs>
+    <fs id="2">
+      <feat attr="pers">
+        <featvar name="PERS:non-3rd"/>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs val="3rd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@3rd-agr">
+    <fs val="3rd" attr="pers" id="1"/>
+    <fs val="3rd" attr="pers" id="2"/>
+  </macro>
+  <macro name="@nom">
+    <fs val="nom" attr="case" id="2"/>
+  </macro>
+  <macro name="@acc">
+    <fs val="acc" attr="case" id="2"/>
+  </macro>
+  <macro name="@pp-from">
+    <fs val="from" attr="lex" id="3"/>
+  </macro>
+  <macro name="@pp-to">
+    <fs val="to" attr="lex" id="3"/>
+  </macro>
+  <macro name="@prt-up">
+    <fs val="up" attr="lex" id="4"/>
+  </macro>
+  <macro name="@prt-with">
+    <fs val="with" attr="lex" id="4"/>
+  </macro>
+  <macro name="@ng">
+    <fs val="ng" attr="form" id="1"/>
+  </macro>
+  <macro name="@base">
+    <fs val="base" attr="form" id="1"/>
+  </macro>
+  <macro name="@base6">
+    <fs val="base" attr="form" id="6"/>
+  </macro>
+  <macro name="@dcl">
+    <fs id="1">
+      <feat val="dcl" attr="form"/>
+    </fs>
+  </macro>
+  <macro name="@adj">
+    <fs val="adj" attr="form" id="1"/>
+  </macro>
+  <macro name="@ppart">
+    <fs val="ppart" attr="form" id="1"/>
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="passive"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@adj6">
+    <fs val="adj" attr="form" id="6"/>
+  </macro>
+  <macro name="@X-location">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:location"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-time">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:time"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-person">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:person"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-thing">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:inanimate"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@active">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="active"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@passive">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="voice">
+          <prop name="passive"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+</morph>

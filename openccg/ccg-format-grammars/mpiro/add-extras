@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# != 1 ]
+then
+	echo "usage: add-extras <name> e.g. add-extras mpiro\n"
+	exit
+fi
+
+lxt $1-rules.xml add-extra-rule-lfs.xsl > new-$1-rules.xml
+mv new-$1-rules.xml $1-rules.xml
+
+lxt $1-morph.xml add-extra-macros.xsl > new-$1-morph.xml
+mv new-$1-morph.xml $1-morph.xml
+
+lxt $1-grammar.xml add-transforms.xsl > new-$1-grammar.xml
+mv new-$1-grammar.xml $1-grammar.xml
+
+for file in $1*.xml;
+do sed s/COMMA/,/g $file > new-$file;
+ sed s/FULLSTOP/\./g new-$file > $file;
+ sed s/QUESTIONMARK/\?/g $file > new-$file;
+ sed s/EXCLAMATIONMARK/\!/g new-$file > $file;
+ rm new-$file;
+done;

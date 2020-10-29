@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<morph name="greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../morph.xsd">
+  <entry word="ο" macros="@masc @nom @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="του" macros="@masc @gen @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="τον" macros="@masc @acc @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="οι" macros="@masc @nom @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="των" macros="@masc @gen @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="τους" macros="@masc @acc @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="η" macros="@fem @nom @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="της" macros="@fem @gen @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="την" macros="@fem @acc @sing @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="οι" macros="@fem @nom @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="των" macros="@fem @gen @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="τις" macros="@fem @acc @plur @3rd @+def @+det" pos="DefArt" stem="defart"/>
+  <entry word="ένας" macros="@masc @nom @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="ενός" macros="@masc @gen @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="έναν" macros="@masc @acc @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="μία" macros="@fem @nom @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="μίας" macros="@fem @gen @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="μία" macros="@fem @acc @sing @3rd @-def" pos="IndefArt" stem="indefart"/>
+  <entry word="αυτός" macros="@masc @nom @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτoύ" macros="@masc @gen @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτόν" macros="@masc @acc @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτοί" macros="@masc @nom @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτών" macros="@masc @gen @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτοί" macros="@masc @acc @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτή" macros="@fem @nom @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτής" macros="@fem @gen @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτήν" macros="@fem @acc @sing @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτές" macros="@fem @nom @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτών" macros="@fem @gen @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αυτές" macros="@fem @acc @plur @3rd @+def @dem-prox" pos="Dem" stem="this"/>
+  <entry word="αμφορέας" macros="@masc @nom @sing @sg" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="αμφορέα" macros="@masc @gen @sing @sg" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="αμφορέα" macros="@masc @acc @sing @sg" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="αμφορείς" macros="@masc @nom @plur @pl" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="αμφορέων" macros="@masc @gen @plur @pl" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="αμφορείς" macros="@masc @acc @plur @pl" pos="Noun" stem="αμφορε" class="exhibit" pred="amphora"/>
+  <entry word="Αθηνά" macros="@fem @nom @sing @sg" pos="Noun" stem="Αθην" class="person" pred="athena"/>
+  <entry word="Αθηνάς" macros="@fem @gen @sing @sg" pos="Noun" stem="Αθην" class="person" pred="athena"/>
+  <entry word="Αθηνά" macros="@fem @acc @sing @sg" pos="Noun" stem="Αθην" class="person" pred="athena"/>
+  <entry word="Σέρρες" macros="@fem @nom @plur @sg" pos="Noun" stem="Σέρρ" class="city" pred="serres"/>
+  <entry word="Σερρών" macros="@fem @gen @plur @sg" pos="Noun" stem="Σέρρ" class="city" pred="serres"/>
+  <entry word="Σέρρες" macros="@fem @acc @plur @sg" pos="Noun" stem="Σέρρ" class="city" pred="serres"/>
+  <entry word="παλιός" macros="@masc @nom @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιού" macros="@masc @gen @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιό" macros="@masc @acc @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιοί" macros="@masc @nom @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιών" macros="@masc @gen @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιούς" macros="@masc @acc @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιά" macros="@fem @nom @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιάς" macros="@fem @gen @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιά" macros="@fem @acc @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιές" macros="@fem @nom @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιών" macros="@fem @gen @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιές" macros="@fem @acc @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιό" macros="@neut @nom @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιού" macros="@neut @gen @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιό" macros="@neut @acc @sing" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιά" macros="@neut @nom @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιών" macros="@neut @gen @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="παλιά" macros="@neut @acc @plur" pos="Adj" stem="παλε" class="temporal-attribute" pred="old"/>
+  <entry word="ερυθρόμορφος" macros="@masc @nom @sing" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="ερυθρόμορφου" macros="@masc @gen @sing" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="ερυθρόμορφο" macros="@masc @acc @sing" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="ερυθρόμορφοι" macros="@masc @nom @plur" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="ερυθρόμορφων" macros="@masc @gen @plur" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="ερυθρόμορφους" macros="@masc @acc @plur" pos="Adj" stem="ερυθρομορφ" class="style" pred="red-figure"/>
+  <entry word="με" macros="@acc @1st @sing @weak" pos="Pro" stem="pro1"/>
+  <entry word="μας" macros="@acc @1st @plur @weak" pos="Pro" stem="pro1"/>
+  <entry word="μου" macros="@gen @1st @sing @weak" pos="Pro" stem="pro1"/>
+  <entry word="μας" macros="@gen @1st @plur @weak" pos="Pro" stem="pro1"/>
+  <entry word="σε" macros="@acc @2nd @sing @weak" pos="Pro" stem="pro2"/>
+  <entry word="σας" macros="@acc @2nd @plur @weak" pos="Pro" stem="pro2"/>
+  <entry word="σου" macros="@gen @2nd @sing @weak" pos="Pro" stem="pro2"/>
+  <entry word="σας" macros="@gen @2nd @plur @weak" pos="Pro" stem="pro2"/>
+  <entry word="τος" macros="@masc @nom @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τον" macros="@masc @acc @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="του" macros="@masc @gen @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τοι" macros="@masc @nom @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τους" macros="@masc @acc @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τους" macros="@masc @gen @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τη" macros="@fem @nom @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="την" macros="@fem @acc @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="της" macros="@fem @gen @3rd @sing @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τες" macros="@fem @nom @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τες" macros="@fem @acc @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="τους" macros="@fem @gen @3rd @plur @weak" pos="Pro" stem="pro3m"/>
+  <entry word="το" macros="@neut @nom @3rd @sing @weak" pos="Pro" stem="pro3n"/>
+  <entry word="το" macros="@neut @acc @3rd @sing @weak" pos="Pro" stem="pro3n"/>
+  <entry word="του" macros="@neut @gen @3rd @sing @weak" pos="Pro" stem="pro3n"/>
+  <entry word="τα" macros="@neut @nom @3rd @plur @weak" pos="Pro" stem="pro3n"/>
+  <entry word="τα" macros="@neut @acc @3rd @plur @weak" pos="Pro" stem="pro3n"/>
+  <entry word="τους" macros="@neut @gen @3rd @plur @weak" pos="Pro" stem="pro3n"/>
+  <entry word="με" macros="@acc" pos="Prep" stem="με" class="dative-attribute"/>
+  <entry word="σε" macros="@acc" pos="Prep" stem="σε" class="dative-attribute"/>
+  <entry word="μετά" macros="@acc" pos="Prep" stem="μετά" class="temporal-attribute"/>
+  <entry word="σε" macros="@acc" pos="Prep" stem="σε" class="locative-attribute" pred="to"/>
+  <entry word="από" macros="@acc" pos="Prep" stem="από" class="locative-attribute" pred="from"/>
+  <entry word="επάνω_σε" macros="@acc" pos="Prep" stem="επάνω_σε" class="locative-attribute" pred="on"/>
+  <entry word="μέσα_σε" macros="@acc" pos="Prep" stem="μέσα_σε" class="locative-attribute" pred="inside"/>
+  <entry word="κοντά_σε" macros="@acc" pos="Prep" stem="κοντά_σε" class="locative-attribute" pred="near"/>
+  <entry word="μπροστά_σε" macros="@acc" pos="Prep" stem="μπροστά_σε" class="locative-attribute" pred="in_front"/>
+  <entry word="δίπλα_σε" macros="@acc" pos="Prep" stem="δίπλα_σε" class="locative-attribute" pred="next_to"/>
+  <entry word="επάνω_από" macros="@acc" pos="Prep" stem="επάνω_από" class="locative-attribute" pred="over"/>
+  <entry word="μέσα_από" macros="@acc" pos="Prep" stem="μέσα_από" class="locative-attribute" pred="through"/>
+  <entry word="μπροστά_από" macros="@acc" pos="Prep" stem="μπροστά_από" class="locative-attribute" pred="in_front_of"/>
+  <entry word="δίπλα_από" macros="@acc" pos="Prep" stem="δίπλα_από" class="locative-attribute" pred="next_to"/>
+  <entry word="κάτω_από" macros="@acc" pos="Prep" stem="κάτω_από" class="locative-attribute" pred="under"/>
+  <entry word="έξω_από" macros="@acc" pos="Prep" stem="έξω_από" class="locative-attribute" pred="out_of"/>
+  <entry word="πίσω_από" macros="@acc" pos="Prep" stem="πίσω_από" class="locative-attribute" pred="behind"/>
+  <entry word="μακρυά_από" macros="@acc" pos="Prep" stem="μακρυά_από" class="locative-attribute" pred="away"/>
+  <entry word="αριστερά_από" macros="@acc" pos="Prep" stem="αριστερά_από" class="locative-attribute" pred="left"/>
+  <entry word="δεξιά_από" macros="@acc" pos="Prep" stem="δεξιά_από" class="locative-attribute" pred="right"/>
+  <entry word="επάνω" macros="@acc" pos="HPrep" stem="επάνω" class="locative-attribute" pred="over"/>
+  <entry word="μέσα" macros="@acc" pos="HPrep" stem="μέσα" class="locative-attribute" pred="through"/>
+  <entry word="μπροστά" macros="@acc" pos="HPrep" stem="μπροστά" class="locative-attribute" pred="in_front_of"/>
+  <entry word="δίπλα" macros="@acc" pos="HPrep" stem="δίπλα" class="locative-attribute" pred="next_to"/>
+  <entry word="κάτω" macros="@acc" pos="HPrep" stem="κάτω" class="locative-attribute" pred="under"/>
+  <entry word="έξω" macros="@acc" pos="HPrep" stem="έξω" class="locative-attribute" pred="out_of"/>
+  <entry word="πίσω" macros="@acc" pos="HPrep" stem="πίσω" class="locative-attribute" pred="behind"/>
+  <entry word="μακρυά" macros="@acc" pos="HPrep" stem="μακρυά" class="locative-attribute" pred="away"/>
+  <entry word="αριστερά" macros="@acc" pos="HPrep" stem="αριστερά" class="locative-attribute" pred="left"/>
+  <entry word="δεξιά" macros="@acc" pos="HPrep" stem="δεξιά" class="locative-attribute" pred="right"/>
+  <entry word="είμαι" macros="@1st @sing @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="είσαι" macros="@2nd @sing @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="είναι" macros="@3rd @sing @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="είμαστε" macros="@1st @plur @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="είσαστε" macros="@2nd @plur @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="είναι" macros="@3rd @plur @pres" pos="Copula" stem="ειν" class="state" pred="be-verb"/>
+  <entry word="βλέπω" macros="@1st @sing @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <entry word="βλέπεις" macros="@2nd @sing @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <entry word="βλέπει" macros="@3rd @sing @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <entry word="βλέπουμε" macros="@1st @plur @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <entry word="βλέπετε" macros="@2nd @plur @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <entry word="βλέπουν" macros="@3rd @plur @pres" pos="VerbTrans" stem="βλεπ" class="action" pred="see"/>
+  <macro name="@+def">
+    <fs id="1">
+      <feat attr="def" val="+def"/>
+    </fs>
+  </macro>
+  <macro name="@+det">
+    <fs id="1">
+      <feat attr="detart" val="+det"/>
+    </fs>
+  </macro>
+  <macro name="@-def">
+    <fs id="1">
+      <feat attr="def" val="-def"/>
+    </fs>
+  </macro>
+  <macro name="@-det">
+    <fs id="1">
+      <feat attr="detart" val="-det"/>
+    </fs>
+  </macro>
+  <macro name="@1st">
+    <fs id="1">
+      <feat attr="pers" val="1st"/>
+    </fs>
+    <fs id="2">
+      <feat attr="pers" val="1st"/>
+    </fs>
+    <fs id="4">
+      <feat attr="pers" val="1st"/>
+    </fs>
+    <fs id="5">
+      <feat attr="pers" val="1st"/>
+    </fs>
+  </macro>
+  <macro name="@2nd">
+    <fs id="1">
+      <feat attr="pers" val="2nd"/>
+    </fs>
+    <fs id="2">
+      <feat attr="pers" val="2nd"/>
+    </fs>
+    <fs id="4">
+      <feat attr="pers" val="2nd"/>
+    </fs>
+    <fs id="5">
+      <feat attr="pers" val="2nd"/>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs id="1">
+      <feat attr="pers" val="3rd"/>
+    </fs>
+    <fs id="2">
+      <feat attr="pers" val="3rd"/>
+    </fs>
+    <fs id="4">
+      <feat attr="pers" val="3rd"/>
+    </fs>
+    <fs id="5">
+      <feat attr="pers" val="3rd"/>
+    </fs>
+  </macro>
+  <macro name="@acc">
+    <fs id="1">
+      <feat attr="case" val="acc"/>
+    </fs>
+    <fs id="2">
+      <feat attr="case" val="acc"/>
+    </fs>
+    <fs id="3">
+      <feat attr="case" val="acc"/>
+    </fs>
+    <fs id="4">
+      <feat attr="case" val="acc"/>
+    </fs>
+  </macro>
+  <macro name="@action">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="action"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="action"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="action"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@animal">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="animal"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="animal"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="animal"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@animate-being">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="animate-being"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="animate-being"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="animate-being"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@attribute">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@change">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="change"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="change"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="change"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@city">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="city"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="city"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="city"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@colour">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="colour"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="colour"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="colour"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@dative-attribute">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="dative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="dative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="dative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@def">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="det">
+          <prop name="def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@dem-nonprox">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="det">
+          <prop name="dem-nonprox"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@dem-prox">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="det">
+          <prop name="dem-prox"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@exhibit">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="exhibit"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="exhibit"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="exhibit"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@fem">
+    <fs id="1">
+      <feat attr="gender" val="fem"/>
+    </fs>
+    <fs id="2">
+      <feat attr="gender" val="fem"/>
+    </fs>
+    <fs id="4">
+      <feat attr="gender" val="fem"/>
+    </fs>
+  </macro>
+  <macro name="@gen">
+    <fs id="1">
+      <feat attr="case" val="gen"/>
+    </fs>
+    <fs id="2">
+      <feat attr="case" val="gen"/>
+    </fs>
+    <fs id="3">
+      <feat attr="case" val="gen"/>
+    </fs>
+    <fs id="4">
+      <feat attr="case" val="gen"/>
+    </fs>
+  </macro>
+  <macro name="@indef">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="det">
+          <prop name="indef"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@locative-attribute">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="locative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="locative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="locative-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@masc">
+    <fs id="1">
+      <feat attr="gender" val="masc"/>
+    </fs>
+    <fs id="2">
+      <feat attr="gender" val="masc"/>
+    </fs>
+    <fs id="4">
+      <feat attr="gender" val="masc"/>
+    </fs>
+  </macro>
+  <macro name="@monodef">
+    <fs id="1">
+      <feat attr="POL" val="monodef"/>
+    </fs>
+  </macro>
+  <macro name="@neut">
+    <fs id="1">
+      <feat attr="gender" val="neut"/>
+    </fs>
+    <fs id="2">
+      <feat attr="gender" val="neut"/>
+    </fs>
+    <fs id="4">
+      <feat attr="gender" val="neut"/>
+    </fs>
+  </macro>
+  <macro name="@nom">
+    <fs id="1">
+      <feat attr="case" val="nom"/>
+    </fs>
+    <fs id="2">
+      <feat attr="case" val="nom"/>
+    </fs>
+    <fs id="3">
+      <feat attr="case" val="nom"/>
+    </fs>
+    <fs id="4">
+      <feat attr="case" val="nom"/>
+    </fs>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="V">
+        <diamond mode="tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@person">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="person"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="person"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="person"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@phys-attribute">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="phys-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="phys-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="phys-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@phys-obj">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="phys-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="phys-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="phys-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="num">
+          <prop name="pl"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@place">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="place"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="place"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="place"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@plur">
+    <fs id="1">
+      <feat attr="number" val="plur"/>
+    </fs>
+    <fs id="2">
+      <feat attr="number" val="plur"/>
+    </fs>
+    <fs id="4">
+      <feat attr="number" val="plur"/>
+    </fs>
+    <fs id="5">
+      <feat attr="number" val="plur"/>
+    </fs>
+  </macro>
+  <macro name="@polydef">
+    <fs id="1">
+      <feat attr="POL" val="polydef"/>
+    </fs>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="V">
+        <diamond mode="tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@region">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="region"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="region"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="region"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sem-obj">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="sem-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="sem-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="sem-obj"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sg">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sing">
+    <fs id="1">
+      <feat attr="num" val="sing"/>
+    </fs>
+    <fs id="2">
+      <feat attr="num" val="sing"/>
+    </fs>
+    <fs id="4">
+      <feat attr="num" val="sing"/>
+    </fs>
+    <fs id="5">
+      <feat attr="num" val="sing"/>
+    </fs>
+  </macro>
+  <macro name="@situation">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="situation"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="situation"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="situation"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@size">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="size"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="size"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="size"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@state">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="state"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="state"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="state"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@strong">
+    <fs id="1">
+      <feat attr="PHON" val="strong"/>
+    </fs>
+    <fs id="2">
+      <feat attr="PHON" val="strong"/>
+    </fs>
+    <fs id="3">
+      <feat attr="PHON" val="strong"/>
+    </fs>
+    <fs id="4">
+      <feat attr="PHON" val="strong"/>
+    </fs>
+  </macro>
+  <macro name="@style">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="style"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="style"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="style"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@temporal-attribute">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="temporal-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="temporal-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="temporal-attribute"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@thing">
+    <lf>
+      <satop nomvar="D">
+        <diamond mode="D">
+          <prop name="thing"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="N">
+        <diamond mode="N">
+          <prop name="thing"/>
+        </diamond>
+      </satop>
+    </lf>
+    <lf>
+      <satop nomvar="P">
+        <diamond mode="P">
+          <prop name="thing"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@weak">
+    <fs id="1">
+      <feat attr="PHON" val="weak"/>
+    </fs>
+    <fs id="2">
+      <feat attr="PHON" val="weak"/>
+    </fs>
+    <fs id="3">
+      <feat attr="PHON" val="weak"/>
+    </fs>
+    <fs id="4">
+      <feat attr="PHON" val="weak"/>
+    </fs>
+  </macro>
+</morph>

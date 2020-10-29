@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<def-objects>
+    <defobject-structure is="a-location">
+        <def-role slot="a-city" type="entity-id" />
+        <def-role slot="a-region" type="entity-id" />
+        <def-role slot="a-country" type="entity-id" />
+        <def-role slot="a-island" type="entity-id" />
+        <def-role slot="location-information" type="string" />
+        <def-role slot="location-definition" type="string" />
+        <def-role slot="university" type="entity-id" />
+    </defobject-structure>
+    <defobject-structure is="copy" />
+    <defobject-structure is="exhibit">
+        <def-role slot="creation-period" type="entity-id" />
+        <def-role slot="current-location" type="entity-id" />
+        <def-role slot="location-found" type="entity-id" />
+        <def-role slot="original-location" type="entity-id" />
+        <def-role slot="made-of" type="entity-id" />
+        <def-role slot="exhibit-height" type="string" />
+        <def-role slot="creation-time" type="string" />
+        <def-role slot="exhibit-form" type="string" />
+        <def-role slot="exhibit-purpose" type="string" />
+        <def-role slot="exhibit-depicts" type="string" />
+        <def-role slot="exhibit-portrays" type="entity-id" />
+        <def-role slot="exhibit-characteristics" type="string" />
+        <def-role slot="previous-locations" type="string" />
+        <def-role slot="copy-info" type="entity-id" />
+        <def-role slot="exhibit-name-means" type="string" />
+        <def-role slot="donate-by" type="entity-id" />
+        <def-role slot="references" type="string" />
+        <def-role slot="inscription-says" type="string" />
+        <def-role slot="exhibit-story" type="string" />
+        <def-role slot="painting-style" type="entity-id" />
+        <def-role slot="exhibit-definition" type="string" />
+        <def-role slot="created-by" type="entity-id" />
+        <def-role slot="sculpted-by" type="entity-id" />
+        <def-role slot="exhibit-shows" type="entity-id" />
+        <def-role slot="helmet-type" type="entity-id" />
+        <def-role slot="exhibit-style" type="entity-id" />
+        <def-role slot="painting-technique-used" type="entity-id" />
+        <def-role slot="painted-by" type="entity-id" />
+        <def-role slot="potter-is" type="entity-id" />
+    </defobject-structure>
+    <defobject-structure is="historical-period">
+        <def-role slot="historical-period-description" type="string" />
+        <def-role slot="historical-period-time" type="string" />
+    </defobject-structure>
+    <defobject-structure is="material" />
+    <defobject-structure is="person">
+        <def-role slot="person-information" type="string" />
+        <def-role slot="person-country" type="entity-id" />
+        <def-role slot="other-work" type="string" />
+        <def-role slot="person-story" type="string" />
+        <def-role slot="ruler-of" type="entity-id" />
+    </defobject-structure>
+    <defobject-structure is="style">
+        <def-role slot="style-time" type="string" />
+        <def-role slot="style-description" type="string" />
+    </defobject-structure>
+    <defobject-structure is="technique">
+        <def-role slot="opposite-technique" type="entity-id" />
+        <def-role slot="technique-description" type="string" />
+    </defobject-structure>
+</def-objects>

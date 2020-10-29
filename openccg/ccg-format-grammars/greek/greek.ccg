@@ -1,0 +1,504 @@
+
+
+feature {
+
+  # 1: intermediate determiner projections (dp1)
+  # 2: nominal projections and final det projections (dp and np)
+  # 3: prepositions
+  # 4: pronouns
+  # 5: verbal projections
+
+  GENDER<1,2,4>: masc fem neut;
+  CASE<1,2,3,4>: nom gen acc;
+  NUMBER<1,2,4,5>: sing plur;
+
+  DETART<1>: +det -det;
+  DEF<1>: +def -def;
+  POL<1>: monodef polydef;
+  PERS<1,2,4,5>:1st 2nd 3rd;
+
+  PHON<1,2,3,4>: weak strong;
+
+  # Verbal sem features
+  TENSE<V:tense>: past pres;
+
+  # Nominal sem features
+  NUM<D:num,N:num>: sg pl;
+  DET<D:det>: def indef dem-prox dem-nonprox;
+
+  ontology<D,N,P>: sem-obj {
+      phys-obj {
+        animate-being { person animal }
+        thing { exhibit }
+      }
+      attribute {
+        phys-attribute { colour size style }
+        dative-attribute
+        temporal-attribute
+        locative-attribute
+      }
+      place { city region }
+      situation {
+        change { action }
+        state
+      }
+  };
+
+}
+
+
+family DefArt {
+
+  # bottom-level dp: det-np
+
+  entry:
+  dp1<1>[D +def +det strong] /* np<2>[D]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* np<2>[D]:
+  D:sem-obj(D <det>def);
+
+
+  # if there is no determiner in the ip, the projection of
+  # a def article can only be monodef
+
+  entry:
+  dp1<1>[D +def +det monodef strong] /* ip<~1>[D -det]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* ip<~2>[D -det]:
+  D:sem-obj(D <det>def);
+
+  entry:
+  dp1<1>[D +def +det monodef strong] /* ip<1>[D +det +def monodef]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* ip<1>[D +det +def monodef]:
+  D:sem-obj(D <det>def);
+
+  entry:
+  dp1<1>[D +def +det polydef strong] /* ip<1>[D +def +det polydef]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* ip<1>[D +def +det polydef]:
+  D:sem-obj(D <det>def);
+}
+
+
+family IndefArt {
+
+  # bottom-level dp: det-np
+
+  entry:
+  dp1<1>[D +def +det strong] /* np<2>[D]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* np<2>[D]:
+  D:sem-obj(D <det>indef);
+
+  entry:
+  dp1<1>[D -def +det strong] /* ip<~1>[D -det]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D strong] /* ip<~2>[D -det]:
+  D:sem-obj(D <det>indef);
+
+}
+
+
+family Dem { 
+  
+  # demonstratives from the left,
+  # finalise a DP1 into a DP: no further determinations are allowed
+  entry:
+  dp<2>[D] /* dp1<~1>[D +def +det strong]:
+  D:sem-obj(D);
+   
+  # demonstratives from the right can go arbitrarily deep
+  # into the structure
+
+  entry:
+  dp1<1>[D] \* dp1<~1>[D +def +det strong]:
+  D:sem-obj(D);
+
+  entry:
+  dp<2>[D] \* dp1<~1>[D +def +det strong]:
+  D:sem-obj(D);
+}    
+
+    
+family Noun {
+
+  entry:
+  np<2>[D strong]:
+  D:sem-obj(*);
+
+  entry:
+  dp<2>[D strong]:
+  D:sem-obj(* <det>indef);
+
+}
+
+
+family Pro {
+
+  entry:
+  dp1<1>[-det weak];
+
+  entry:
+  dp<2>[D weak]:
+  D:sem-obj(* <det>def);
+
+}
+
+
+family Adj {
+
+  # the old amphora
+  entry:
+  ip<1>[D -det] / dp1<1>[D -det]:
+  D:sem-obj(<HasProp>*);
+
+  # the old the amphora
+  entry:
+  ip<1>[D polydef +def +det] / dp1<1>[D +def +det polydef]:
+  D:sem-obj(<HasContrastiveProp>*);
+
+  # the old red amphora
+  entry:
+  ip<1>[D +def monodef +det] / dp1<~1>[D -det]:
+  D:sem-obj(<HasProp>*);
+
+  # the old the red (the) amphora
+  entry:
+  ip<1>[D +def polydef +det] / np<2>[D]:
+  D:sem-obj(<HasContrastiveProp>*);
+
+}
+
+
+family Prep {
+
+  # PPs may include finalised DPs (with demonstrative)
+  entry:
+  pp<1>[D strong] / dp<~1>[strong +det]:
+  D:sem-obj(<prep>*) ;
+
+  #entry:
+  # pp<1>[D strong] / dp<~1>[weak +det]:
+  #D:sem-obj(<prep>*) ;
+
+}
+
+
+family HPrep {
+
+  entry:
+  sc<1>[D] / pp<3>[D]:
+  D:sem-obj(<prep>*);
+
+  entry:
+  sc<1> / dp<~1>[D weak gen]:
+  D:sem-obj(<prep>*);
+  
+
+}
+
+family Copula {
+
+  entry:
+  (s<5>[V] \ dp<~5>[X nom GENDER PHON]) / dp<~5>[Y nom GENDER NUMBER PHON PERS]:
+  V:state(* <ArgOne>X <ArgTwo>Y);
+
+  entry:
+  (s<5>[V] \ dp<~5>[X nom GENDER PHON]) / (ip<~5>[Y nom GENDER NUMBER PHON PERS]/dp1):
+  V:state(* <ArgOne>X <ArgTwo>Y);
+
+}
+
+
+family VerbIntrans {
+
+  entry:
+  s<5>[V] \ dp<~5>[X nom]:
+  V:sem-obj(* <ArgOne>X);
+
+}
+
+family VerbTrans {
+
+  entry:
+  (s<5>[V] \ dp<~5>[X nom]) / dp<2>[Y acc]:
+  V:sem-obj(* <ArgOne>X <ArgTwo>Y);
+
+  #TODO: funkiness occuring for 'X sees Y Z[gen]'
+  # Z[gen] => Y\Y hijacks the semantics of the whole sentence
+
+}
+
+
+
+
+rule {
+
+  no typeraise;
+
+  # 'the amphora the old' is not covered
+  # typeraise 'the amphora' to the front, for polydef only
+
+  # pro-drop 
+  typechange: s<5> \ dp<2>[nom] => s<5> ;
+
+  # allow null determiners
+  typechange: np<2>[D CASE GENDER NUMBER]$1 => dp1<1>[D CASE GENDER NUMBER -det strong]$1 ;
+  typechange: ip<1>[D -det] => dp1<1>[D -det];
+
+  # no demonstrative
+  typechange: dp1<2> => dp<2>;
+
+  # DP adjuncts are DP[gen] and PP
+  # IMPORTANT: the semantics are manually fixed in greek-rules.xml
+  # by applying greek-rules.xml.patch
+  # TODO: fix or file feature request
+  # NOTE: WF-Possessives finalize the DP
+
+  typechange:
+  dp<2>[P gen strong] => ( dp1<1>[D strong] \* dp1<1>[D strong] ) ;
+  typechange:
+  dp<2>[P gen weak]   => ( dp<1>[D strong] \* dp1<1>[D strong] ) ;
+
+  typechange: pp[P] => dp1<1>[D strong] \* dp1<1>[D strong];
+
+  # WF-Possessives can modify adjectives (ip/dp1)
+  typechange:
+  dp<2>[P gen weak] => (ip<1>[D]/dp1) \* (ip<1>[D]/dp1) ;
+
+}
+
+
+
+##
+## Lexicon
+##
+
+
+#word and:Conj { και; }
+
+word defart:DefArt {
+  ο:    masc nom sing 3rd +def +det;
+  του:  masc gen sing 3rd +def +det;
+  τον:  masc acc sing 3rd +def +det;
+  οι:   masc nom plur 3rd +def +det;
+  των:  masc gen plur 3rd +def +det;
+  τους: masc acc plur 3rd +def +det;
+}
+
+word defart:DefArt {
+  η:   fem nom sing 3rd +def +det;
+  της: fem gen sing 3rd +def +det;
+  την: fem acc sing 3rd +def +det;
+  οι:  fem nom plur 3rd +def +det;
+  των: fem gen plur 3rd +def +det;
+  τις: fem acc plur 3rd +def +det;
+}
+
+word indefart:IndefArt {
+  ένας: masc nom sing 3rd -def;
+  ενός: masc gen sing 3rd -def;
+  έναν: masc acc sing 3rd -def;
+}
+
+word indefart:IndefArt {
+  μία:  fem nom sing 3rd -def;
+  μίας: fem gen sing 3rd -def;
+  μία:  fem acc sing 3rd -def;
+}
+
+word this:Dem {
+  αυτός: masc nom sing 3rd +def dem-prox;
+  αυτoύ: masc gen sing 3rd +def dem-prox;
+  αυτόν: masc acc sing 3rd +def dem-prox;
+  αυτοί: masc nom plur 3rd +def dem-prox;
+  αυτών: masc gen plur 3rd +def dem-prox;
+  αυτοί: masc acc plur 3rd +def dem-prox;
+}
+
+word this:Dem {
+  αυτή:  fem nom sing 3rd +def dem-prox;
+  αυτής: fem gen sing 3rd +def dem-prox;
+  αυτήν: fem acc sing 3rd +def dem-prox;
+  αυτές: fem nom plur 3rd +def dem-prox;
+  αυτών: fem gen plur 3rd +def dem-prox;
+  αυτές: fem acc plur 3rd +def dem-prox;
+}
+
+word αμφορε:Noun(exhibit, pred=amphora) {
+  αμφορέας: masc nom sing sg;
+  αμφορέα:  masc gen sing sg;
+  αμφορέα:  masc acc sing sg;
+  αμφορείς: masc nom plur pl;
+  αμφορέων: masc gen plur pl;
+  αμφορείς: masc acc plur pl;
+}
+
+word Αθην:Noun(person, pred=athena) {
+  Αθηνά:  fem nom sing sg;
+  Αθηνάς: fem gen sing sg;
+  Αθηνά:  fem acc sing sg;
+}
+
+# Example of syntactically pl, but semantically sg word.
+# Justification for placing semantci number in nouns and
+# instead of determiners.
+
+word Σέρρ:Noun(city, pred=serres) {
+  Σέρρες: fem nom plur sg;
+  Σερρών: fem gen plur sg;
+  Σέρρες: fem acc plur sg;
+}
+
+word παλε:Adj(temporal-attribute, pred=old) {
+  παλιός:  masc nom sing;
+  παλιού:  masc gen sing;
+  παλιό:   masc acc sing;
+  παλιοί:  masc nom plur;
+  παλιών:  masc gen plur;
+  παλιούς: masc acc plur;
+
+  παλιά:  fem nom sing;
+  παλιάς: fem gen sing;
+  παλιά:  fem acc sing;
+  παλιές: fem nom plur;
+  παλιών: fem gen plur;
+  παλιές: fem acc plur;
+
+  παλιό:  neut nom sing;
+  παλιού: neut gen sing;
+  παλιό:  neut acc sing;
+  παλιά:  neut nom plur;
+  παλιών: neut gen plur;
+  παλιά:  neut acc plur;
+
+}
+ 
+word ερυθρομορφ:Adj(style, pred=red-figure) {   
+  ερυθρόμορφος:  masc nom sing;
+  ερυθρόμορφου:  masc gen sing;
+  ερυθρόμορφο:   masc acc sing;
+  ερυθρόμορφοι:  masc nom plur;
+  ερυθρόμορφων:  masc gen plur;
+  ερυθρόμορφους: masc acc plur;
+}
+
+
+word pro1:Pro {
+  με: acc 1st  sing weak; 
+  μας:acc 1st  plur weak;
+  μου:gen 1st  sing weak;
+  μας:gen 1st  plur weak;
+}
+
+
+word pro2:Pro {
+  σε  : acc 2nd  sing weak; 
+  σας : acc 2nd  plur weak;  
+  σου : gen 2nd  sing weak; 
+  σας : gen 2nd  plur weak; 
+}
+
+
+word pro3m:Pro {
+  τος: masc nom 3rd  sing weak;
+  τον: masc acc 3rd  sing weak;
+  του: masc gen 3rd  sing weak;
+  τοι: masc nom 3rd  plur weak;
+  τους:masc acc 3rd  plur weak;
+  τους:masc gen 3rd  plur weak;
+}
+
+word pro3m:Pro {
+  τη:  fem  nom 3rd  sing weak;
+  την: fem  acc 3rd  sing weak;
+  της: fem  gen 3rd  sing weak;
+  τες: fem  nom 3rd  plur weak;
+  τες: fem  acc 3rd  plur weak;
+  τους:fem  gen 3rd  plur weak;
+}
+
+word pro3n:Pro {
+  το:  neut nom 3rd  sing weak;
+  το:  neut acc 3rd  sing weak;
+  του: neut gen 3rd  sing weak;
+  τα:  neut nom 3rd  plur weak;
+  τα:  neut acc 3rd  plur weak;
+  τους:neut gen 3rd  plur weak;
+}
+ 
+
+word με:   Prep(dative-attribute) { *: acc; }
+word σε:   Prep(dative-attribute) { *: acc; }
+word μετά: Prep(temporal-attribute) { *: acc; }
+
+word σε:   Prep(locative-attribute, pred=to) { *: acc; }
+word από:  Prep(locative-attribute, pred=from) { *: acc; }
+
+word επάνω_σε:   Prep(locative-attribute, pred=on) { *: acc; }
+word μέσα_σε:    Prep(locative-attribute, pred=inside) { *: acc; }
+word κοντά_σε:   Prep(locative-attribute, pred=near) { *: acc; }
+word μπροστά_σε: Prep(locative-attribute, pred=in_front) { *: acc; }
+word δίπλα_σε:   Prep(locative-attribute, pred=next_to) { *: acc; }
+
+word επάνω_από:   Prep(locative-attribute, pred=over) { *: acc; }
+word μέσα_από:    Prep(locative-attribute, pred=through) { *: acc; }
+word μπροστά_από: Prep(locative-attribute, pred=in_front_of) { *: acc; }
+word δίπλα_από:   Prep(locative-attribute, pred=next_to) { *: acc; }
+
+word κάτω_από:     Prep(locative-attribute, pred=under) { *: acc; }
+word έξω_από:      Prep(locative-attribute, pred=out_of) { *: acc; }
+word πίσω_από:     Prep(locative-attribute, pred=behind) { *: acc; }
+word μακρυά_από:   Prep(locative-attribute, pred=away) { *: acc; }
+word αριστερά_από: Prep(locative-attribute, pred=left) { *: acc; }
+word δεξιά_από:    Prep(locative-attribute, pred=right) { *: acc; }
+
+
+word επάνω:    HPrep(locative-attribute, pred=over) { *: acc; }
+word μέσα:     HPrep(locative-attribute, pred=through) { *: acc; }
+word μπροστά:  HPrep(locative-attribute, pred=in_front_of) { *: acc; }
+word δίπλα:    HPrep(locative-attribute, pred=next_to) { *: acc; }
+word κάτω:     HPrep(locative-attribute, pred=under) { *: acc; }
+word έξω:      HPrep(locative-attribute, pred=out_of) { *: acc; }
+word πίσω:     HPrep(locative-attribute, pred=behind) { *: acc; }
+word μακρυά:   HPrep(locative-attribute, pred=away) { *: acc; }
+word αριστερά: HPrep(locative-attribute, pred=left) { *: acc; }
+word δεξιά:    HPrep(locative-attribute, pred=right) { *: acc; }
+
+
+word ειν: Copula(state, pred=be-verb){
+
+  είμαι:   1st sing pres;
+  είσαι:   2nd sing pres;
+  είναι:   3rd sing pres;
+  είμαστε: 1st plur pres; 
+  είσαστε: 2nd plur pres;
+  είναι:   3rd plur pres; 
+
+}
+
+
+word βλεπ: VerbTrans(action, pred=see) { 
+
+  βλέπω:    1st sing pres;
+  βλέπεις:  2nd sing pres;
+  βλέπει:   3rd sing pres;
+  βλέπουμε: 1st plur pres; 
+  βλέπετε:  2nd plur pres;
+  βλέπουν:  3rd plur pres;
+
+}
+

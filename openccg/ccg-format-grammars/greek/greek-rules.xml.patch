@@ -1,0 +1,58 @@
+--- greek-rules.xml~	2007-04-02 05:07:30.000000000 +0300
++++ greek-rules.xml	2007-04-02 05:09:41.000000000 +0300
+@@ -147,6 +147,13 @@
+           </fs>
+         </atomcat>
+       </complexcat>
++        <lf>
++	  <satop nomvar="D:sem-obj">
++	    <diamond mode="GenOwner">
++	      <nomvar name="P"/>
++	    </diamond>
++	  </satop>
++        </lf>
+     </result>
+   </typechanging>
+   <typechanging name="typechange-6">
+@@ -185,6 +192,13 @@
+             <feat attr="PHON" val="strong"/>
+           </fs>
+         </atomcat>
++        <lf>
++	  <satop nomvar="D:sem-obj">
++	    <diamond mode="GenOwner">
++	      <nomvar name="P"/>
++	    </diamond>
++	  </satop>
++        </lf>
+       </complexcat>
+     </result>
+   </typechanging>
+@@ -223,6 +237,13 @@
+             <feat attr="PHON" val="strong"/>
+           </fs>
+         </atomcat>
++        <lf>
++	  <satop nomvar="D:sem-obj">
++	    <diamond mode="GenOwner">
++	      <nomvar name="P"/>
++	    </diamond>
++	  </satop>
++        </lf>
+       </complexcat>
+     </result>
+   </typechanging>
+@@ -271,6 +292,13 @@
+             <fs/>
+           </atomcat>
+         </complexcat>
++        <lf>
++	  <satop nomvar="D:sem-obj">
++	    <diamond mode="GenOwner">
++	      <nomvar name="P"/>
++	    </diamond>
++	  </satop>
++        </lf>
+       </complexcat>
+     </result>
+   </typechanging>

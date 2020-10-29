@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regression name="amy-greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../testbed.xsd">
+  <item string="ο αμφορέας είναι παλιός ." numOfParses="1"/>
+  <item string="ο αμφορέας είναι ένας αμφορέας ." numOfParses="1"/>
+  <item string="αυτός ο αμφορέας είναι παλιός ." numOfParses="1"/>
+  <item string="η Αθινά λάξευσε τον ανφορέα ." numOfParses="1"/>
+</regression>

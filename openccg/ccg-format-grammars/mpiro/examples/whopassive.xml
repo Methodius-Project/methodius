@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="p1:situation" pred="paint-verb" mood="quant" tense="past" voice="passive">
+      <rel name="ArgOne">
+        <node id="a1:amphora" pred="amphora-np" det="def" num="sg"/>
+      </rel>
+      <rel name="ArgTwo">
+        <node id="q1:animate-being" pred="quant" prep="by"/>
+      </rel>
+    </node>
+  </lf>
+  <target>who was the amphora painted by ?</target>
+</xml>

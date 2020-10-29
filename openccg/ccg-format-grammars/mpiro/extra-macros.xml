@@ -1,0 +1,38 @@
+<extra-macros>
+  <macro name="@X-thing">
+    <fs id="2">
+      <feat attr="index">
+        <lf>
+          <nomvar name="X:thing"/>
+        </lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-animate">
+    <fs id="2">
+      <feat attr="index">
+	<lf>
+	  <nomvar name="X:animate-being"/>
+	</lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-location">
+    <fs id="2">
+      <feat attr="index">
+	<lf>
+	  <nomvar name="X:location"/>
+	</lf>
+      </feat>
+    </fs>
+  </macro>
+  <macro name="@X-time">
+    <fs id="2">
+      <feat attr="index">
+	<lf>
+	  <nomvar name="X:time"/>
+	</lf>
+      </feat>
+    </fs>
+  </macro>
+</extra-macros>

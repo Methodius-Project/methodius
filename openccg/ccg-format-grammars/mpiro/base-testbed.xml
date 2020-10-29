@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regression name="base.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../testbed.xsd">
+  <item string="the amphora was painted by the_painter_of_Kleofrades during the_archaic_period FULLSTOP" numOfParses="1"/>
+  <item string="the amphora was painted during the_archaic_period FULLSTOP" numOfParses="1"/>
+  <item string="was the amphora painted by the_painter_of_Kleofrades during the_archaic_period QUESTIONMARK" numOfParses="1"/>
+  <item string="the amphora was painted by the_painter_of_Kleofrades FULLSTOP" numOfParses="1"/>
+  <item string="the amphora was painted by the_painter_of_Kleofrades QUESTIONMARK" numOfParses="0"/>
+  <item string="was the amphora painted by the_painter_of_Kleofrades QUESTIONMARK" numOfParses="1"/>
+  <item string="the amphora is located in the_national_museum_of_athens FULLSTOP" numOfParses="1"/>
+  <item string="the amphora is in the_national_museum_of_athens FULLSTOP" numOfParses="1"/>
+  <item string="is the amphora located in the_national_museum_of_athens QUESTIONMARK" numOfParses="1"/>
+  <item string="who was the amphora painted by QUESTIONMARK" numOfParses="1"/>
+  <item string="who painted the amphora QUESTIONMARK" numOfParses="1"/>
+  <item string="when painted the amphora QUESTIONMARK" numOfParses="0"/>
+  <item string="who painted the amphora FULLSTOP" numOfParses="0"/>
+  <item string="when was the amphora painted QUESTIONMARK" numOfParses="1"/>
+  <item string="who was the amphora painted QUESTIONMARK" numOfParses="0"/>
+  <item string="where is the amphora located QUESTIONMARK" numOfParses="1"/>
+  <item string="where is the amphora located QUESTIONMARK" numOfParses="1"/>
+  <item string="who is the amphora located QUESTIONMARK" numOfParses="0"/>
+</regression>

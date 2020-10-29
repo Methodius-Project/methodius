@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="p1:situation" pred="paint-verb" mood="int" tense="past" voice="passive">
+      <rel name="ArgOne">
+        <node id="a1:amphora" pred="amphora-np" det="def" num="sg"/>
+      </rel>
+      <rel name="ArgTwo">
+        <node id="p2:person" pred="painter-of-kleofrades" num="sg" prep="by"/>
+      </rel>
+      <rel name="ArgTwo">
+        <node id="a2:time" pred="archaic-period" num="sg" prep="during"/>
+      </rel>
+    </node>
+  </lf>
+  <target>was the amphora painted by the_painter_of_Kleofrades during the_archaic_period ?</target>
+</xml>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="s1:action" pred="sculpt-verb" mood="dcl" tense="past" voice="active">
+      <rel name="Actor">
+	<node id="a1:person" pred="athina" det="def" num="sg" prep="από"/>
+      </rel>
+      <rel name="Patient">
+        <node id="a2:exhibit" pred="amphora" det="def" num="sg"/>
+      </rel>
+    </node>
+  </lf>
+  <target>ο αμφορέας λαξεύθηκε από την Αθηνά .</target>
+</xml>

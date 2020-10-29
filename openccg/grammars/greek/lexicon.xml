@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ccg-lexicon name="greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../lexicon.xsd">
+  <family name="DefArt" pos="DefArt" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-3">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="monodef"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-4">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs inheritsFrom="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-5">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="monodef"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="POL" val="monodef"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-6">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="POL" val="monodef"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-7">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="polydef"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="polydef"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-8">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="polydef"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="defart"/>
+  </family>
+  <family name="IndefArt" pos="IndefArt" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="indef"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-3">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="-def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-4">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="ip">
+          <fs inheritsFrom="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+            <diamond mode="det">
+              <prop name="indef"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="indefart"/>
+  </family>
+  <family name="Dem" pos="Dem" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="*"/>
+        <atomcat type="dp1">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="dp1">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-3">
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="dp1">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <nomvar name="D"/>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="this"/>
+  </family>
+  <family name="Noun" pos="Noun" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="np">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="D"/>
+            </lf>
+          </feat>
+          <feat attr="PHON" val="strong"/>
+        </fs>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <entry name="Entry-2">
+      <atomcat type="dp">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="D"/>
+            </lf>
+          </feat>
+          <feat attr="PHON" val="strong"/>
+        </fs>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="det">
+              <prop name="indef"/>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="αμφορε" pred="amphora"/>
+    <member stem="Αθην" pred="athena"/>
+    <member stem="Σέρρ" pred="serres"/>
+  </family>
+  <family name="Pro" pos="Pro" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="dp1">
+        <fs id="1">
+          <feat attr="DETART" val="-det"/>
+          <feat attr="PHON" val="weak"/>
+        </fs>
+      </atomcat>
+    </entry>
+    <entry name="Entry-2">
+      <atomcat type="dp">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="D"/>
+            </lf>
+          </feat>
+          <feat attr="PHON" val="weak"/>
+        </fs>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="pro1"/>
+    <member stem="pro2"/>
+    <member stem="pro3m"/>
+    <member stem="pro3n"/>
+  </family>
+  <family name="Adj" pos="Adj" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="HasProp">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="POL" val="polydef"/>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="DETART" val="+det"/>
+            <feat attr="POL" val="polydef"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="HasContrastiveProp">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-3">
+      <complexcat>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="POL" val="monodef"/>
+            <feat attr="DETART" val="+det"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp1">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="HasProp">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-4">
+      <complexcat>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="DEF" val="+def"/>
+            <feat attr="POL" val="polydef"/>
+            <feat attr="DETART" val="+det"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="HasContrastiveProp">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="παλε" pred="old"/>
+    <member stem="ερυθρομορφ" pred="red-figure"/>
+  </family>
+  <family name="Prep" pos="Prep" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="pp">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="1">
+            <feat attr="PHON" val="strong"/>
+            <feat attr="DETART" val="+det"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="prep">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="με"/>
+    <member stem="σε" pred="to"/>
+    <member stem="μετά"/>
+    <member stem="από" pred="from"/>
+    <member stem="επάνω_σε" pred="on"/>
+    <member stem="μέσα_σε" pred="inside"/>
+    <member stem="κοντά_σε" pred="near"/>
+    <member stem="μπροστά_σε" pred="in_front"/>
+    <member stem="δίπλα_σε" pred="next_to"/>
+    <member stem="επάνω_από" pred="over"/>
+    <member stem="μέσα_από" pred="through"/>
+    <member stem="μπροστά_από" pred="in_front_of"/>
+    <member stem="δίπλα_από" pred="next_to"/>
+    <member stem="κάτω_από" pred="under"/>
+    <member stem="έξω_από" pred="out_of"/>
+    <member stem="πίσω_από" pred="behind"/>
+    <member stem="μακρυά_από" pred="away"/>
+    <member stem="αριστερά_από" pred="left"/>
+    <member stem="δεξιά_από" pred="right"/>
+  </family>
+  <family name="HPrep" pos="HPrep" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="sc">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="pp">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="prep">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="sc">
+          <fs id="1"/>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="weak"/>
+            <feat attr="case" val="gen"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="D:sem-obj">
+            <diamond mode="prep">
+              <prop name="[*DEFAULT*]"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="επάνω" pred="over"/>
+    <member stem="μέσα" pred="through"/>
+    <member stem="μπροστά" pred="in_front_of"/>
+    <member stem="δίπλα" pred="next_to"/>
+    <member stem="κάτω" pred="under"/>
+    <member stem="έξω" pred="out_of"/>
+    <member stem="πίσω" pred="behind"/>
+    <member stem="μακρυά" pred="away"/>
+    <member stem="αριστερά" pred="left"/>
+    <member stem="δεξιά" pred="right"/>
+  </family>
+  <family name="Copula" pos="Copula" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="V"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="&lt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="nom"/>
+            <feat attr="index">
+              <lf>
+                <nomvar name="GENDER"/>
+              </lf>
+            </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="PHON"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="nom"/>
+            <feat attr="index">
+              <lf>
+                <nomvar name="GENDER"/>
+              </lf>
+            </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="NUMBER"/>
+              </lf>
+            </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="PHON"/>
+              </lf>
+            </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="PERS"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="V:state">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="ArgOne">
+              <nomvar name="X"/>
+            </diamond>
+            <diamond mode="ArgTwo">
+              <nomvar name="Y"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="Entry-2">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="V"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="&lt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="nom"/>
+            <feat attr="index">
+              <lf>
+                <nomvar name="GENDER"/>
+              </lf>
+            </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="PHON"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <complexcat>
+          <atomcat type="ip">
+            <fs inheritsFrom="5">
+              <feat attr="index">
+                <lf>
+                  <nomvar name="Y"/>
+                </lf>
+              </feat>
+              <feat attr="case" val="nom"/>
+              <feat attr="index">
+                <lf>
+                  <nomvar name="GENDER"/>
+                </lf>
+              </feat>
+              <feat attr="index">
+                <lf>
+                  <nomvar name="NUMBER"/>
+                </lf>
+              </feat>
+              <feat attr="index">
+                <lf>
+                  <nomvar name="PHON"/>
+                </lf>
+              </feat>
+              <feat attr="index">
+                <lf>
+                  <nomvar name="PERS"/>
+                </lf>
+              </feat>
+            </fs>
+          </atomcat>
+          <slash dir="/" mode="&gt;"/>
+          <atomcat type="dp1">
+            <fs/>
+          </atomcat>
+        </complexcat>
+        <lf>
+          <satop nomvar="V:state">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="ArgOne">
+              <nomvar name="X"/>
+            </diamond>
+            <diamond mode="ArgTwo">
+              <nomvar name="Y"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="ειν" pred="be-verb"/>
+  </family>
+  <family name="VerbIntrans" pos="VerbIntrans" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="V"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="&lt;"/>
+        <atomcat type="dp">
+          <fs inheritsFrom="5">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="nom"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="V:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="ArgOne">
+              <nomvar name="X"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+  </family>
+  <family name="VerbTrans" pos="VerbTrans" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="3">
+	    <feat attr="num">
+	      <featvar name="NUM:num-vals"/>
+	    </feat>
+	    <feat attr="pers">
+	      <featvar name="PERS:pers-vals"/>
+	    </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="V"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="&lt;"/>
+        <atomcat type="dp">
+          <fs id="5">
+	    <feat attr="num">
+	      <featvar name="NUM:num-vals"/>
+	    </feat>
+	    <feat attr="pers">
+	      <featvar name="PERS:pers-vals"/>
+	    </feat>
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="nom"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="case" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="V:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="ArgOne">
+              <nomvar name="X"/>
+            </diamond>
+            <diamond mode="ArgTwo">
+              <nomvar name="Y"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="βλεπ" pred="see"/>
+  </family>
+</ccg-lexicon>

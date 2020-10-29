@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="l1:situation" pred="like" mood="dcl">
+      <rel name="Comparator">
+        <node id="a1:vessel" pred="amphora" det="the" num="sg">
+          <rel name="HasProp">
+            <node id="p1:proposition" pred="previous"/>
+          </rel>
+        </node>
+      </rel>
+      <rel name="Focus">
+        <node id="b1:state" pred="be" tense="pres">
+          <rel name="Arg">
+            <node id="a2:vessel" pred="amphora" num="sg">
+              <rel name="Det">
+                <node id="t1:proposition" pred="this"/>
+              </rel>
+            </node>
+          </rel>
+          <rel name="Prop">
+            <node id="m1:proposition" pred="made">
+              <rel name="MadeOf">
+                <node idref="a2:vessel"/>
+              </rel>
+              <rel name="Material">
+                <node id="g1:material" pred="gold" det="nil"/>
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+  </lf>
+  <target>like the previous amphora , this amphora is made of gold .</target>
+</xml>

@@ -1,0 +1,24 @@
+Main Authors:
+     Java Code:
+         Jason Baldridge <jmb -at- cogsci.ed.ac.uk>
+         Gann Bierner <gbierner -at- cogsci.ed.ac.uk>
+         Michael White <mwhite -at- inf.ed.ac.uk>
+     CCG-to-XML:
+         Ben Wing <ben -at- 666.com>
+     
+Additional Contributors:
+     Cem Bozsahin <cem.bozsahin -at- ed.ac.uk / bozsahin -at- metu.edu.tr>
+       grammars from Bozsahin and Steedman (2003)
+     Gunes Erkan <gunes -at- ceng.metu.edu.tr>
+       handling of type hierachies
+     Scott Martin <scott -at- ling.osu.edu>
+       GrammarDoc
+       incoporating the SRILM toolkit for scoring
+     Alexandros Triantafyllidis <s0345201 -at- sms.ed.ac.uk>
+       visualization of derivations via latex
+     David Reitter <dreitter -at- inf.ed.ac.uk>
+       command completion and per grammar history
+       "tiny" grammar
+     Ben Wing <ben -at- 666.com>
+       (in addition to ccg2xml): wccg and WebCCG code; CCG-format grammars
+

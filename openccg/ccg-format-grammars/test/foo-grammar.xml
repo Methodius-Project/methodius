@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="foo.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="foo-lexicon.xml"/>
+  <morphology file="foo-morph.xml"/>
+  <rules file="foo-rules.xml"/>
+  <types file="foo-types.xml"/>
+</grammar>

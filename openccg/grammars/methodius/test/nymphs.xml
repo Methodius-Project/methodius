@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="d1:situation" pred="depict-verb" mood="dcl" tense="pres" voice="active">
+      <rel name="ArgOne">
+        <node id="p1:sem-obj" pred="pro3n" num="sg"/>
+      </rel>
+      <rel name="ArgTwo">
+        <node id="e1:exhibit-depicts" pred="exhibit3-exhibit-depicts"/>
+      </rel>
+    </node>
+  </lf>
+  <target>it depicts a_group_of_Nymphs .</target>
+</xml>

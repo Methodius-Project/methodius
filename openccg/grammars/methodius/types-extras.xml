@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2003-4 University of Edinburgh (Michael White)
+$Revision: 1.3 $, $Date: 2004/11/21 14:22:18 $ 
+-->
+<types name="methodius" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="types.xsd"
+       >
+
+
+  <type name="quality" parents="proposition"/>
+  <type name="intensifier" parents="quality"/>
+  <type name="adv" parents="proposition quality"/>
+
+  <!-- manually added types for mpiro domain -->
+  <type name="object" parents="phys-obj inanimate"/>
+  <type name="string" parents="situation"/>
+  <type name="canned-text" parents="string"/>
+
+  <!-- types from mpiro instances.xml -->
+
+  <type name="copy" parents="object"/>
+  <type name="exhibit" parents="object"/>
+  <type name="historical-period" parents="time inanimate"/>
+  <type name="material" parents="sem-obj"/>
+  <type name="style" parents="object"/>
+  <type name="technique" parents="mental-obj inanimate"/>
+  
+
+
+  <!-- types from mpiro types.xml -->
+
+  <type name="archaeological-site" parents="location"/>
+  <!--<type name="city" parents="location"/>-->
+  <type name="country" parents="location"/>
+  <type name="government-department" parents="location"/>
+  <type name="island" parents="location"/>
+  <type name="league" parents="location"/>
+  <type name="museum" parents="location"/>
+  <type name="region" parents="location"/>
+  <type name="university" parents="location"/>
+  <type name="other-copy-type" parents="copy"/>
+  <type name="roman-copy-type" parents="copy"/>
+  <type name="coin" parents="exhibit"/>
+  <type name="decorative-artefact" parents="exhibit"/>
+  <type name="figurine" parents="exhibit"/>
+  <type name="jewel" parents="exhibit"/>
+  <type name="military" parents="exhibit"/>
+  <type name="painting" parents="exhibit"/>
+  <type name="potsherd" parents="exhibit"/>
+  <type name="relief" parents="exhibit"/>
+  <type name="statue" parents="exhibit"/>
+  <type name="vessel" parents="exhibit"/>
+  <type name="drachma" parents="coin"/>
+  <type name="stater" parents="coin"/>
+  <type name="tetradrachm" parents="coin"/>
+  <type name="earrings" parents="jewel"/>
+  <type name="helmet" parents="military"/>
+  <type name="suit-of-armour" parents="military"/>
+  <type name="grave" parents="relief"/>
+  <type name="other-relief" parents="relief"/>
+  <type name="complex-statue" parents="statue"/>
+  <type name="imperial-portrait" parents="statue"/>
+  <type name="kouros" parents="statue"/>
+  <type name="portrait" parents="statue"/>
+  <type name="amphora" parents="vessel"/>
+  <type name="aryballos" parents="vessel"/>
+  <type name="cauldron" parents="vessel"/>
+  <type name="hydria" parents="vessel"/>
+  <type name="kantharos" parents="vessel"/>
+  <type name="kylix" parents="vessel"/>
+  <type name="lekythos" parents="vessel"/>
+  <type name="prochous" parents="vessel"/>
+  <type name="rhyton" parents="vessel"/>
+  <type name="stamnos" parents="vessel"/>
+  <type name="amphora-handle" parents="amphora"/>
+  <type name="panathenaic-amphora" parents="amphora"/>
+  <type name="marriage-cauldron" parents="cauldron"/>
+  <type name="continuous-outline-hydria" parents="hydria"/>
+  <type name="hydria-hadra" parents="hydria"/>
+  <type name="hydria-with-separate-neck" parents="hydria"/>
+  <type name="black-kantharos" parents="kantharos"/>
+  <type name="other-lekythos" parents="lekythos"/>
+  <type name="white-lekythos" parents="lekythos"/>
+  <type name="bronze-material" parents="material"/>
+  <type name="clay-material" parents="material"/>
+  <type name="gold-material" parents="material"/>
+  <type name="ivory-material" parents="material"/>
+  <type name="marble-material" parents="material"/>
+  <type name="silver-material" parents="material"/>
+  <type name="wood-material" parents="material"/>
+  <type name="artist" parents="person"/>
+  <type name="donor" parents="person"/>
+  <type name="emperor" parents="person"/>
+  <type name="god" parents="person"/>
+  <type name="goddess" parents="person"/>
+  <type name="king" parents="person"/>
+  <type name="painter" parents="artist"/>
+  <type name="potter" parents="artist"/>
+  <type name="sculptor" parents="artist"/>
+  <type name="nonroman-emperor" parents="emperor"/>
+  <type name="roman-emperor" parents="emperor"/>
+  <type name="painting-technique" parents="technique"/>
+
+  <!-- types from mpiro predicates.xml -->
+
+  <type name="opposite-technique" parents="canned-text"/>
+  <type name="technique-description" parents="canned-text"/>
+  <type name="exhibit-height" parents="canned-text"/>
+  <type name="creation-time" parents="canned-text"/>
+  <type name="exhibit-form" parents="canned-text"/>
+  <type name="exhibit-purpose" parents="canned-text"/>
+  <type name="exhibit-characteristics" parents="canned-text"/>
+  <type name="previous-locations" parents="canned-text"/>
+  <type name="exhibit-name-means" parents="canned-text"/>
+  <type name="references" parents="canned-text"/>
+  <type name="exhibit-story" parents="canned-text"/>
+  <type name="exhibit-definition" parents="canned-text"/>
+  <type name="person-information" parents="canned-text"/>
+  <type name="other-work" parents="canned-text"/>
+  <type name="person-story" parents="canned-text"/>
+  <type name="location-information" parents="canned-text"/>
+  <type name="location-definition" parents="canned-text"/>
+  <type name="style-time" parents="canned-text"/>
+  <type name="style-description" parents="canned-text"/>
+  <type name="historical-period-description" parents="canned-text"/>
+  <type name="historical-period-time" parents="canned-text"/>
+  <type name="exhibit-depicts" parents="canned-text"/>
+  <type name="inscription-says" parents="canned-text"/>
+</types>

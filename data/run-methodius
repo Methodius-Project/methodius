@@ -1,0 +1,32 @@
+#!/bin/bash
+
+configflag=
+
+while getopts 'c:' OPTION
+do
+  case $OPTION in
+  c) configflag=1
+		configval="$OPTARG"
+  ;;
+  ?) printf "usage: %s: <config-file> [song1] [numfacts1] [song2] [numfacts2] ...\n" $(basename $0) >&2
+  exit 2
+  ;;
+  esac
+done
+
+shift $(($OPTIND - 1))
+
+#if [ $1 = ]
+#then
+# printf "usage: %s: <config-file> [song1] [numfacts1] [song2] [numfacts2] ...\n" $(basename $0) >&2
+# exit 2
+#fi
+
+if [ "$configflag" ]
+then
+
+echo "java -Xms256m -Xmx512m -classpath ../jars/jdom.jar:../jars/je.jar:../jars/trove.jar:../jars/openccg.jar:../dist/methodius.jar uk/ac/ed/methodius/Command -q $configval pubmany $*"
+  java -Xms256m -Xmx512m -classpath ../jars/jdom.jar:../jars/je.jar:../jars/trove.jar:../jars/openccg.jar:../dist/methodius.jar uk/ac/ed/methodius/Command -q $configval pubmany $*
+fi
+
+

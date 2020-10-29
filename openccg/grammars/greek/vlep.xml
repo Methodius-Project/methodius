@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <satop nom="s1:action">
+      <prop name="see"/>
+      <diamond mode="tense">
+        <prop name="pres"/>
+      </diamond>
+      <diamond mode="ArgOne">
+        <nom name="x1"/>
+      </diamond>
+      <diamond mode="ArgTwo">
+        <nom name="a1:exhibit"/>
+        <prop name="amphora"/>
+        <diamond mode="det">
+          <prop name="def"/>
+        </diamond>
+        <diamond mode="num">
+          <prop name="sg"/>
+        </diamond>
+      </diamond>
+    </satop>
+  </lf>
+  <target>βλέπει τον αμφορέα</target>
+</xml>

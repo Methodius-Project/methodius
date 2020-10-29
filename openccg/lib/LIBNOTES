@@ -1,0 +1,64 @@
+
+This file briefly describes the libraries which are used by the 
+OpenNLP CCG Library. See the appropriate license files also in this directory.
+
+------------------------------------------------------------------------
+ant.jar
+
+The Apache Ant Build System, version 1.7.0
+Homepage: http://ant.apache.org/
+License: Apache Software License (ASL)
+
+A Java based build tool. 
+
+
+------------------------------------------------------------------------
+jdom.jar
+
+JDOM, version 1.1
+Homepage: http://www.jdom.org
+License: See jdom.license
+
+A complete, Java-based solution for accessing, manipulating, and
+outputting XML data from Java code.
+
+
+------------------------------------------------------------------------
+jline.jar
+
+jLine, version 0.8.1 + patch
+Homepage: http://jline.sourceforge.net/
+License: LGPL
+
+JLine is a Java library for handling console input.  
+It is similar in functionality to BSD editline and GNU readline,
+providing a command input history and more.
+The current version contains a patch (not yet released) that 
+supports UTF-8 input on Unix. 
+
+
+------------------------------------------------------------------------
+trove.jar
+
+GNU Trove, version 1.0.2
+Homepage: http://trove4j.sf.net
+License: LGPL
+
+High performance collections for Java.
+
+
+------------------------------------------------------------------------
+xalan.jar, xercesImpl.jar, xml-apis.jar
+
+The Apache Xalan-J XML transformation processor, version 2.6.0
+The Apache Xerces-J XML parser, version 2.6.2
+Homepage: http://xml.apache.org
+License: Apache Software License (ASL)
+
+XSLT transformation library and associated XML parser,
+with schema validation support.
+These libraries are only needed to build grammars, as the versions of the 
+libraries built-in to Java 1.4 and 1.5 should work for run-time uses.
+
+
+

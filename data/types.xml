@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+ <type name="location">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="location-np"/>
+  </nps>
+ </type>
+ <type name="archaeological-site">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="archaeological-site-np"/>
+  </nps>
+ </type>
+ <type name="city">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="city-np"/>
+  </nps>
+ </type>
+ <type name="country">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="country-np"/>
+  </nps>
+ </type>
+ <type name="government-department">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="government-department-np"/>
+  </nps>
+ </type>
+ <type name="island">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="island-np"/>
+  </nps>
+ </type>
+ <type name="league">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="league-np"/>
+  </nps>
+ </type>
+ <type name="museum">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="museum-np"/>
+  </nps>
+ </type>
+ <type name="region">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="region-np"/>
+  </nps>
+ </type>
+ <type name="university">
+  <parents>
+   <parent name="location"/>
+  </parents>
+  <nps>
+   <np id="university-np"/>
+  </nps>
+ </type>
+ <type name="copy">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="copy-np"/>
+  </nps>
+ </type>
+ <type name="other-copy-type">
+  <parents>
+   <parent name="copy"/>
+  </parents>
+  <nps>
+   <np id="copy-np"/>
+  </nps>
+ </type>
+ <type name="roman-copy-type">
+  <parents>
+   <parent name="copy"/>
+  </parents>
+  <nps>
+   <np id="roman-copy-type-np"/>
+  </nps>
+ </type>
+ <type name="exhibit">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="exhibit-np"/>
+  </nps>
+ </type>
+ <type name="coin">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="coin-np"/>
+  </nps>
+ </type>
+ <type name="decorative-artefact">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="decorative-artefact-np"/>
+  </nps>
+ </type>
+ <type name="figurine">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="figurine-np"/>
+  </nps>
+ </type>
+ <type name="jewel">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="jewel-np"/>
+  </nps>
+ </type>
+ <type name="military">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="military-np"/>
+  </nps>
+ </type>
+ <type name="painting">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="painting-np"/>
+  </nps>
+ </type>
+ <type name="potsherd">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="potsherd-np"/>
+  </nps>
+ </type>
+ <type name="relief">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="relief-np"/>
+  </nps>
+ </type>
+ <type name="statue">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="statue-np"/>
+  </nps>
+ </type>
+ <type name="vessel">
+  <parents>
+   <parent name="exhibit"/>
+  </parents>
+  <nps>
+   <np id="vessel-np"/>
+   <np id="pot-np"/>
+  </nps>
+ </type>
+ <type name="drachma">
+  <parents>
+   <parent name="coin"/>
+  </parents>
+  <nps>
+   <np id="drachma-np"/>
+  </nps>
+ </type>
+ <type name="stater">
+  <parents>
+   <parent name="coin"/>
+  </parents>
+  <nps>
+   <np id="stater-np"/>
+  </nps>
+ </type>
+ <type name="tetradrachm">
+  <parents>
+   <parent name="coin"/>
+  </parents>
+  <nps>
+   <np id="tetradrachm-np"/>
+  </nps>
+ </type>
+ <type name="earrings">
+  <parents>
+   <parent name="jewel"/>
+  </parents>
+  <nps>
+   <np id="earring-np"/>
+  </nps>
+ </type>
+ <type name="helmet">
+  <parents>
+   <parent name="military"/>
+  </parents>
+  <nps>
+   <np id="helmet-np"/>
+  </nps>
+ </type>
+ <type name="suit-of-armour">
+  <parents>
+   <parent name="military"/>
+  </parents>
+  <nps>
+   <np id="suit-of-armour-np"/>
+  </nps>
+ </type>
+ <type name="grave">
+  <parents>
+   <parent name="relief"/>
+  </parents>
+  <nps>
+   <np id="grave-np"/>
+  </nps>
+ </type>
+ <type name="other-relief">
+  <parents>
+   <parent name="relief"/>
+  </parents>
+  <nps>
+   <np id="other-relief-np"/>
+  </nps>
+ </type>
+ <type name="complex-statue">
+  <parents>
+   <parent name="statue"/>
+  </parents>
+  <nps>
+   <np id="complex-statue-np"/>
+  </nps>
+ </type>
+ <type name="imperial-portrait">
+  <parents>
+   <parent name="statue"/>
+  </parents>
+  <nps>
+   <np id="imperial-portrait-np"/>
+  </nps>
+ </type>
+ <type name="kouros">
+  <parents>
+   <parent name="statue"/>
+  </parents>
+  <nps>
+   <np id="kouros-np"/>
+  </nps>
+ </type>
+ <type name="portrait">
+  <parents>
+   <parent name="statue"/>
+  </parents>
+  <nps>
+   <np id="portrait-np"/>
+  </nps>
+ </type>
+ <type name="amphora">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="amphora-np"/>
+  </nps>
+ </type>
+ <type name="aryballos">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="aryballos-np"/>
+  </nps>
+ </type>
+ <type name="cauldron">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="cauldron-np"/>
+  </nps>
+ </type>
+ <type name="hydria">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="hydria-np"/>
+  </nps>
+ </type>
+ <type name="kantharos">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="kantharos-np"/>
+  </nps>
+ </type>
+ <type name="kylix">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="kylix-np"/>
+  </nps>
+ </type>
+ <type name="lekythos">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="lekythos-np"/>
+  </nps>
+ </type>
+ <type name="prochous">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="prochous-np"/>
+  </nps>
+ </type>
+ <type name="rhyton">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="rhyton-np"/>
+  </nps>
+ </type>
+ <type name="stamnos">
+  <parents>
+   <parent name="vessel"/>
+  </parents>
+  <nps>
+   <np id="stamnos-np"/>
+  </nps>
+ </type>
+ <type name="amphora-handle">
+  <parents>
+   <parent name="amphora"/>
+  </parents>
+  <nps>
+   <np id="amphora-handle-np"/>
+  </nps>
+ </type>
+ <type name="panathenaic-amphora">
+  <parents>
+   <parent name="amphora"/>
+  </parents>
+  <nps>
+   <np id="panathenaic-amphora-np"/>
+  </nps>
+ </type>
+ <type name="marriage-cauldron">
+  <parents>
+   <parent name="cauldron"/>
+  </parents>
+  <nps>
+   <np id="marriage-cauldron-np"/>
+  </nps>
+ </type>
+ <type name="continuous-outline-hydria">
+  <parents>
+   <parent name="hydria"/>
+  </parents>
+  <nps>
+   <np id="continuous-outline-hydria-np"/>
+  </nps>
+ </type>
+ <type name="hydria-hadra">
+  <parents>
+   <parent name="hydria"/>
+  </parents>
+  <nps>
+   <np id="hydria-hadra-np"/>
+  </nps>
+ </type>
+ <type name="hydria-with-separate-neck">
+  <parents>
+   <parent name="hydria"/>
+  </parents>
+  <nps>
+   <np id="hydria-with-separate-neck-np"/>
+  </nps>
+ </type>
+ <type name="black-kantharos">
+  <parents>
+   <parent name="kantharos"/>
+  </parents>
+  <nps>
+   <np id="black-kantharos-np"/>
+  </nps>
+ </type>
+ <type name="other-lekythos">
+  <parents>
+   <parent name="lekythos"/>
+  </parents>
+  <nps>
+   <np id="other-lekythos-np"/>
+  </nps>
+ </type>
+ <type name="white-lekythos">
+  <parents>
+   <parent name="lekythos"/>
+  </parents>
+  <nps>
+   <np id="white-lekythos-np"/>
+  </nps>
+ </type>
+ <type name="historical-period">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="historical-period-np"/>
+  </nps>
+ </type>
+ <type name="material">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="material-np"/>
+  </nps>
+ </type>
+ <type name="person">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="person-np"/>
+  </nps>
+ </type>
+ <type name="artist">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="artist-np"/>
+  </nps>
+ </type>
+ <type name="donor">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="donor-np"/>
+  </nps>
+ </type>
+ <type name="emperor">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="emperor-np"/>
+  </nps>
+ </type>
+ <type name="god">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="god-np"/>
+  </nps>
+ </type>
+ <type name="goddess">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="goddess-np"/>
+  </nps>
+ </type>
+ <type name="king">
+  <parents>
+   <parent name="person"/>
+  </parents>
+  <nps>
+   <np id="king-np"/>
+  </nps>
+ </type>
+ <type name="painter">
+  <parents>
+   <parent name="artist"/>
+  </parents>
+  <nps>
+   <np id="painter-np"/>
+  </nps>
+ </type>
+ <type name="potter">
+  <parents>
+   <parent name="artist"/>
+  </parents>
+  <nps>
+   <np id="potter-np"/>
+  </nps>
+ </type>
+ <type name="sculptor">
+  <parents>
+   <parent name="artist"/>
+  </parents>
+  <nps>
+   <np id="sculptor-np"/>
+  </nps>
+ </type>
+ <type name="nonroman-emperor">
+  <parents>
+   <parent name="emperor"/>
+  </parents>
+  <nps>
+   <np id="nonroman-emperor-np"/>
+  </nps>
+ </type>
+ <type name="roman-emperor">
+  <parents>
+   <parent name="emperor"/>
+  </parents>
+  <nps>
+   <np id="roman-emperor-np"/>
+  </nps>
+ </type>
+ <type name="style">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="style-np"/>
+  </nps>
+ </type>
+ <type name="technique">
+  <parents>
+   <parent name="basic"/>
+  </parents>
+  <nps>
+   <np id="technique-np"/>
+  </nps>
+ </type>
+ <type name="painting-technique">
+  <parents>
+   <parent name="technique"/>
+  </parents>
+  <nps>
+   <np id="painting-technique-np"/>
+  </nps>
+ </type>
+</types>

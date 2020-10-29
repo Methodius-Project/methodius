@@ -1,0 +1,11 @@
+<extra-rules>
+<extra-rule-lf add-to="typechange-3">
+  <lf>
+    <satop nomvar="E">
+      <diamond mode="ArgTwo">
+	<nomvar name="Z"/>
+      </diamond>
+    </satop>
+  </lf>
+</extra-rule-lf>
+</extra-rules>

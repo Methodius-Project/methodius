@@ -1,0 +1,213 @@
+export PATH=${PATH}:/group/project/comic/srilm-1.4.1/bin/i686
+
+export MANPATH=${MANPATH}:/group/project/comic/srilm-1.4.1/man
+
+
+ccg-build
+
+
+this movie sucks
+this movie really sucks
+I hated this movie
+I really hated this movie
+
+the movie was bad
+
+
+A: ``The story even the story such as it it was you know was kind of it's not
+very inventive the bad guy turned out to con everybody just to get them
+together blah blah blah that's kind of not exactly original is it really.''
+
+B: ``It's too clean and tidy.''
+
+A: ``I don't know whether the script was actually fairly kind of superficial
+or whether the director just kind of skimmed over the top of it just to get
+the action sequences out of it or something I don't know but there really
+wasn't a lot to it I don't think.''
+
+B: ``They certainly didn't spend any money on the script I don't think because
+that was just terrible.''
+
+A: ``The thing I did like though was the use of the kind of Moulin Rouge look
+to it at the beginning when they were portraying Victorian England.''
+
+B: ``It was colourful.''
+
+
+OpenCCG-Bugs:
+
+- exception when realizing an XML file with empty <target></target>
+
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:507)
+	at java.util.ArrayList.get(ArrayList.java:324)
+	at opennlp.ccg.ngrams.NgramScorer.getWordsToScore(NgramScorer.java:103)
+	at opennlp.ccg.ngrams.NgramPrecisionModel.initTargetNgrams(NgramPrecisionModel.java:143)
+	at opennlp.ccg.ngrams.NgramPrecisionModel.<init>(NgramPrecisionModel.java:94)
+	at opennlp.ccg.ngrams.NgramPrecisionModel.<init>(NgramPrecisionModel.java:78)
+	at opennlp.ccg.ngrams.NgramPrecisionModel.<init>(NgramPrecisionModel.java:69)
+	at opennlp.ccg.ngrams.NgramPrecisionModel.<init>(NgramPrecisionModel.java:51)
+	at opennlp.ccg.TextCCG.main(TextCCG.java:298)
+
+
+Adverb placement
+
+s\np/(s\np)
+
+- modifying an intransitive verb  s\np  OK
+  this movie really sucks
+
+- modifying a transitive verb  s\np/np
+  this movie really sucks
+
+- modifying an adjective  s\np  OK
+  this movie was really bad
+
+- modifying another adverb
+
+- modifying a whole sentence  s
+
+- modifying a prepositional phrase
+
+
+One possibility would be to just use s|s with no restrictions on the slash,
+but I have no idea how much this would overgenerate.
+
+Re intensifiers (modifier modifiers), it may be tricky to get these to work,
+if you need them, we should probably discuss what to do.
+
+
+Missing:
+
+- "the bad guy turned out to con everybody just to get them together blah blah
+  blah" (verbs with infinitival complements)
+- contractions ("it's")
+- coordination ("and", "or", "because", "but")
+- "the director just kind of skimmed over the top of it just to get the action
+  sequences out of it or something"
+- subordination
+
+Problematic:
+
+- negation in a sentence ... Polarity has to be inverted ...
+
+
+tccg> the story such_as_it_was you_know was kind_of not_very inventive .
+
+tccg> that is kind_of not_exactly original .
+
+tccg> is it really
+
+tccg> it is too clean .
+
+tccg> I_don_t_know_whether the script was actually fairly kind_of superficial .
+
+tccg> the thing_I_did_like_though was the use_of_the_kind_of_Moulin_Rouge_look_to_it at_the_beginning .
+
+tccg> it was colourful .
+
+
+the story such_as_it_was you_know was kind_of not_very inventive .
+3 parses found.
+
+Parse 1: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(s1 ^ story ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <HasProp>(m2:proposition ^ modifier) ^
+                <HasProp>(m3:proposition ^ modifier) ^
+                <HasProp>(m4:proposition ^ modifier) ^
+                <Prop>(g1 ^ good ^
+                       <Of>s1))
+
+
+that is kind_of not_exactly original .
+3 parses found.
+
+Parse 1: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>pres ^
+              <Arg>(t1 ^ that ^
+                    <num>sg) ^
+              <Prop>(g1:situation ^ good ^
+                     <HasProp>(m1:proposition ^ modifier) ^
+                     <HasProp>(m2:proposition ^ modifier) ^
+                     <Of>t1))
+
+
+is it really
+4 parses found.
+
+Parse 1: s/(s\!np) :
+  @b1:situation(be ^
+                <tense>pres ^
+                <Arg>(p1 ^ pro3n ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Prop>x1)
+
+
+it is too clean .
+2 parses found.
+
+Parse 1: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>pres ^
+              <Arg>(p1 ^ pro3n ^
+                    <num>sg) ^
+              <Prop>(g1:situation ^ good ^
+                     <HasProp>(m1:proposition ^ modifier) ^
+                     <Of>p1))
+
+
+I_don_t_know_whether the script was actually fairly kind_of superficial .
+4 parses found.
+
+Parse 1: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(s1 ^ script ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(s2:proposition ^ scomp) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Prop>(b2:situation ^ bad ^
+                       <HasProp>(m2:proposition ^ modifier) ^
+                       <HasProp>(m3:proposition ^ modifier) ^
+                       <Of>s1))
+
+
+the thing_I_did_like_though was the use_of_the_kind_of_Moulin_Rouge_look_to_it at_the_beginning .
+1 parse found.
+
+Parse: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(t1 ^ thing_I_did_like_though ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Pred>(u1 ^ use_of_the_kind_of_Moulin_Rouge_look_to_it ^
+                       <det>def ^
+                       <num>sg))
+
+
+it was colourful .
+1 parse found.
+
+Parse: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>past ^
+              <Arg>(p1 ^ pro3n ^
+                    <num>sg) ^
+              <Prop>(g1 ^ good ^
+                     <Of>p1))

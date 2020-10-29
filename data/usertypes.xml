@@ -1,0 +1,17 @@
+<usertypes>
+  <user name="child">
+  	<maximumfacts page="4" sentence="2"/>
+  	<contentpotential depth="5"/>
+  	<desc>user profile most suitable for a person up to 16 years old</desc>
+  </user>
+  <user name="adult">
+  	<maximumfacts page="8" sentence="4"/>
+  	<contentpotential depth="7"/>
+  	<desc>user profile most suitable for a non expert adult</desc>
+  </user>
+  <user name="expert">
+  	<maximumfacts page="24" sentence="4"/>
+  	<contentpotential depth="9"/>
+  	<desc>user profile most suitable for an expert in the field</desc>
+  </user>
+</usertypes>  	

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="test.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="test-lexicon.xml"/>
+  <morphology file="test-morph.xml"/>
+  <rules file="test-rules.xml"/>
+  <types file="test-types.xml"/>
+</grammar>

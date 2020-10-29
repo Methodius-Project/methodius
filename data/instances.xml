@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<def-objects>
+  <!-- test comment 15/06/15 to check svn commit -->
+  <!-- test comment 16/06/15 to check svn commit -->
+   <defobject type="region" is="pennsylvania">
+      <role filler="usa" slot="country"/>
+      <role slot="name" filler="pennsylvania-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-argos">
+      <role filler="argos" slot="city"/>
+      <role slot="name" filler="archaeological-argos-np"/>
+   </defobject>
+   <defobject type="material" is="bronze-material">
+      <role slot="name" filler="bronze-material-np"/>
+   </defobject>
+   <defobject type="city" is="philadelphia-usa">
+      <role filler="usa" slot="country"/>
+      <role slot="name" filler="philadelphia-usa-np"/>
+   </defobject>
+   <defobject type="donor" is="mantiklos">
+      <role slot="name" filler="mantiklos-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="material" is="wood-material">
+      <role slot="name" filler="wood-material-np"/>
+   </defobject>
+   <defobject type="city" is="florina">
+      <role filler="macedonia" slot="region"/>
+      <role slot="name" filler="florina-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-florina">
+      <role filler="florina" slot="city"/>
+      <role filler="macedonia" slot="region"/>
+      <role slot="name" filler="archaeological-florina-np"/>
+   </defobject>
+   <defobject type="marriage-cauldron" is="generic-marriage-cauldron">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-story" filler="generic-marriage-cauldron-exhibit-story"/>
+      <role slot="exhibit-definition" filler="generic-marriage-cauldron-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="national-copenhagen">
+      <role filler="copenhagen" slot="city"/>
+      <role slot="name" filler="national-copenhagen-np"/>
+      <role slot="shortname" filler="national-copenhagen-short-np"/>
+   </defobject>
+   <defobject type="city" is="amphipolis">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="amphipolis-np"/>
+   </defobject>
+   <defobject type="sculptor" is="polyklitus">
+      <role slot="name" filler="polyklitus-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="polyklitus-person-information"/>
+      <role slot="other-work" filler="polyklitus-other-work"/>
+      <role slot="person-story" filler="polyklitus-person-story"/>
+   </defobject>
+   <defobject type="city" is="croton">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="croton-np"/>
+      <role slot="location-information" filler="croton-location-information"/>
+   </defobject>
+   <defobject type="country" is="italy">
+      <role slot="name" filler="italy-np"/>
+   </defobject>
+   <defobject type="other-copy-type" is="other-copy"/>
+   <defobject type="material" is="clay-material">
+      <role slot="name" filler="clay-material-np"/>
+   </defobject>
+   <defobject type="league" is="aetolian-league">
+      <role slot="name" filler="aetolian-league-np"/>
+      <role slot="location-information" filler="aetolian-league-location-information"/>
+   </defobject>
+   <defobject type="government-department" is="hellenic-ministry-of-culture">
+      <role slot="name" filler="hellenic-ministry-of-culture-np"/>
+   </defobject>
+   <defobject type="city" is="rome">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="rome-np"/>
+   </defobject>
+   <defobject type="museum" is="rhodes-archaeological">
+      <role filler="rhodes" slot="island"/>
+      <role slot="name" filler="rhodes-archaeological-np"/>
+   </defobject>
+   <defobject type="region" is="boeotia">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="boeotia-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-olympia">
+      <role filler="olympia" slot="city"/>
+      <role slot="name" filler="archaeological-olympia-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-thessaloniki">
+      <role filler="thessaloniki" slot="city"/>
+      <role slot="name" filler="archaeological-thessaloniki-np"/>
+   </defobject>
+   <defobject type="archaeological-site" is="temple-sarapis">
+      <role filler="thessaloniki" slot="city"/>
+      <role slot="name" filler="temple-sarapis-np"/>
+   </defobject>
+   <defobject type="city" is="kavala">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="kavala-np"/>
+   </defobject>
+   <defobject type="city" is="korinth">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="korinth-np"/>
+   </defobject>
+   <defobject type="rhyton" is="exhibit9">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="musee-du-petit-palais" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role filler="painter-of-sotades" slot="painted-by"/>
+      <role filler="sotades" slot="potter-is"/>
+      <role slot="creation-time" filler="exhibit9-creation-time"/>
+      <role slot="exhibit-characteristics" filler="exhibit9-exhibit-characteristics"/>
+      <role slot="exhibit-form" filler="exhibit9-exhibit-form"/>
+   </defobject>
+   <defobject type="drachma" is="exhibit8">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="athens-agora-museum" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="silver-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit8-creation-time"/>
+      <role slot="exhibit-purpose" filler="exhibit8-exhibit-purpose"/>
+      <role slot="references" filler="exhibit8-references"/>
+      <role slot="exhibit-form" filler="exhibit8-exhibit-form"/>
+   </defobject>
+   <defobject type="imperial-portrait" is="exhibit7">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="archaeological-corinth" slot="current-location"/>
+      <role slot="creation-time" filler="exhibit7-creation-time"/>
+      <role filler="leucius-caesar" slot="exhibit-portrays"/>
+      <role slot="exhibit-form" filler="exhibit7-exhibit-form"/>
+   </defobject>
+   <defobject type="sculptor" is="aristocles">
+      <role slot="name" filler="aristocles-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="tetradrachm" is="exhibit6">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="athens-numismatic" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="silver-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit6-creation-time"/>
+      <role slot="references" filler="exhibit6-references"/>
+      <role slot="exhibit-form" filler="exhibit6-exhibit-form"/>
+   </defobject>
+   <defobject type="copy" is="generic-copy">
+      <role filler="T" slot="generic"/>
+   </defobject>
+   <defobject type="stater" is="exhibit5">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="athens-numismatic" slot="current-location"/>
+      <role filler="croton" slot="original-location"/>
+      <role filler="silver-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit5-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit5-exhibit-form"/>
+   </defobject>
+   <defobject type="statue" is="exhibit4">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-napoli" slot="current-location"/>
+      <role slot="exhibit-height" filler="exhibit4-exhibit-height"/>
+      <role filler="roman-copy" slot="copy-info"/>
+      <role filler="polyklitus" slot="sculpted-by"/>
+      <role slot="creation-time" filler="exhibit4-creation-time"/>
+   </defobject>
+   <defobject type="archaeological-site" is="sanctuary-zeus-olympia">
+      <role filler="olympia" slot="city"/>
+      <role slot="name" filler="sanctuary-zeus-olympia-np"/>
+      <role slot="shortname" filler="sanctuary-zeus-olympia-short-np"/>
+   </defobject>
+   <defobject type="hydria" is="exhibit3">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-florence" slot="current-location"/>
+<!--      <role filler="athens" slot="original-location"/>-->
+      <role filler="attica" slot="original-location"/>
+      <role filler="rich-style" slot="exhibit-style"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role filler="painter-of-meidias" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit3-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit3-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit3-exhibit-story"/>
+   </defobject>
+   <defobject type="kouros" is="exhibit2">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role slot="exhibit-height" filler="exhibit2-exhibit-height"/>
+      <role slot="creation-time" filler="exhibit2-creation-time"/>
+      <role slot="exhibit-purpose" filler="exhibit2-exhibit-purpose"/>
+      <role slot="references" filler="exhibit2-references"/>
+      <role slot="inscription-says" filler="exhibit2-inscription-says"/>
+      <role slot="exhibit-form" filler="exhibit2-exhibit-form"/>
+      <role slot="exhibit-story" filler="exhibit2-exhibit-story"/>
+   </defobject>
+   <defobject type="amphora" is="exhibit1">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="martin-von-wagner-museum" slot="current-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role filler="painter-of-kleofrades" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit1-creation-time"/>
+      <role slot="references" filler="exhibit1-references"/>
+      <role slot="exhibit-depicts" filler="exhibit1-exhibit-depicts"/>
+   </defobject>
+   <defobject type="king" is="alexander-the-great">
+      <role filler="macedonia" slot="ruler-of"/>
+      <role slot="name" filler="alexander-the-great-np"/>
+      <role slot="shortname" filler="alexander-the-great-short-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-story" filler="alexander-the-great-person-story"/>
+   </defobject>
+   <defobject type="king" is="fake-king">
+      <role filler="macedonia" slot="ruler-of"/>
+      <role slot="name" filler="fake-king-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="king" is="other-fake-king">
+      <role filler="macedonia" slot="ruler-of"/>
+      <role slot="name" filler="other-fake-king-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="region" is="ipeiros">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="ipeiros-np"/>
+   </defobject>
+   <defobject type="painter" is="painter-of-kleofrades">
+      <role slot="name" filler="painter-of-kleofrades-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="painter-of-kleofrades-person-information"/>
+   </defobject>
+   <defobject type="stamnos" is="generic-stamnos">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-stamnos-exhibit-definition"/>
+   </defobject>
+   <defobject type="city" is="athens">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="athens-np"/>
+   </defobject>
+   <defobject type="league" is="generic-league">
+      <role filler="T" slot="generic"/>
+      <role slot="location-definition" filler="generic-league-location-definition"/>
+   </defobject>
+   <defobject type="museum" is="museum-fur-kunst-hamb">
+      <role filler="hamburg" slot="city"/>
+      <role slot="name" filler="museum-fur-kunst-hamb-np"/>
+   </defobject>
+   <defobject type="museum" is="national-archaeological-athens">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="national-archaeological-athens-np"/>
+   </defobject>
+   <defobject type="city" is="patrae">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="patrae-np"/>
+   </defobject>
+   <defobject type="painting-technique" is="red-figure-technique">
+      <role slot="name" filler="red-figure-technique-np"/>
+      <role slot="technique-description" filler="red-figure-technique-technique-description"/>
+<!--      <role slot="opposite-technique" filler="black-figure-technique"/>-->
+   </defobject>
+   <defobject type="city" is="newyork">
+      <role filler="usa" slot="country"/>
+      <role slot="name" filler="newyork-np"/>
+   </defobject>
+   <defobject type="painting-technique" is="black-figure-technique">
+      <role slot="name" filler="black-figure-technique-np"/>
+      <role slot="opposite-technique" filler="red-figure-technique"/>
+   </defobject>
+   <defobject type="museum" is="archaeologico-taranto">
+      <role filler="taranto" slot="city"/>
+      <role slot="name" filler="archaeologico-taranto-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-kavala">
+      <role filler="kavala" slot="city"/>
+      <role slot="name" filler="archaeological-kavala-np"/>
+   </defobject>
+   <defobject type="tetradrachm" is="generic-tetradrachm">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-tetradrachm-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="national-archaeological-florence">
+      <role filler="florence" slot="city"/>
+      <role slot="name" filler="national-archaeological-florence-np"/>
+   </defobject>
+   <defobject type="god" is="apollo">
+      <role slot="name" filler="apollo-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="apollo-person-information"/>
+   </defobject>
+   <defobject type="city" is="taranto">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="taranto-np"/>
+   </defobject>
+   <defobject type="museum" is="acropolis-museum">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="acropolis-museum-np"/>
+   </defobject>
+   <defobject type="archaeological-site" is="agora-athens">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="agora-athens-np"/>
+   </defobject>
+   <defobject type="roman-copy-type" is="roman-copy"/>
+   <defobject type="donor" is="attalus">
+      <role slot="name" filler="attalus-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="archaeological-site" is="ismenion-thebes">
+      <role filler="thebes" slot="city"/>
+      <role slot="name" filler="ismenion-thebes-np"/>
+   </defobject>
+   <defobject type="painting-technique" is="west-sl-technique">
+      <role slot="name" filler="west-sl-technique-np"/>
+      <role slot="technique-description" filler="west-sl-technique-technique-description"/>
+   </defobject>
+   <defobject type="city" is="thessaloniki">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="thessaloniki-np"/>
+   </defobject>
+   <defobject type="government-department" is="soprinteendenza-firenze">
+      <role slot="name" filler="soprinteendenza-firenze-np"/>
+   </defobject>
+   <defobject type="painter" is="painter-of-dinos">
+      <role slot="name" filler="painter-of-dinos-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="city" is="wurzburg">
+      <role filler="germany" slot="country"/>
+      <role slot="name" filler="wurzburg-np"/>
+   </defobject>
+   <defobject type="kouros" is="generic-kouros">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-kouros-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="un-museum-pensylvania">
+      <role filler="philadelphia-usa" slot="city"/>
+      <role filler="pennsylvania" slot="region"/>
+      <role slot="name" filler="un-museum-pensylvania-np"/>
+   </defobject>
+   <defobject type="region" is="california">
+      <role filler="usa" slot="country"/>
+      <role slot="name" filler="california-np"/>
+   </defobject>
+   <defobject type="museum" is="getty-california">
+      <role filler="california" slot="region"/>
+      <role slot="name" filler="getty-california-np"/>
+      <role slot="shortname" filler="getty-california-short-np"/>
+   </defobject>
+   <defobject type="museum" is="arch-museo-napoli">
+      <role filler="napoli" slot="city"/>
+      <role slot="name" filler="arch-museo-napoli-np"/>
+   </defobject>
+   <defobject type="museum" is="athens-agora-museum">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="athens-agora-museum-np"/>
+   </defobject>
+   <defobject type="city" is="pergamos">
+      <role slot="name" filler="pergamos-np"/>
+   </defobject>
+   <defobject type="prochous" is="generic-prochous">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-prochous-exhibit-definition"/>
+   </defobject>
+   <defobject type="city" is="florence">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="florence-np"/>
+   </defobject>
+   <defobject type="city" is="copenhagen">
+      <role filler="denmark" slot="country"/>
+      <role slot="name" filler="copenhagen-np"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-corinth">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="archaeological-corinth-np"/>
+   </defobject>
+   <defobject type="painter" is="painter-of-achilles">
+      <role slot="name" filler="painter-of-achilles-np"/>
+   </defobject>
+   <defobject type="amphora-handle" is="exhibit50">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="thassos-archaeological" slot="current-location"/>
+      <role filler="rhodes" slot="original-location"/>
+      <role filler="clay-material" slot="made-of"/>
+      <role slot="exhibit-form" filler="exhibit50-exhibit-form"/>
+   </defobject>
+   <defobject type="archaeological-site" is="grave-warrior">
+      <role filler="argos" slot="city"/>
+      <role slot="name" filler="grave-warrior-np"/>
+      <role slot="shortname" filler="grave-warrior-short-np"/>
+   </defobject>
+   <defobject type="relief" is="generic-relief">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-relief-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-aquileia">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="archaeological-aquileia-np"/>
+   </defobject>
+   <defobject type="island" is="delos">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="delos-np"/>
+   </defobject>
+   <defobject type="museum" is="new-york-metropolitan-art">
+      <role filler="newyork" slot="city"/>
+      <role slot="name" filler="new-york-metropolitan-art-np"/>
+      <role slot="shortname" filler="new-york-metropolitan-art-short-np"/>
+   </defobject>
+   <defobject type="decorative-artefact" is="exhibit49">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="archaeological-thessaloniki" slot="current-location"/>
+      <role filler="vergina" slot="location-found"/>
+      <role filler="ivory-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit49-creation-time"/>
+      <role slot="exhibit-purpose" filler="exhibit49-exhibit-purpose"/>
+      <role slot="exhibit-form" filler="exhibit49-exhibit-form"/>
+   </defobject>
+   <defobject type="university" is="uniwurzburg">
+      <role filler="germany" slot="country"/>
+      <role slot="name" filler="uniwurzburg-np"/>
+   </defobject>
+   <defobject type="prochous" is="exhibit48">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="arch-mus-ioannina" slot="current-location"/>
+      <role filler="vitsa" slot="location-found"/>
+      <role filler="bronze-material" slot="made-of"/>
+      <role slot="references" filler="exhibit48-references"/>
+   </defobject>
+   <defobject type="stamnos" is="exhibit47">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="arch-museo-napoli" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="clay-material" slot="made-of"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role filler="painter-of-dinos" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit47-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit47-exhibit-depicts"/>
+   </defobject>
+   <defobject type="tetradrachm" is="exhibit46">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="athens-numismatic" slot="current-location"/>
+      <role filler="macedonia" slot="original-location"/>
+      <role filler="silver-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit46-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit46-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit46-exhibit-story"/>
+   </defobject>
+   <defobject type="figurine" is="exhibit45">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="archaeological-kavala" slot="current-location"/>
+      <role filler="amphipolis" slot="original-location"/>
+      <role filler="clay-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit45-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit45-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit45-exhibit-story"/>
+   </defobject>
+   <defobject type="panathenaic-amphora" is="exhibit44">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="getty-california" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role slot="creation-time" filler="exhibit44-creation-time"/>
+      <role slot="exhibit-story" filler="exhibit44-exhibit-story"/>
+   </defobject>
+   <defobject type="kylix" is="exhibit43">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="mfa" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit43-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit43-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit43-exhibit-story"/>
+   </defobject>
+   <defobject type="lekythos" is="exhibit42">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit42-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit42-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit42-exhibit-story"/>
+   </defobject>
+   <defobject type="city" is="napoli">
+      <role filler="italy" slot="country"/>
+      <role slot="name" filler="napoli-np"/>
+   </defobject>
+   <defobject type="lekythos" is="exhibit41">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit41-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit41-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit41-exhibit-story"/>
+   </defobject>
+   <defobject type="suit-of-armour" is="exhibit40">
+      <role filler="archaeological-argos" slot="current-location"/>
+      <role filler="argos" slot="location-found"/>
+      <role filler="bronze-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit40-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit40-exhibit-form"/>
+   </defobject>
+   <defobject type="historical-period" is="classical-period">
+      <role slot="historical-period-time" filler="classical-period-historical-period-time"/>
+      <role slot="name" filler="classical-period-np"/>
+      <role slot="historical-period-description" filler="classical-period-historical-period-description"/>
+   </defobject>
+   <defobject type="country" is="denmark">
+      <role slot="name" filler="denmark-np"/>
+   </defobject>
+   <defobject type="hydria-hadra" is="generic-hydria-hadra">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-hydria-hadra-exhibit-definition"/>
+   </defobject>
+   <defobject type="coin" is="exhibit39">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="athens-numismatic" slot="current-location"/>
+      <role filler="patrae" slot="original-location"/>
+      <role slot="creation-time" filler="exhibit39-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit39-exhibit-depicts"/>
+   </defobject>
+   <defobject type="helmet" is="exhibit38">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="archaeological-olympia" slot="current-location"/>
+      <role filler="sanctuary-zeus-olympia" slot="location-found"/>
+      <role filler="corinthian-type" slot="helmet-type"/>
+      <role slot="exhibit-characteristics" filler="exhibit38-exhibit-characteristics"/>
+      <role slot="inscription-says" filler="exhibit38-inscription-says"/>
+   </defobject>
+   <defobject type="white-lekythos" is="exhibit37">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="painter-of-achilles" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit37-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit37-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit37-exhibit-story"/>
+   </defobject>
+   <defobject type="kylix" is="exhibit36">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="museum-of-art-toledo" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit36-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit36-exhibit-depicts"/>
+   </defobject>
+   <defobject type="city" is="boston">
+      <role filler="usa" slot="country"/>
+      <role slot="name" filler="boston-np"/>
+   </defobject>
+   <defobject type="grave" is="exhibit35">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="athens" slot="location-found"/>
+      <role slot="creation-time" filler="exhibit35-creation-time"/>
+      <role slot="inscription-says" filler="exhibit35-inscription-says"/>
+      <role slot="exhibit-depicts" filler="exhibit35-exhibit-depicts"/>
+   </defobject>
+   <defobject type="other-copy-type" is="generic-other-copy-type">
+      <role filler="T" slot="generic"/>
+   </defobject>
+   <defobject type="relief" is="exhibit34">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-florence" slot="current-location"/>
+      <role filler="athens" slot="location-found"/>
+      <role slot="creation-time" filler="exhibit34-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit34-exhibit-depicts"/>
+   </defobject>
+   <defobject type="material" is="marble-material">
+      <role slot="name" filler="marble-material-np"/>
+   </defobject>
+   <defobject type="painting" is="exhibit33">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="cave-pitsa" slot="location-found"/>
+      <role filler="wood-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit33-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit33-exhibit-form"/>
+      <role slot="exhibit-depicts" filler="exhibit33-exhibit-depicts"/>
+   </defobject>
+   <defobject type="kantharos" is="generic-kantharos">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-kantharos-exhibit-definition"/>
+   </defobject>
+   <defobject type="figurine" is="exhibit32">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="national-copenhagen" slot="current-location"/>
+      <role filler="boeotia" slot="original-location"/>
+      <role filler="clay-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit32-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit32-exhibit-depicts"/>
+   </defobject>
+   <defobject type="relief" is="exhibit31">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="archaeologico-taranto" slot="current-location"/>
+      <role slot="creation-time" filler="exhibit31-creation-time"/>
+      <role slot="exhibit-purpose" filler="exhibit31-exhibit-purpose"/>
+      <role slot="exhibit-depicts" filler="exhibit31-exhibit-depicts"/>
+   </defobject>
+   <defobject type="potsherd" is="generic-potsherd">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-potsherd-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="arch-mus-ioannina">
+      <role filler="ioannina" slot="city"/>
+      <role filler="ipeiros" slot="region"/>
+      <role slot="name" filler="arch-mus-ioannina-np"/>
+   </defobject>
+   <defobject type="potsherd" is="exhibit30">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="athens-agora-museum" slot="current-location"/>
+      <role filler="agora-athens" slot="location-found"/>
+      <role slot="creation-time" filler="exhibit30-creation-time"/>
+   </defobject>
+   <defobject type="hydria" is="generic-hydria">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-hydria-exhibit-definition"/>
+   </defobject>
+   <defobject type="region" is="macedonia">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="macedonia-np"/>
+   </defobject>
+   <defobject type="country" is="greece">
+      <role slot="name" filler="greece-np"/>
+   </defobject>
+   <defobject type="style" is="corinthian-type">
+      <role slot="name" filler="corinthian-type-np"/>
+   </defobject>
+   <defobject type="city" is="paris">
+      <role filler="france" slot="country"/>
+      <role slot="name" filler="paris-np"/>
+   </defobject>
+   <defobject type="grave" is="exhibit29">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="archaeological-florina" slot="current-location"/>
+      <role filler="macedonia" slot="original-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit29-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit29-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit29-exhibit-story"/>
+   </defobject>
+   <defobject type="prochous" is="exhibit28">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="museum-fur-kunst-hamb" slot="current-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit28-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit28-exhibit-depicts"/>
+   </defobject>
+   <defobject type="earrings" is="exhibit27">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="argos" slot="location-found"/>
+      <role filler="gold-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit27-creation-time"/>
+      <role filler="potnia" slot="exhibit-portrays"/>
+      <role filler="pl" slot="number"/>
+      <role slot="exhibit-form" filler="exhibit27-exhibit-form"/>
+   </defobject>
+   <defobject type="kylix" is="generic-kylix">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-kylix-exhibit-definition"/>
+   </defobject>
+   <defobject type="country" is="germany">
+      <role slot="name" filler="germany-np"/>
+   </defobject>
+   <defobject type="museum" is="athens-numismatic">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="athens-numismatic-np"/>
+   </defobject>
+   <defobject type="relief" is="exhibit26">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="acropolis-museum" slot="current-location"/>
+      <role filler="acropolis" slot="location-found"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit26-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit26-exhibit-depicts"/>
+   </defobject>
+   <defobject type="relief" is="exhibit25">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="epigraphical-athens" slot="current-location"/>
+      <role slot="creation-time" filler="exhibit25-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit25-exhibit-depicts"/>
+   </defobject>
+   <defobject type="aryballos" is="exhibit24">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="archaeological-delos" slot="current-location"/>
+      <role filler="iraion-delos" slot="location-found"/>
+      <role filler="corinthian-type" slot="exhibit-style"/>
+      <role filler="black-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit24-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit24-exhibit-form"/>
+      <role slot="exhibit-story" filler="exhibit24-exhibit-story"/>
+   </defobject>
+   <defobject type="statue" is="exhibit23">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="mfa" slot="current-location"/>
+      <role filler="ismenion-thebes" slot="original-location"/>
+      <role filler="bronze-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit23-creation-time"/>
+      <role filler="apollo" slot="exhibit-portrays"/>
+      <role slot="inscription-says" filler="exhibit23-inscription-says"/>
+      <role slot="exhibit-form" filler="exhibit23-exhibit-form"/>
+   </defobject>
+   <defobject type="kylix" is="exhibit22">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="un-museum-pensylvania" slot="current-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role filler="eucharides" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit22-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit22-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit22-exhibit-story"/>
+   </defobject>
+   <defobject type="grave" is="exhibit21">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit21-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit21-exhibit-form"/>
+      <role slot="exhibit-depicts" filler="exhibit21-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit21-exhibit-story"/>
+   </defobject>
+   <defobject type="black-kantharos" is="exhibit20">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="archaeological-kavala" slot="current-location"/>
+      <role filler="amphipolis" slot="original-location"/>
+      <role filler="west-sl-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit20-creation-time"/>
+      <role slot="exhibit-story" filler="exhibit20-exhibit-story"/>
+   </defobject>
+   <defobject type="archaeological-site" is="iraion-delos">
+      <role filler="delos" slot="island"/>
+      <role slot="name" filler="iraion-delos-np"/>
+   </defobject>
+   <defobject type="city" is="argos">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="argos-np"/>
+   </defobject>
+   <defobject type="style" is="rich-style">
+      <role slot="name" filler="rich-style-np"/>
+      <role slot="shortname" filler="rich-style-short-np"/>
+      <role slot="style-description" filler="rich-style-style-description"/>
+   </defobject>
+   <defobject type="painter" is="eucharides">
+      <role slot="name" filler="eucharides-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="city" is="ioannina">
+      <role filler="ipeiros" slot="region"/>
+      <role slot="name" filler="ioannina-np"/>
+   </defobject>
+   <defobject type="archaeological-site" is="acropolis">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="acropolis-np"/>
+   </defobject>
+   <defobject type="museum" is="epigraphical-athens">
+      <role filler="athens" slot="city"/>
+      <role slot="name" filler="epigraphical-athens-np"/>
+   </defobject>
+   <defobject type="country" is="spain">
+      <role slot="name" filler="spain-np"/>
+   </defobject>
+   <defobject type="goddess" is="potnia">
+      <role slot="name" filler="potnia-np"/>
+      <role filler="female" slot="gender"/>
+      <role slot="person-information" filler="potnia-person-information"/>
+   </defobject>
+   <defobject type="archaeological-site" is="vergina">
+      <role filler="macedonia" slot="region"/>
+      <role slot="name" filler="vergina-np"/>
+   </defobject>
+   <defobject type="region" is="attica">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="attica-np"/>
+   </defobject>
+   <defobject type="complex-statue" is="exhibit19">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="nationale-romano-roma" slot="current-location"/>
+      <role filler="pergamos" slot="original-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role filler="roman-copy" slot="copy-info"/>
+      <role slot="creation-time" filler="exhibit19-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit19-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit19-exhibit-story"/>
+   </defobject>
+   <defobject type="panathenaic-amphora" is="exhibit18">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit18-creation-time"/>
+   </defobject>
+   <defobject type="imperial-portrait" is="exhibit17">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="archaeological-thessaloniki" slot="current-location"/>
+      <role filler="temple-sarapis" slot="original-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit17-creation-time"/>
+      <role filler="octavian-augustus" slot="exhibit-portrays"/>
+      <role slot="exhibit-form" filler="exhibit17-exhibit-form"/>
+      <role slot="exhibit-story" filler="exhibit17-exhibit-story"/>
+   </defobject>
+   <defobject type="relief" is="exhibit16">
+      <role filler="roman-period" slot="creation-period"/>
+      <role filler="archaeological-aquileia" slot="current-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit16-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit16-exhibit-depicts"/>
+   </defobject>
+   <defobject type="lekythos" is="exhibit15">
+      <role filler="archaic-period" slot="creation-period"/>
+      <role filler="new-york-metropolitan-art" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="black-figure-technique" slot="painting-technique-used"/>
+      <role filler="amasis" slot="painted-by"/>
+      <role slot="creation-time" filler="exhibit15-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit15-exhibit-depicts"/>
+   </defobject>
+   <defobject type="portrait" is="exhibit14">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="thassos-archaeological" slot="current-location"/>
+      <role filler="marble-material" slot="made-of"/>
+      <role filler="roman-copy" slot="copy-info"/>
+      <role filler="alexander-the-great" slot="exhibit-portrays"/>
+   </defobject>
+   <defobject type="hydria-hadra" is="exhibit13">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="rhodes-archaeological" slot="current-location"/>
+      <role filler="rhodes" slot="original-location"/>
+   </defobject>
+   <defobject type="painter" is="painter-of-sotades">
+      <role slot="name" filler="painter-of-sotades-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="portrait" is="exhibit12">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="new-york-metropolitan-art" slot="current-location"/>
+      <role slot="exhibit-height" filler="exhibit12-exhibit-height"/>
+<!--      <role filler="other-copy" slot="copy-info"/>-->
+      <role slot="creation-time" filler="exhibit12-creation-time"/>
+      <role slot="exhibit-depicts" filler="exhibit12-exhibit-depicts"/>
+      <role slot="exhibit-story" filler="exhibit12-exhibit-story"/>
+   </defobject>
+   <defobject type="stater" is="exhibit11">
+      <role filler="hellenistic-period" slot="creation-period"/>
+      <role filler="athens-numismatic" slot="current-location"/>
+      <role filler="aetolian-league" slot="original-location"/>
+      <role filler="gold-material" slot="made-of"/>
+      <role slot="creation-time" filler="exhibit11-creation-time"/>
+      <role slot="exhibit-form" filler="exhibit11-exhibit-form"/>
+   </defobject>
+   <defobject type="marriage-cauldron" is="exhibit10">
+      <role filler="classical-period" slot="creation-period"/>
+      <role filler="national-archaeological-athens" slot="current-location"/>
+      <role filler="attica" slot="original-location"/>
+      <role filler="red-figure-technique" slot="painting-technique-used"/>
+      <role slot="creation-time" filler="exhibit10-creation-time"/>
+      <role filler="meidias-style" slot="painting-style"/>
+      <role slot="exhibit-depicts" filler="exhibit10-exhibit-depicts"/>
+   </defobject>
+   <defobject type="island" is="rhodes">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="rhodes-np"/>
+   </defobject>
+   <defobject type="roman-emperor" is="leucius-caesar">
+      <role slot="name" filler="leucius-caesar-np"/>
+      <role slot="shortname" filler="leucius-caesar-short-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="historical-period" is="roman-period">
+      <role slot="historical-period-time" filler="roman-period-historical-period-time"/>
+      <role slot="name" filler="roman-period-np"/>
+      <role slot="historical-period-description" filler="roman-period-historical-period-description"/>
+   </defobject>
+   <defobject type="city" is="olympia">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="olympia-np"/>
+   </defobject>
+   <defobject type="earrings" is="generic-earrings">
+      <role filler="T" slot="generic"/>
+      <role filler="pl" slot="number"/>
+   </defobject>
+   <defobject type="imperial-portrait" is="generic-imperial-portrait">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-story" filler="generic-imperial-portrait-exhibit-story"/>
+   </defobject>
+   <defobject type="historical-period" is="archaic-period">
+      <role slot="historical-period-time" filler="archaic-period-historical-period-time"/>
+      <role slot="name" filler="archaic-period-np"/>
+      <role slot="historical-period-description" filler="archaic-period-historical-period-description"/>
+   </defobject>
+   <defobject type="coin" is="generic-coin">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-story" filler="generic-coin-exhibit-story"/>
+   </defobject>
+   <defobject type="museum" is="national-archaeological-napoli">
+      <role filler="napoli" slot="city"/>
+      <role slot="name" filler="national-archaeological-napoli-np"/>
+   </defobject>
+   <defobject type="city" is="hamburg">
+      <role filler="germany" slot="country"/>
+      <role slot="name" filler="hamburg-np"/>
+   </defobject>
+   <defobject type="historical-period" is="hellenistic-period">
+      <role slot="historical-period-time" filler="hellenistic-period-historical-period-time"/>
+      <role slot="name" filler="hellenistic-period-np"/>
+      <role slot="historical-period-description" filler="hellenistic-period-historical-period-description"/>
+   </defobject>
+   <defobject type="lekythos" is="generic-lekythos">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-lekythos-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="archaeological-delos">
+      <role filler="delos" slot="island"/>
+      <role slot="name" filler="archaeological-delos-np"/>
+   </defobject>
+   <defobject type="material" is="gold-material">
+      <role slot="name" filler="gold-material-np"/>
+   </defobject>
+   <defobject type="amphora" is="generic-amphora">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-amphora-exhibit-definition"/>
+   </defobject>
+   <defobject type="archaeological-site" is="cave-pitsa">
+      <role filler="korinth" slot="city"/>
+      <role slot="name" filler="cave-pitsa-np"/>
+      <role slot="shortname" filler="cave-pitsa-short-np"/>
+   </defobject>
+   <defobject type="city" is="thebes">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="thebes-np"/>
+   </defobject>
+   <defobject type="style" is="meidias-style">
+      <role slot="name" filler="meidias-style-np"/>
+   </defobject>
+   <defobject type="grave" is="generic-grave">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-grave-exhibit-definition"/>
+   </defobject>
+   <defobject type="painter" is="painter-of-meidias">
+      <role slot="name" filler="painter-of-meidias-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="painter-of-meidias-person-information"/>
+      <role slot="person-story" filler="painter-of-meidias-person-story"/>
+   </defobject>
+   <defobject type="museum" is="museum-of-art-toledo">
+      <role filler="toledo" slot="city"/>
+      <role slot="name" filler="museum-of-art-toledo-np"/>
+   </defobject>
+   <defobject type="vessel" is="generic-vessel">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-story" filler="generic-vessel-exhibit-story"/>
+   </defobject>
+   <defobject type="museum" is="nationale-romano-roma">
+      <role filler="rome" slot="city"/>
+      <role slot="name" filler="nationale-romano-roma-np"/>
+   </defobject>
+   <defobject type="archaeological-site" is="vitsa">
+      <role filler="ipeiros" slot="region"/>
+      <role slot="name" filler="vitsa-np"/>
+      <role slot="shortname" filler="vitsa-short-np"/>
+   </defobject>
+   <defobject type="archaeological-site" is="anavyssos">
+      <role filler="attica" slot="region"/>
+      <role slot="name" filler="anavyssos-np"/>
+   </defobject>
+   <defobject type="country" is="usa">
+      <role slot="name" filler="usa-np"/>
+   </defobject>
+   <defobject type="country" is="france">
+      <role slot="name" filler="france-np"/>
+   </defobject>
+   <defobject type="material" is="silver-material">
+      <role slot="name" filler="silver-material-np"/>
+   </defobject>
+   <defobject type="cauldron" is="generic-cauldron">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-cauldron-exhibit-definition"/>
+   </defobject>
+   <defobject type="aryballos" is="generic-aryballos">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-aryballos-exhibit-definition"/>
+   </defobject>
+   <defobject type="potter" is="sotades">
+      <role slot="name" filler="sotades-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="sotades-person-information"/>
+   </defobject>
+   <defobject type="material" is="ivory-material">
+      <role slot="name" filler="ivory-material-np"/>
+   </defobject>
+   <defobject type="painter" is="amasis">
+      <role slot="name" filler="amasis-np"/>
+      <role filler="male" slot="gender"/>
+      <role slot="person-information" filler="amasis-person-information"/>
+   </defobject>
+   <defobject type="city" is="toledo">
+      <role filler="spain" slot="country"/>
+      <role slot="name" filler="toledo-np"/>
+   </defobject>
+   <defobject type="amphora-handle" is="generic-amphora-handle">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-story" filler="generic-amphora-handle-exhibit-story"/>
+   </defobject>
+   <defobject type="museum" is="musee-du-petit-palais">
+      <role filler="paris" slot="city"/>
+      <role slot="name" filler="musee-du-petit-palais-np"/>
+   </defobject>
+   <defobject type="rhyton" is="generic-rhyton">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-rhyton-exhibit-definition"/>
+   </defobject>
+   <defobject type="panathenaic-amphora" is="generic-panathenaic-amphora">
+      <role filler="T" slot="generic"/>
+      <role slot="exhibit-definition" filler="generic-panathenaic-amphora-exhibit-definition"/>
+   </defobject>
+   <defobject type="museum" is="mfa">
+      <role filler="boston" slot="city"/>
+      <role slot="name" filler="mfa-np"/>
+      <role slot="shortname" filler="mfa-short-np"/>
+   </defobject>
+   <defobject type="roman-emperor" is="octavian-augustus">
+      <role slot="name" filler="octavian-augustus-np"/>
+      <role slot="shortname" filler="octavian-augustus-short-np"/>
+      <role filler="male" slot="gender"/>
+   </defobject>
+   <defobject type="museum" is="martin-von-wagner-museum">
+      <role filler="wurzburg" slot="city"/>
+      <role slot="name" filler="martin-von-wagner-museum-np"/>
+   </defobject>
+   <defobject type="museum" is="thassos-archaeological">
+      <role filler="greece" slot="country"/>
+      <role slot="name" filler="thassos-archaeological-np"/>
+   </defobject>
+   <defobject type="roman-copy-type" is="generic-roman-copy-type">
+      <role filler="T" slot="generic"/>
+   </defobject>
+</def-objects>

@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<significances>
+  <predicate-significances>
+    <predicate-significance for-predicate="type">
+      <for-type name="basic">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="type">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="9"/>
+	<significance user-type="expert" val="9"/>
+	<significance user-type="child" val="9"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="type">
+      <for-type name="person">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="type">
+      <for-type name="painter">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="type">
+      <for-type name="king">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="opposite-technique">
+      <for-type name="technique">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="technique-description">
+      <for-type name="technique">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="creation-period">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="current-location">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="2"/>
+	<significance user-type="expert" val="2"/>
+	<significance user-type="child" val="2"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="location-found">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="original-location">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="made-of">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="7"/>
+	<significance user-type="expert" val="7"/>
+	<significance user-type="child" val="7"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-height">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="creation-time">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-form">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-purpose">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-depicts">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-portrays">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="6"/>
+	<significance user-type="expert" val="6"/>
+	<significance user-type="child" val="6"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-characteristics">
+      <for-type name="">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="copy-info">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="donate-by">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="references">
+      <for-type name="">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="inscription-says">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-story">
+      <for-type name="">
+	<significance user-type="adult" val="2"/>
+	<significance user-type="expert" val="2"/>
+	<significance user-type="child" val="2"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="painting-style">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="3"/>
+	<significance user-type="expert" val="3"/>
+	<significance user-type="child" val="3"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-definition">
+      <for-type name="exhibit">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="ruler-of">
+      <for-type name="king">
+	<significance user-type="adult" val="6"/>
+	<significance user-type="expert" val="6"/>
+	<significance user-type="child" val="6"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="person-information">
+      <for-type name="person">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="person-country">
+      <for-type name="person">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="other-work">
+      <for-type name="">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="person-story">
+      <for-type name="person">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="university">
+      <for-type name="museum">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="city">
+      <for-type name="museum">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="city">
+      <for-type name="location">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="region">
+      <for-type name="location">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="country">
+      <for-type name="location">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="island">
+      <for-type name="museum">
+	<significance user-type="adult" val="0"/>
+	<significance user-type="expert" val="0"/>
+	<significance user-type="child" val="0"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="island">
+      <for-type name="location">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="location-information">
+      <for-type name="">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="location-definition">
+      <for-type name="">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="created-by">
+      <for-type name="relief">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="sculpted-by">
+      <for-type name="statue">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-shows">
+      <for-type name="statue">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="style-time">
+      <for-type name="style">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="style-description">
+      <for-type name="style">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="helmet-type">
+      <for-type name="helmet">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="exhibit-style">
+      <for-type name="vessel">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="painting-technique-used">
+      <for-type name="vessel">
+	<significance user-type="adult" val="4"/>
+	<significance user-type="expert" val="4"/>
+	<significance user-type="child" val="4"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="painted-by">
+      <for-type name="vessel">
+	<significance user-type="adult" val="2"/>
+	<significance user-type="expert" val="2"/>
+	<significance user-type="child" val="2"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="potter-is">
+      <for-type name="vessel">
+	<significance user-type="adult" val="5"/>
+	<significance user-type="expert" val="5"/>
+	<significance user-type="child" val="5"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="historical-period-description">
+      <for-type name="historical-period">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+    <predicate-significance for-predicate="historical-period-time">
+      <for-type name="historical-period">
+	<significance user-type="adult" val="1"/>
+	<significance user-type="expert" val="1"/>
+	<significance user-type="child" val="1"/>
+      </for-type>
+    </predicate-significance>
+  </predicate-significances>
+  <expression-significances>
+    <expression-significance for-expression="current-location1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="current-location2">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="current-location3">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="original-location1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="original-location2">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="exhibit-depicts1">
+      <significance user-type="adult" val="2"/>
+      <significance user-type="expert" val="2"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+    <expression-significance for-expression="exhibit-depicts2">
+      <significance user-type="adult" val="2"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="exhibit-depicts3">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="2"/>
+    </expression-significance>
+    <expression-significance for-expression="copy-info1">
+      <significance user-type="adult" val="0"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+    <expression-significance for-expression="copy-info2">
+      <significance user-type="adult" val="0"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+    <expression-significance for-expression="copy-info3">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="inscription-says1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="inscription-says2">
+      <significance user-type="adult" val="0"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+    <expression-significance for-expression="ruler-of1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="ruler-of2">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="painting-technique-used1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="painting-technique-used2">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="painted-by1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="painted-by2">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="historical-period-time1">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </expression-significance>
+    <expression-significance for-expression="historical-period-time2">
+      <significance user-type="adult" val="0"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+    <expression-significance for-expression="historical-period-time3">
+      <significance user-type="adult" val="0"/>
+      <significance user-type="expert" val="0"/>
+      <significance user-type="child" val="0"/>
+    </expression-significance>
+  </expression-significances>
+  <np-significances>
+    <np-significance for-np="vessel-np">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </np-significance>
+    <np-significance for-np="pot-np">
+      <significance user-type="adult" val="1"/>
+      <significance user-type="expert" val="1"/>
+      <significance user-type="child" val="1"/>
+    </np-significance>
+  </np-significances>
+</significances>

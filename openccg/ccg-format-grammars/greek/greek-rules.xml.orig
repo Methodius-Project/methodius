@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules name="greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../rules.xsd">
+  <typechanging name="typechange-1">
+    <arg>
+      <complexcat>
+        <atomcat type="s">
+          <fs id="5"/>
+        </atomcat>
+        <slash dir="\" mode="&lt;"/>
+        <atomcat type="dp">
+          <fs id="2">
+            <feat attr="CASE" val="nom"/>
+          </fs>
+        </atomcat>
+      </complexcat>
+    </arg>
+    <result>
+      <atomcat type="s">
+        <fs id="5"/>
+      </atomcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-2">
+    <arg>
+      <complexcat>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="GENDER">
+              <featvar name="GENDER"/>
+            </feat>
+            <feat attr="NUMBER">
+              <featvar name="NUMBER"/>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash/>
+        <dollar name="1"/>
+      </complexcat>
+    </arg>
+    <result>
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="GENDER">
+              <featvar name="GENDER"/>
+            </feat>
+            <feat attr="NUMBER">
+              <featvar name="NUMBER"/>
+            </feat>
+            <feat attr="DETART" val="-det"/>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash/>
+        <dollar name="1"/>
+      </complexcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-3">
+    <arg>
+      <atomcat type="ip">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="D"/>
+            </lf>
+          </feat>
+          <feat attr="DETART" val="-det"/>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <atomcat type="dp1">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="D"/>
+            </lf>
+          </feat>
+          <feat attr="DETART" val="-det"/>
+        </fs>
+      </atomcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-4">
+    <arg>
+      <atomcat type="dp1">
+        <fs id="2"/>
+      </atomcat>
+    </arg>
+    <result>
+      <atomcat type="dp">
+        <fs id="2"/>
+      </atomcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-5">
+    <arg>
+      <atomcat type="dp">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+          <feat attr="CASE" val="gen"/>
+          <feat attr="PHON" val="strong"/>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+      </complexcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-6">
+    <arg>
+      <atomcat type="dp">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+          <feat attr="CASE" val="gen"/>
+          <feat attr="PHON" val="weak"/>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+        <atomcat type="dp">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+      </complexcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-7">
+    <arg>
+      <atomcat type="pp">
+        <fs>
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="dp1">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+            <feat attr="PHON" val="strong"/>
+          </fs>
+        </atomcat>
+      </complexcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-8">
+    <arg>
+      <atomcat type="dp">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+          <feat attr="CASE" val="gen"/>
+          <feat attr="PHON" val="weak"/>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+        <atomcat type="ip">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="D"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="dp1">
+          <fs/>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <complexcat>
+          <atomcat type="ip">
+            <fs id="1">
+              <feat attr="index">
+                <lf>
+                  <nomvar name="D"/>
+                </lf>
+              </feat>
+            </fs>
+          </atomcat>
+          <slash dir="/" mode="&gt;"/>
+          <atomcat type="dp1">
+            <fs/>
+          </atomcat>
+        </complexcat>
+      </complexcat>
+    </result>
+  </typechanging>
+  <application dir="forward"/>
+  <application dir="backward"/>
+  <composition harmonic="true" dir="forward"/>
+  <composition harmonic="true" dir="backward"/>
+  <substitution harmonic="true" dir="forward"/>
+  <substitution harmonic="true" dir="backward"/>
+  <composition harmonic="false" dir="forward"/>
+  <composition harmonic="false" dir="backward"/>
+  <substitution harmonic="false" dir="forward"/>
+  <substitution harmonic="false" dir="backward"/>
+</rules>

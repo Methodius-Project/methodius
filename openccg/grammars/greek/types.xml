@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types name="greek.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../types.xsd">
+  <type name="case-vals"/>
+  <type name="nom" parents="case-vals"/>
+  <type name="gen" parents="case-vals"/>
+  <type name="acc" parents="case-vals"/>
+  <type name="pers-vals"/>
+  <type name="1st" parents="pers-vals"/>
+  <type name="2nd" parents="pers-vals"/>
+  <type name="3rd" parents="pers-vals"/>
+  <type name="gender-vals"/>
+  <type name="masc" parents="gender-vals"/>
+  <type name="fem" parents="gender-vals"/>
+  <type name="neut" parents="gender-vals"/>
+  <type name="det-vals"/>
+  <type name="def" parents="det-vals"/>
+  <type name="indef" parents="det-vals"/>
+  <type name="dem-prox" parents="det-vals"/>
+  <type name="dem-nonprox" parents="det-vals"/>
+<!--  <type name="NUMBER"/>
+  <type name="sing" parents="NUMBER"/>
+  <type name="plur" parents="NUMBER"/>-->
+  <type name="DETART"/>
+  <type name="+det" parents="DETART"/>
+  <type name="-det" parents="DETART"/>
+  <type name="POL"/>
+  <type name="monodef" parents="POL"/>
+  <type name="polydef" parents="POL"/>
+  <type name="num-vals"/>
+  <type name="sg" parents="num-vals"/>
+  <type name="pl" parents="num-vals"/>
+  <type name="tense-vals"/>
+  <type name="past" parents="tense-vals"/>
+  <type name="pres" parents="tense-vals"/>
+  <type name="ontology"/>
+  <type name="sem-obj" parents="ontology"/>
+  <type name="phys-obj" parents="sem-obj"/>
+  <type name="attribute" parents="sem-obj"/>
+  <type name="place" parents="sem-obj"/>
+  <type name="situation" parents="sem-obj"/>
+  <type name="animate-being" parents="phys-obj"/>
+  <type name="thing" parents="phys-obj"/>
+  <type name="person" parents="animate-being"/>
+  <type name="animal" parents="animate-being"/>
+  <type name="exhibit" parents="thing"/>
+  <type name="phys-attribute" parents="attribute"/>
+  <type name="dative-attribute" parents="attribute"/>
+  <type name="temporal-attribute" parents="attribute"/>
+  <type name="locative-attribute" parents="attribute"/>
+  <type name="colour" parents="phys-attribute"/>
+  <type name="size" parents="phys-attribute"/>
+  <type name="style" parents="phys-attribute"/>
+  <type name="city" parents="place"/>
+  <type name="region" parents="place"/>
+  <type name="change" parents="situation"/>
+  <type name="state" parents="situation"/>
+  <type name="action" parents="change"/>
+  <type name="DEF"/>
+  <type name="+def" parents="DEF"/>
+  <type name="-def" parents="DEF"/>
+  <type name="PHON"/>
+  <type name="weak" parents="PHON"/>
+  <type name="strong" parents="PHON"/>
+</types>

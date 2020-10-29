@@ -1,0 +1,352 @@
+Coverage CrAg OpenCCG grammar, 2004-12-10
+=========================================
+
+Goal:
+
+A: ``The story even the story such as it it was you know was kind of it's not
+very inventive the bad guy turned out to con everybody just to get them
+together blah blah blah that's kind of not exactly original is it really.''
+
+B: ``It's too clean and tidy.''
+
+A: ``I don't know whether the script was actually fairly kind of superficial
+or whether the director just kind of skimmed over the top of it just to get
+the action sequences out of it or something I don't know but there really
+wasn't a lot to it I don't think.''
+
+B: ``They certainly didn't spend any money on the script I don't think because
+that was just terrible.''
+
+A: ``The thing I did like though was the use of the kind of Moulin Rouge look
+to it at the beginning when they were portraying Victorian England.''
+
+B: ``It was colourful.''
+
+
+
+Missing:
+
+- "the bad guy turned out to con everybody just to get them together blah blah
+  blah" (verbs with infinitival complements)
+- contractions ("it's")
+- coordination ("and", "or", "because", "but")
+- "the director just kind of skimmed over the top of it just to get the action
+  sequences out of it or something"
+- subordination
+
+Problematic:
+
+- negation in a sentence ... Polarity has to be inverted ...
+
+
+
+tccg> the story such_as_it_was you_know was kind_of not_very inventive .
+
+tccg> that is kind_of not_exactly original .
+
+tccg> is it really
+
+tccg> it is too clean .
+
+tccg> I_don_t_know_whether the script was actually fairly kind_of superficial .
+
+tccg> the thing_I_did_like_though was the use_of_the_kind_of_Moulin_Rouge_look_to_it at_the_beginning .
+
+tccg> it was colourful .
+
+
+
+the story such_as_it_was you_know was kind_of not_very inventive .
+3 parses found.
+
+Parse 1: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(s1 ^ story ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <HasProp>(m2:proposition ^ modifier) ^
+                <HasProp>(m3:proposition ^ modifier) ^
+                <HasProp>(m4:proposition ^ modifier) ^
+                <Prop>(g1 ^ good ^
+                       <Of>s1))
+
+
+that is kind_of not_exactly original .
+3 parses found.
+
+Parse 1: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>pres ^
+              <Arg>(t1 ^ that ^
+                    <num>sg) ^
+              <Prop>(g1:situation ^ good ^
+                     <HasProp>(m1:proposition ^ modifier) ^
+                     <HasProp>(m2:proposition ^ modifier) ^
+                     <Of>t1))
+
+
+is it really
+4 parses found.
+
+Parse 1: s/(s\!np) :
+  @b1:situation(be ^
+                <tense>pres ^
+                <Arg>(p1 ^ pro3n ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Prop>x1)
+
+
+it is too clean .
+2 parses found.
+
+Parse 1: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>pres ^
+              <Arg>(p1 ^ pro3n ^
+                    <num>sg) ^
+              <Prop>(g1:situation ^ good ^
+                     <HasProp>(m1:proposition ^ modifier) ^
+                     <Of>p1))
+
+
+I_don_t_know_whether the script was actually fairly kind_of superficial .
+4 parses found.
+
+Parse 1: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(s1 ^ script ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(s2:proposition ^ scomp) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Prop>(b2:situation ^ bad ^
+                       <HasProp>(m2:proposition ^ modifier) ^
+                       <HasProp>(m3:proposition ^ modifier) ^
+                       <Of>s1))
+
+
+the thing_I_did_like_though was the use_of_the_kind_of_Moulin_Rouge_look_to_it at_the_beginning .
+1 parse found.
+
+Parse: sent :
+  @b1:situation(be ^
+                <mood>dcl ^
+                <tense>past ^
+                <Arg>(t1 ^ thing_I_did_like_though ^
+                      <det>def ^
+                      <num>sg) ^
+                <HasProp>(m1:proposition ^ modifier) ^
+                <Pred>(u1 ^ use_of_the_kind_of_Moulin_Rouge_look_to_it ^
+                       <det>def ^
+                       <num>sg))
+
+
+it was colourful .
+1 parse found.
+
+Parse: sent :
+  @b1:sem-obj(be ^
+              <mood>dcl ^
+              <tense>past ^
+              <Arg>(p1 ^ pro3n ^
+                    <num>sg) ^
+              <Prop>(g1 ^ good ^
+                     <Of>p1))
+
+
+
+tccg> the movie was really bad .
+the movie was really bad .
+2 parses found.
+
+Parse 1: sent
+tccg> :r
+:r
+[1.000] the movie was really bad . :- sent
+[0.503] the movie was really superficial . :- sent
+[0.503] the movie was really terrible . :- sent
+[0.503] the film was really bad . :- sent
+[0.398] the movie was actually bad . :- sent
+[0.398] the movie was not_exactly bad . :- sent
+[0.398] the movie was such_as_it_was bad . :- sent
+[0.398] the movie was not_very bad . :- sent
+[0.398] the movie was you_know bad . :- sent
+[0.398] the movie was kind_of bad . :- sent
+[0.398] the movie was too bad . :- sent
+[0.398] the movie was certainly bad . :- sent
+[0.398] the movie was at_the_beginning bad . :- sent
+[0.398] the movie was blah_blah_blah bad . :- sent
+[0.398] the movie was just bad . :- sent
+[0.398] the movie was I_don_t_know bad . :- sent
+[0.398] the movie was fairly bad . :- sent
+[0.398] the movie was I_don_t_think bad . :- sent
+[0.340] the movie was bad really . :- sent
+[0.332] the movie was superficial really . :- sent
+[0.332] the movie was terrible really . :- sent
+[0.332] the movie was bad actually . :- sent
+[0.332] the movie was bad not_exactly . :- sent
+[0.332] the movie was bad such_as_it_was . :- sent
+[0.332] the movie was bad not_very . :- sent
+[0.332] the movie was bad you_know . :- sent
+[0.332] the movie was bad kind_of . :- sent
+[0.332] the movie was bad too . :- sent
+[0.332] the movie was bad certainly . :- sent
+[0.332] the movie was bad at_the_beginning . :- sent
+[0.332] the movie was bad blah_blah_blah . :- sent
+[0.332] the movie was bad just . :- sent
+[0.332] the movie was bad I_don_t_know . :- sent
+[0.332] the movie was bad fairly . :- sent
+[0.332] the movie was bad I_don_t_think . :- sent
+[0.325] the movie was actually superficial . :- sent
+[0.325] the movie was actually terrible . :- sent
+[0.325] the movie was not_exactly superficial . :- sent
+[0.325] the movie was not_exactly terrible . :- sent
+[0.325] the movie was such_as_it_was superficial . :- sent
+[0.325] the movie was such_as_it_was terrible . :- sent
+[0.325] the movie was not_very superficial . :- sent
+[0.325] the movie was not_very terrible . :- sent
+[0.325] the movie was you_know superficial . :- sent
+[0.325] the movie was you_know terrible . :- sent
+[0.325] the movie was kind_of superficial . :- sent
+[0.325] the movie was kind_of terrible . :- sent
+[0.325] the movie was too superficial . :- sent
+[0.325] the movie was too terrible . :- sent
+[0.325] the movie was certainly superficial . :- sent
+[0.325] the movie was certainly terrible . :- sent
+[0.325] the movie was at_the_beginning superficial . :- sent
+[0.325] the movie was at_the_beginning terrible . :- sent
+[0.325] the movie was blah_blah_blah superficial . :- sent
+[0.325] the movie was blah_blah_blah terrible . :- sent
+[0.325] the movie was just superficial . :- sent
+[0.325] the movie was just terrible . :- sent
+[0.325] the movie was I_don_t_know superficial . :- sent
+[0.325] the movie was I_don_t_know terrible . :- sent
+[0.325] the movie was fairly superficial . :- sent
+[0.325] the movie was fairly terrible . :- sent
+[0.325] the movie was I_don_t_think superficial . :- sent
+[0.325] the movie was I_don_t_think terrible . :- sent
+[0.325] the movie was superficial actually . :- sent
+[0.325] the movie was terrible actually . :- sent
+[0.325] the movie was superficial not_exactly . :- sent
+[0.325] the movie was terrible not_exactly . :- sent
+[0.325] the movie was superficial such_as_it_was . :- sent
+[0.325] the movie was terrible such_as_it_was . :- sent
+[0.325] the movie was superficial not_very . :- sent
+[0.325] the movie was terrible not_very . :- sent
+[0.325] the movie was superficial you_know . :- sent
+[0.325] the movie was terrible you_know . :- sent
+[0.325] the movie was superficial kind_of . :- sent
+[0.325] the movie was terrible kind_of . :- sent
+[0.325] the movie was superficial too . :- sent
+[0.325] the movie was terrible too . :- sent
+[0.325] the movie was superficial certainly . :- sent
+[0.325] the movie was terrible certainly . :- sent
+[0.325] the movie was superficial at_the_beginning . :- sent
+[0.325] the movie was terrible at_the_beginning . :- sent
+[0.325] the movie was superficial blah_blah_blah . :- sent
+[0.325] the movie was terrible blah_blah_blah . :- sent
+[0.325] the movie was superficial just . :- sent
+[0.325] the movie was terrible just . :- sent
+[0.325] the movie was superficial I_don_t_know . :- sent
+[0.325] the movie was terrible I_don_t_know . :- sent
+[0.325] the movie was superficial fairly . :- sent
+[0.325] the movie was terrible fairly . :- sent
+[0.325] the movie was superficial I_don_t_think . :- sent
+[0.325] the movie was terrible I_don_t_think . :- sent
+[0.155] the film was actually bad . :- sent
+[0.155] the film was not_exactly bad . :- sent
+[0.155] the film was such_as_it_was bad . :- sent
+[0.155] the film was not_very bad . :- sent
+[0.155] the film was you_know bad . :- sent
+[0.155] the film was kind_of bad . :- sent
+[0.155] the film was too bad . :- sent
+[0.155] the film was certainly bad . :- sent
+[0.155] the film was at_the_beginning bad . :- sent
+[0.155] the film was blah_blah_blah bad . :- sent
+[0.155] the film was just bad . :- sent
+[0.155] the film was I_don_t_know bad . :- sent
+[0.155] the film was fairly bad . :- sent
+[0.155] the film was I_don_t_think bad . :- sent
+[0.109] the film was really superficial . :- sent
+[0.109] the film was really terrible . :- sent
+[0.096] the film was bad really . :- sent
+[0.089] the film was superficial really . :- sent
+[0.089] the film was terrible really . :- sent
+[0.089] the film was bad actually . :- sent
+[0.089] the film was bad not_exactly . :- sent
+[0.089] the film was bad such_as_it_was . :- sent
+[0.089] the film was bad not_very . :- sent
+[0.089] the film was bad you_know . :- sent
+[0.089] the film was bad kind_of . :- sent
+[0.089] the film was bad too . :- sent
+[0.089] the film was bad certainly . :- sent
+[0.089] the film was bad at_the_beginning . :- sent
+[0.089] the film was bad blah_blah_blah . :- sent
+[0.089] the film was bad just . :- sent
+[0.089] the film was bad I_don_t_know . :- sent
+[0.089] the film was bad fairly . :- sent
+[0.089] the film was bad I_don_t_think . :- sent
+[0.081] the film was actually superficial . :- sent
+[0.081] the film was actually terrible . :- sent
+[0.081] the film was not_exactly superficial . :- sent
+[0.081] the film was not_exactly terrible . :- sent
+[0.081] the film was such_as_it_was superficial . :- sent
+[0.081] the film was such_as_it_was terrible . :- sent
+[0.081] the film was not_very superficial . :- sent
+[0.081] the film was not_very terrible . :- sent
+[0.081] the film was you_know superficial . :- sent
+[0.081] the film was you_know terrible . :- sent
+[0.081] the film was kind_of superficial . :- sent
+[0.081] the film was kind_of terrible . :- sent
+[0.081] the film was too superficial . :- sent
+[0.081] the film was too terrible . :- sent
+[0.081] the film was certainly superficial . :- sent
+[0.081] the film was certainly terrible . :- sent
+[0.081] the film was at_the_beginning superficial . :- sent
+[0.081] the film was at_the_beginning terrible . :- sent
+[0.081] the film was blah_blah_blah superficial . :- sent
+[0.081] the film was blah_blah_blah terrible . :- sent
+[0.081] the film was just superficial . :- sent
+[0.081] the film was just terrible . :- sent
+[0.081] the film was I_don_t_know superficial . :- sent
+[0.081] the film was I_don_t_know terrible . :- sent
+[0.081] the film was fairly superficial . :- sent
+[0.081] the film was fairly terrible . :- sent
+[0.081] the film was I_don_t_think superficial . :- sent
+[0.081] the film was I_don_t_think terrible . :- sent
+[0.081] the film was superficial actually . :- sent
+[0.081] the film was terrible actually . :- sent
+[0.081] the film was superficial not_exactly . :- sent
+[0.081] the film was terrible not_exactly . :- sent
+[0.081] the film was superficial such_as_it_was . :- sent
+[0.081] the film was terrible such_as_it_was . :- sent
+[0.081] the film was superficial not_very . :- sent
+[0.081] the film was terrible not_very . :- sent
+[0.081] the film was superficial you_know . :- sent
+[0.081] the film was terrible you_know . :- sent
+[0.081] the film was superficial kind_of . :- sent
+[0.081] the film was terrible kind_of . :- sent
+[0.081] the film was superficial too . :- sent
+[0.081] the film was terrible too . :- sent
+[0.081] the film was superficial certainly . :- sent
+[0.081] the film was terrible certainly . :- sent
+[0.081] the film was superficial at_the_beginning . :- sent
+[0.081] the film was terrible at_the_beginning . :- sent
+[0.081] the film was superficial blah_blah_blah . :- sent
+[0.081] the film was terrible blah_blah_blah . :- sent
+[0.081] the film was superficial just . :- sent
+[0.081] the film was terrible just . :- sent
+[0.081] the film was superficial I_don_t_know . :- sent
+[0.081] the film was terrible I_don_t_know . :- sent
+[0.081] the film was superficial fairly . :- sent
+[0.081] the film was terrible fairly . :- sent
+[0.081] the film was superficial I_don_t_think . :- sent
+[0.081] the film was terrible I_don_t_think . :- sent

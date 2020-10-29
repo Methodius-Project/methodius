@@ -1,0 +1,166 @@
+Grammar Family Overview
+=======================
+
+Pronoun
+
+Parse 1: np<1>{index=X_0:animate-being, num=NUM} :
+  @p1:animate-being(pro1 ^
+                    <num>sg)
+------------------------------
+(lex)  I :- np<1>{index=X_0:animate-being, num=NUM} : (@X_0:animate-being(pro1) ^ @X_0:animate-being(<num>sg))
+
+Parse 2: s<2>/@i(s<2>\@inp<1>{index=X_0:animate-being, num=NUM}) :
+  @p1:animate-being(pro1 ^
+                    <num>sg)
+------------------------------
+(lex)  I :- np<1>{index=X_0:animate-being, num=NUM} : (@X_0:animate-being(pro1) ^ @X_0:animate-being(<num>sg))
+(>T)   I :- s<2>/@i(s<2>\@inp<1>{index=X_0:animate-being, num=NUM}) : (@X_0:animate-being(pro1) ^ @X_0:animate-being(<num>sg))
+
+Parse 3: s<3>\@i(s<3>/@inp<1>{index=X_0:animate-being, num=NUM}) :
+  @p1:animate-being(pro1 ^
+                    <num>sg)
+------------------------------
+(lex)  I :- np<1>{index=X_0:animate-being, num=NUM} : (@X_0:animate-being(pro1) ^ @X_0:animate-being(<num>sg))
+(<T)   I :- s<3>\@i(s<3>/@inp<1>{index=X_0:animate-being, num=NUM}) : (@X_0:animate-being(pro1) ^ @X_0:animate-being(<num>sg))
+
+
+Adjective
+
+Parse 1: s{form=adj, index=P_0}\!np<1>{index=X_0} :
+  @b1(bad ^
+      <Of>x1)
+------------------------------
+(lex)  bad :- s{form=adj, index=P_0}\!np<1>{index=X_0} : (@P_0(bad) ^ @P_0(<Of>X_0))
+
+Parse 2: n<2>{index=X_1}/^n<2>{index=X_1} :
+  @x1(
+      <HasProp>(b1 ^ bad))
+------------------------------
+(lex)  bad :- n<2>{index=X_1}/^n<2>{index=X_1} : (@P_1(bad) ^ @X_1(<HasProp>P_1))
+
+
+Adverb
+
+Parse 1: s{form=fronted, index=E_0:situation, num=NUM1, pers=PERS1}/^s<1>{form=dcl, index=E_0:situation, num=NUM1, pers=PERS1} :
+  @x1:situation(
+                <HasProp>(f1:proposition ^ filler))
+------------------------------
+(lex)  really :- s{form=fronted, index=E_0:situation, num=NUM1, pers=PERS1}/^s<1>{form=dcl, index=E_0:situation, num=NUM1, pers=PERS1} : (@E_0:situation(<HasProp>P_0:proposition) ^ @P_0:proposition(filler))
+
+Parse 2: s<2>{index=E_1:situation}\.s<2>{index=E_1:situation} :
+  @x1:situation(
+                <HasProp>(f1:proposition ^ filler))
+------------------------------
+(lex)  really :- s<2>{index=E_1:situation}\.s<2>{index=E_1:situation} : (@E_1:situation(<HasProp>P_1:proposition) ^ @P_1:proposition(filler))
+
+Parse 3: s<3>{index=E_2:situation}\np<4>{index=X_2}/^(s<3>{index=E_2:situation}\np<4>{index=X_2}) :
+  @x1:situation(
+                <HasProp>(f1:proposition ^ filler))
+------------------------------
+(lex)  really :- s<3>{index=E_2:situation}\np<4>{index=X_2}/^(s<3>{index=E_2:situation}\np<4>{index=X_2}) : (@E_2:situation(<HasProp>P_2:proposition) ^ @P_2:proposition(filler))
+
+
+IntransitiveVerb
+
+Parse: s<1>{form=dcl, index=E_0, num=NUM:sg-or-mass, pers=3rd}\np<2>{case=nom, index=X_0, num=NUM:sg-or-mass, pers=3rd} :
+  @b1(bad ^
+      <tense>pres ^
+      <Arg>x1)
+------------------------------
+(lex)  sucks :- s<1>{form=dcl, index=E_0, num=NUM:sg-or-mass, pers=3rd}\np<2>{case=nom, index=X_0, num=NUM:sg-or-mass, pers=3rd} : (@E_0(bad) ^ @E_0(<tense>pres) ^ @E_0(<Arg>X_0))
+
+
+TransitiveVerb
+
+Parse: s<1>{form=dcl, index=E_0, num=NUM, pers=PERS}\np<2>{case=nom, index=X_0, num=NUM, pers=PERS}/np<3>{case=acc, index=Y_0} :
+  @b1(bad ^
+      <tense>past ^
+      <Agent>x1 ^
+      <Arg>x2)
+------------------------------
+(lex)  hated :- s<1>{form=dcl, index=E_0, num=NUM, pers=PERS}\np<2>{case=nom, index=X_0, num=NUM, pers=PERS}/np<3>{case=acc, index=Y_0} : (@E_0(bad) ^ @E_0(<tense>past) ^ @E_0(<Agent>X_0) ^ @E_0(<Arg>Y_0))
+
+
+Copula
+
+Parse 1: s<1>{form=dcl, index=E_0, num=sg, pers=3rd}\np<2>{case=nom, index=X_0, num=sg, pers=3rd}/(s{form=adj, index=P_0}\!np<2>{index=X_0, num=sg, pers=3rd}) :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Prop>x2)
+------------------------------
+(lex)  was :- s<1>{form=dcl, index=E_0, num=sg, pers=3rd}\np<2>{case=nom, index=X_0, num=sg, pers=3rd}/(s{form=adj, index=P_0}\!np<2>{index=X_0, num=sg, pers=3rd}) : (@E_0(be) ^ @E_0(<tense>past) ^ @E_0(<Arg>X_0) ^ @E_0(<Prop>P_0))
+
+Parse 2: s<3>{form=q, index=E_1, num=sg, pers=3rd}/np<4>{case=acc, index=Y_1}/*np<5>{case=nom, index=X_1, num=sg, pers=3rd} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Pred>x2)
+------------------------------
+(lex)  was :- s<3>{form=q, index=E_1, num=sg, pers=3rd}/np<4>{case=acc, index=Y_1}/*np<5>{case=nom, index=X_1, num=sg, pers=3rd} : (@E_1(be) ^ @E_1(<tense>past) ^ @E_1(<Arg>X_1) ^ @E_1(<Pred>Y_1))
+
+Parse 3: s<6>{form=q, index=E_2, num=sg, pers=1st}/np<7>{case=acc, index=Y_2}/*np<8>{case=nom, index=X_2, num=sg, pers=1st} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Pred>x2)
+------------------------------
+(lex)  was :- s<6>{form=q, index=E_2, num=sg, pers=1st}/np<7>{case=acc, index=Y_2}/*np<8>{case=nom, index=X_2, num=sg, pers=1st} : (@E_2(be) ^ @E_2(<tense>past) ^ @E_2(<Arg>X_2) ^ @E_2(<Pred>Y_2))
+
+Parse 4: s<9>{form=dcl, index=E_3, num=sg, pers=1st}\np<10>{case=nom, index=X_3, num=sg, pers=1st}/(s{form=adj, index=P_3}\!np<10>{index=X_3, num=sg, pers=1st}) :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Prop>x2)
+------------------------------
+(lex)  was :- s<9>{form=dcl, index=E_3, num=sg, pers=1st}\np<10>{case=nom, index=X_3, num=sg, pers=1st}/(s{form=adj, index=P_3}\!np<10>{index=X_3, num=sg, pers=1st}) : (@E_3(be) ^ @E_3(<tense>past) ^ @E_3(<Arg>X_3) ^ @E_3(<Prop>P_3))
+
+Parse 5: s<11>{form=dcl, index=E_4, num=sg, pers=3rd}\np<12>{case=nom, index=X_4, num=sg, pers=3rd}/np<13>{case=acc, index=Y_4} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Pred>x2)
+------------------------------
+(lex)  was :- s<11>{form=dcl, index=E_4, num=sg, pers=3rd}\np<12>{case=nom, index=X_4, num=sg, pers=3rd}/np<13>{case=acc, index=Y_4} : (@E_4(be) ^ @E_4(<tense>past) ^ @E_4(<Arg>X_4) ^ @E_4(<Pred>Y_4))
+
+Parse 6: s<14>{form=q, index=E_5, num=sg, pers=1st}/(s{form=adj, index=P_5}\!np<15>{index=X_5, num=sg, pers=1st})/*np<15>{case=nom, index=X_5, num=sg, pers=1st} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Prop>x2)
+------------------------------
+(lex)  was :- s<14>{form=q, index=E_5, num=sg, pers=1st}/(s{form=adj, index=P_5}\!np<15>{index=X_5, num=sg, pers=1st})/*np<15>{case=nom, index=X_5, num=sg, pers=1st} : (@E_5(be) ^ @E_5(<tense>past) ^ @E_5(<Arg>X_5) ^ @E_5(<Prop>P_5))
+
+Parse 7: s<16>{form=dcl, index=E_6, num=sg, pers=1st}\np<17>{case=nom, index=X_6, num=sg, pers=1st}/np<18>{case=acc, index=Y_6} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Pred>x2)
+------------------------------
+(lex)  was :- s<16>{form=dcl, index=E_6, num=sg, pers=1st}\np<17>{case=nom, index=X_6, num=sg, pers=1st}/np<18>{case=acc, index=Y_6} : (@E_6(be) ^ @E_6(<tense>past) ^ @E_6(<Arg>X_6) ^ @E_6(<Pred>Y_6))
+
+Parse 8: s<19>{form=q, index=E_7, num=sg, pers=3rd}/(s{form=adj, index=P_7}\!np<20>{index=X_7, num=sg, pers=3rd})/*np<20>{case=nom, index=X_7, num=sg, pers=3rd} :
+  @b1(be ^
+      <tense>past ^
+      <Arg>x1 ^
+      <Prop>x2)
+------------------------------
+(lex)  was :- s<19>{form=q, index=E_7, num=sg, pers=3rd}/(s{form=adj, index=P_7}\!np<20>{index=X_7, num=sg, pers=3rd})/*np<20>{case=nom, index=X_7, num=sg, pers=3rd} : (@E_7(be) ^ @E_7(<tense>past) ^ @E_7(<Arg>X_7) ^ @E_7(<Prop>P_7))
+
+
+Det
+
+Parse: np<1>{index=X_0, pers=3rd}/^n<1>{index=X_0, num=NUM} :
+  @x1(
+      <det>def)
+------------------------------
+(lex)  the :- np<1>{index=X_0, pers=3rd}/^n<1>{index=X_0, num=NUM} : @X_0(<det>def)
+
+
+Noun
+
+Parse: n<1>{index=X_0, num=NUM} :
+  @m1(movie ^
+      <num>sg)
+------------------------------
+(lex)  movie :- n<1>{index=X_0, num=NUM} : (@X_0(movie) ^ @X_0(<num>sg))

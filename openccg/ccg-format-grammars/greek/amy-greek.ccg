@@ -1,0 +1,319 @@
+#########################################################
+#							#
+#	Indigo Greek CCG				#
+#							#
+#########################################################
+
+
+feature {
+  case<2>: nom acc dat gen;
+
+  num<2,X:num>: sg pl;
+  num<1,2>: sg-agr:sg pl-agr:pl;
+  num<2>: sg-2:sg pl-2:pl;
+
+  gend<2,X:gend>: masc fem neut;
+  gend<1,2>: masc-agr:masc fem-agr:fem neut-agr:neut;
+  gend<2>: masc-2:masc fem-2:fem neut-2:neut;
+
+
+  pers<2,X:pers>: 1st 2nd 3rd;
+  pers<2>: 1st-2:1st 2nd-2:2nd 3rd-2:3rd;
+  pers<1,2>: 1st-agr:1st 2nd-agr:2nd 3rd-agr:3rd;
+
+  tense<E:tense>: past pres presperf pastperf;
+  voice<E:voice>: active passive;
+
+  det: def indef dem;
+
+
+  ontology: sem-obj {
+              phys-obj {
+                animate-being {
+                  person
+                }
+                thing {
+	 	  exhibit
+                }
+              }
+              situation {
+                change {
+                  action
+                }
+                state
+              }
+            };
+}
+
+feature {
+  form<1>: fin {dcl, int, marked, imp, exc, q-base {q, wh}, quant},
+	nonfin {base, nfh, inf, part, ppart, adj}
+;
+
+
+
+
+}
+
+
+
+
+    
+
+
+
+rule {
+
+  no typeraise;
+ no xcomp +;
+
+}
+
+
+
+##
+## Lexicon
+##
+
+
+##### Prepositions
+
+
+  word δίπλα:PrepNom;
+  word από:PrepNom;
+  word με:PrepNom;
+  word για:PrepNom;
+  word σε:PrepNom;
+  word κατά_τη_διάρκεια:PrepNom;
+  word μετά:PrepNom;
+  word γύρω:PrepNom;
+  word σύμφωνα_με:PrepNom;
+
+#word and:Conj { και; }
+
+
+
+##### Determiners ######
+
+word def:DefDet {
+  ο:    masc-2 nom sg-2; 
+  του:  masc-2 gen sg-2;
+  τον:  masc-2 acc sg-2;
+  οι:   masc-2 nom pl-2;
+  των:  masc-2 gen pl-2;
+  τους: masc-2 acc pl-2;
+   η:   fem-2 nom sg-2;
+  της: fem-2 gen sg-2;
+  την: fem-2 acc sg-2;
+  οι:  fem-2 nom pl-2;
+  των: fem-2 gen pl-2;
+  τις: fem-2 acc pl-2;
+}
+
+word indef:IndefDet {
+  ένας: masc-2 nom sg-2;
+  ενός: masc-2 gen sg-2;
+  έναν: masc-2 acc sg-2;
+  μία:  fem-2 nom sg-2;
+  μίας: fem-2 gen sg-2;
+  μία:  fem-2 acc sg-2;
+}
+
+word dem:Dem {
+  αυτός: masc-2 nom sg-2;
+  αυτoύ: masc-2 gen sg-2;
+  αυτόν: masc-2 acc sg-2;
+  αυτοί: masc-2 nom pl-2;
+  αυτών: masc-2 gen pl-2;
+  αυτοί: masc-2 acc pl-2;
+  αυτή:  fem-2 nom sg-2;
+  αυτής: fem-2 gen sg-2;
+  αυτήν: fem-2 acc sg-2;
+  αυτές: fem-2 nom pl-2;
+  αυτών: fem-2 gen pl-2;
+  αυτές: fem-2 acc pl-2;
+}
+
+
+######## Nouns #####
+
+word αμφορε:N(exhibit, pred=amphora) {
+  αμφορέας: masc-2 nom sg;
+  αμφορέα:  masc-2 gen sg;
+  αμφορέα:  masc-2 acc sg;
+  αμφορείς: masc-2 nom pl;
+  αμφορέων: masc-2 gen pl;
+  αμφορείς: masc-2 acc pl;
+}
+
+word athina:N(person) {
+  Αθηνά:  fem-2 nom sg;
+  Αθηνάς: fem-2 gen sg;
+  Αθηνά:  fem-2 acc sg;
+}
+
+###### Adjectives ##########
+
+word old:Adj {
+  παλιός:  masc nom sg;
+  παλιού:  masc gen sg;
+  παλιό:   masc acc sg;
+  παλιοί:  masc nom pl;
+  παλιών:  masc gen pl;
+  παλιούς: masc acc pl;
+  παλιά:  fem nom sg;
+  παλιάς: fem gen sg;
+  παλιά:  fem acc sg;
+  παλιές: fem nom pl;
+  παλιών: fem gen pl;
+  παλιές: fem acc pl;
+  παλιό:  neut nom sg;
+  παλιού: neut gen sg;
+  παλιό:  neut acc sg;
+  παλιά:  neut nom pl;
+  παλιών: neut gen pl;
+  παλιά:  neut acc pl;
+
+}
+ 
+word red-figure:AnywhereAdj {
+  ερυθρόμορφος:  masc nom sg;
+  ερυθρόμορφου:  masc gen sg;
+  ερυθρόμορφο:   masc acc sg;
+  ερυθρόμορφοι:  masc nom pl;
+  ερυθρόμορφων:  masc gen pl;
+  ερυθρόμορφους: masc acc pl;
+}
+
+
+##### Verbs ######### 
+
+
+word be-verb:Copula {
+
+  είμαι:   1st-agr sg-agr pres active;
+  είσαι:   2nd-agr sg-agr pres active;
+  είναι:   3rd-agr sg-agr pres active;
+  είμαστε: 1st-agr pl-agr pres active; 
+  είσαστε: 2nd-agr pl-agr pres active;
+  είναι:   3rd-agr pl-agr pres active; 
+
+}
+
+
+word see-verb:TransV {
+
+  βλέπω:    1st-agr sg-agr pres active;
+  βλέπεις:  2nd-agr sg-agr pres active;
+  βλέπει:   3rd-agr sg-agr pres active;
+  βλέπουμε: 1st-agr pl-agr pres active; 
+  βλέπετε:  2nd-agr pl-agr pres active;
+  βλέπουν:  3rd-agr pl-agr pres active;
+
+}
+word sculpt-verb:TransV {
+  λάξευσε: 3rd-agr past active;
+  λαξεύθηκε: 3rd-agr past passive;
+}
+
+################## punctuation #################
+
+word '.';
+
+###### Adjectives #########
+
+family PredicativeAdj(Adj) {
+ entry : s[P adj] \! np<2>[X]:
+      P:proposition(* <Of>X:sem-obj);
+ member: old;
+}
+family AnywhereAdj(Adj) {
+ entry : n<2>[X] /^ n<2>[X]:
+  X:sem-obj(<HasProp>P:proposition) P:proposition(*);
+ member: old;
+}
+
+
+
+
+######### Verbs ######
+
+family TransV(V) {
+
+entry Active: s<1>[E dcl main num pers active] \< np<2>[X num pers nom] /> np<3>[Y acc]:
+    E:action(* <Actor>X:sem-obj <Patient>Y:sem-obj);
+# entry PassiveActor: s<1>[E dcl main num pers passive] \ np<2> [X num pers nom] / pp-by<3>[Y]:
+entry PassiveActor: s<1>[E dcl main num pers passive] \ np<2> [X num pers nom]  :
+    E:action(* <Patient>X:sem-obj);
+}
+
+family Copula(V) {
+ entry Pred : s<1>[E num pers dcl] \ np<2>[X num pers nom] / (s[P adj] \! np<2>[X]):
+         E:state(* <Arg>X:sem-obj <Prop>P:proposition);
+entry NP: s<1>[E num pers dcl] \ np<2> [X num pers nom] / np<3>[Y nom] :
+         E:state(* <Arg>X:sem-obj <Pred>Y:sem-obj);
+}
+
+##### Determiners ####
+
+family DefDet(indexRel=det) {
+  entry: np<2>[X def] /^ n<2>[X 3rd]:
+         X:sem-obj(<det>*);
+}
+
+family IndefDet(indexRel=det) {
+  entry: np<2>[X indef] /^ n<2>[X 3rd]:
+         X:sem-obj(<det>*);
+}
+
+family Dem(Det,indexRel=prox) {
+  entry: np<~2>[X dem] /^ np<2>[X def 3rd]:
+	X:sem-obj(<prox>*);
+}
+
+###### Nouns ########
+
+family N {
+  entry Simple: n<2>[X num]: X:sem-obj(*);
+  entry Relational: n<2>[X case num pers gend] / np[Y gen det]: X(* <GenOwner>Y);
+}
+
+
+#### Punctuation #####
+
+family FullStop('.', indexRel=mood) {
+ entry Declare-Dcl : sent[E] \* s<1>[E dcl main]:
+	E:sem-obj(<mood> dcl);
+ entry Declare-Imp : sent[E] \* s<1>[E imp]:
+	E:sem-obj(<mood> imp);
+ member: '.';
+}
+
+#### Prepositions ####
+
+family PrepNom(Prep, indexRel=ArgTwo) {
+ entry : s<1>[E] \ s<1>[E] / np<3>[Y acc] :
+      E(<Actor>Y:sem-obj) Y(<prep>*);
+}
+
+family PrepActor(Prep, indexRel=prep) {
+ entry: pp-by<~3>[lex=*] / np<3>[Y acc] ;
+}  
+
+#############################################################
+#                                                           #
+#                           TESTBED                         #
+#                                                           #
+#############################################################
+
+# Statements to put in testbed.xml.  If you omit the number, it will omit
+# the corresponding numOfParses item in the XML; I think this currently
+# is equivalent to specifying 1 as the number.  If you put a ! before a
+# line, this indicates a "known failure" (known="true" in the XML).
+
+testbed {
+  ο αμφορέας είναι παλιός '.' : 1 ;
+  ο αμφορέας είναι ένας αμφορέας '.' : 1 ;
+  αυτός ο αμφορέας είναι παλιός '.' : 1 ;
+  η Αθινά λάξευσε τον ανφορέα '.' : 1 ;
+}

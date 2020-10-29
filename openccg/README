@@ -1,0 +1,144 @@
+
+Introduction
+============
+
+See CHANGES for a description of the project status. 
+Also see the web site: http://openccg.sf.net
+
+This file contains the configuration and build instructions. Next you'll
+probably want to look at "Specifying Grammars for OpenCCG: A Rough
+Guide" in docs/grammars-rough-guide.pdf. See also the SAMPLE_GRAMMARS
+file for descriptions of the sample grammars that come with the
+distribution.  A programmer's guide to using the OpenCCG realizer 
+appears in docs/realizer-manual.pdf.
+
+
+Requirements
+============
+
+* Version 1.5 of the Java 2 SDK (http://java.sun.com)
+* For ccg2xml, Python version 2.4 (http://www.python.org)
+
+
+Configuring your environment variables
+======================================
+
+The easiest thing to do is to set the environment variables JAVA_HOME
+and OPENCCG_HOME to the relevant locations on your system. Set JAVA_HOME
+to match the top level directory containing the Java installation you
+want to use.
+
+For example, on Windows:
+
+C:\> set JAVA_HOME=C:\Program Files\jdk1.5.0_04
+
+or on Unix:
+
+% setenv JAVA_HOME /usr/local/java
+  (csh)
+> export JAVA_HOME=/usr/java
+  (ksh, bash)
+
+On Windows, to get these settings to persist, it's actually easiest to
+set your environment variables through the System Properties from the
+Control Panel. For example, under WinXP, go to Control Panel, click on
+System Properties, choose the Advanced tab, click on Environment
+Variables, and add your settings in the User variables area.
+
+Next, likewise set OPENCCG_HOME to be the top level directory where you
+unzipped the download. In Unix, type 'pwd' in the directory where
+this file is and use the path given to you by the shell as
+OPENCCG_HOME.  You can set this in the same manner as for JAVA_HOME
+above.
+
+Next, add the directory OPENCCG_HOME/bin to your path. For example, you
+can set the path in your .bashrc file as follows:
+
+export PATH="$PATH:$OPENCCG_HOME/bin"
+
+On Windows, you should also add the python main directory to your path.
+
+Once you have taken care of these three things, you should be able to
+build and use the OpenCCG Library.
+
+Note: Spaces are allowed in JAVA_HOME but not in OPENCCG_HOME.  To set
+an environment variable with spaces in it, you need to put quotes around
+the value when on Unix, but you must *NOT* do this when under Windows.
+
+
+Trying it out
+=============
+
+If you've managed to configure the system, you should be able
+to change to the directory for the "tiny" sample grammar and run "tccg"
+(for text ccg), the command-line tool for interactively testing
+grammars:
+
+  cd grammars
+  cd tiny
+  tccg (Windows/Unix)
+
+Provided tccg starts properly, it loads the grammar files, parses them,
+and shows the command-line interface (at which point you can type :h for
+help or :q to quit).
+
+If you trouble starting up tccg, make sure you have set the environment
+variables properly, and that the tccg script (located in openccg/bin)
+calls the right shell environment (top-line of the script; to solve the
+problem, either comment out this line or correct the path).
+
+
+Generating Grammar Documentation
+================================
+OpenCCG includes a tool for generating HTML documentation of the XML files
+that specify a grammar. It can be run either from the ccg-grammardoc script in
+the bin/ directory, or as an Ant task. An example of how to incorporate 
+GrammarDoc into an Ant build file is given in the "tiny" grammar
+(grammars/tiny/build.xml), in a build target called "document."
+
+
+Building the system from source
+===============================
+
+The OpenCCG build system is based on Apache Ant.  Ant is a little but very
+handy tool that uses a build file written in XML (build.xml) as building
+instructions.  Building the Java portion of OpenCCG is accomplished using the
+script `ccg-build'; this works under Windows and Unix, but requires that
+you run it from the top-level directory (where the build.xml file is
+located).  If everything is right and all the required packages are
+visible, this action will generate a file called openccg.jar in the
+./output directory.
+
+
+Build targets
+=============
+
+These are the meaningful targets for the main build file:
+
+  package  --> generates the openccg.jar file (default)
+  compile  --> compiles the source code
+  javadoc  --> generates the API documentation
+  clean    --> cleans up the compilation directory
+
+There are also build files in each sample grammar directory.
+
+To learn the details of what each target does, read the build.xml file.
+It is quite understandable.
+
+
+Bug Reports
+===========
+
+Please report bugs at the bug section of the OpenCCG sourceforge site.
+
+Also, you can report bugs by sending mail to Michael dot White at ed.ac.uk.
+
+
+Special Note
+============
+
+Parts of this README and some of the directory structure and the build
+system for this project were borrowed from the JDOM project (kudos!).
+See www.jdom.org for more details.
+
+

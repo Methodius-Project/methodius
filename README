@@ -1,0 +1,6 @@
+To generate one or more texts about the Greek exhibits, where exhibit names range from exhibit1 to exhibit50
+If you generate multiple exhibits in one call, you will get comparisons and proper referring expressions.
+
+cd data
+./reload-domain-xml mpiro-methodius-config.xml
+./run-methodius-xml -c mpiro-methodius-config.xml [exhibit1] [numfacts1] [exhibit2] [numfacts2] ...

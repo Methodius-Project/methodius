@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node id="l1:situation" pred="locate-verb" mood="quant" tense="pres" voice="passive">
+      <rel name="ArgOne">
+        <node id="a1:amphora" pred="amphora-np" det="def" num="sg"/>
+      </rel>
+      <rel name="ArgTwo">
+        <node id="q1:location" pred="quant"/>
+      </rel>
+    </node>
+  </lf>
+  <target>where is the amphora located ?</target>
+</xml>

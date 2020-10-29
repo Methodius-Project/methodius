@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<methodius-adverbs>
+  <adverbs lang="english">
+    <adverb text="currently" position="5"/>
+    <adverb text="now" position="5"/>
+    <adverb text="today" position="5"/>
+    <adverb text="originally" position="1"/>
+    <adverb text="initially" position="1"/>
+    <adverb text="later" position="3"/>
+    <adverb text="recently" position="4"/>
+    <adverb text="just" position="4"/>
+  </adverbs>
+  <adverbs lang="greek">
+  </adverbs>
+</methodius-adverbs>

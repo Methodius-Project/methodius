@@ -1,0 +1,9 @@
+<methodius-config>
+  <openccg root="../openccg/grammars" dir="methodius" grammar="grammar.xml"/>
+  <domain  instances="instances.xml" types="types.xml" predicates="predicates.xml" usertypes="usertypes.xml" significance="significance.xml" adverbs="methodius-adverbs.xml"/>
+<!-- objectdefs="fake-object-structures.xml"/>-->
+  <database dir="../databases" db="mpiroDB" classdb="mpiroClassDB" defs="mpiroDefsDB"/>
+  <texts useTypeFact="true" maxcpdepth="5" default="Sorry there's no more to say about this exhibit"/>
+  <log file="methodius.log"/>
+  <images dir="pictures"/>
+</methodius-config>

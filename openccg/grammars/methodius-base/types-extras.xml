@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2003-4 University of Edinburgh (Michael White)
+$Revision: 1.3 $, $Date: 2004/11/21 14:22:18 $ 
+-->
+<types name="methodius" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="../types.xsd"
+       >
+
+
+  <type name="quality" parents="proposition"/>
+  <type name="intensifier" parents="quality"/>
+  <type name="adv" parents="proposition quality"/>
+
+  <type name="object" parents="phys-obj inanimate"/>
+  <type name="string" parents="situation"/>
+  <type name="canned-text" parents="string"/>
+
+
+  <type name="basic" parents="sem-obj"/>
+
+</types>

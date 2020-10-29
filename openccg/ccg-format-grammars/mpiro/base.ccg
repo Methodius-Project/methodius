@@ -1,0 +1,749 @@
+#############################################################
+#                                                           #
+#                          mpiro.ccg                        #
+#                                                           #
+#############################################################
+
+# Author: Amy Isard
+# Date: August 2007
+
+#############################################################
+#                                                           #
+#                          FEATURES                         #
+#                                                           #
+#############################################################
+
+
+feature {
+  case<2>: nom acc;
+
+  num<2,X:num>: sg pl;
+  num<1,2>: sg-agr:sg pl-agr:pl;
+  num<2>: sg-2:sg pl-2:pl;
+
+  gend<2,X:gend>: masc fem neut;
+  gend<1,2>: masc-agr:masc fem-agr:fem neut-agr:neut;
+  gend<2>: masc-2:masc fem-2:fem neut-2:neut;
+
+  pers<2,X:pers>: 1st 2nd 3rd;
+  pers<2>: 1st-2:1st 2nd-2:2nd 3rd-2:3rd;
+  pers<1,2>: 1st-agr:1st 2nd-agr:2nd 3rd-agr:3rd;
+
+  tense<E:tense>: past pres presperf pastperf;
+  voice<E:voice>: active passive;
+
+  adjunct<1>: present none;
+
+  ontology: sem-obj {
+	      Resource
+	      inanimate {
+	        location
+	  	time
+	      }
+              phys-obj {
+                animate-being {
+                  person
+                }
+                thing[inanimate] {
+	          amphora
+                }
+	      }
+	      quantification
+              situation {
+                change {
+                  action
+                }
+                state
+		greeting
+              }
+            };
+
+}
+
+feature {
+  form<1>: fin {dcl, int, marked, imp, q-base {q, wh}, quant},
+	nonfin {base, nfh, inf, part, adj, not, ppart}
+;
+}
+
+
+
+#############################################################
+#                                                           #
+#                           WORDS                           #
+#                                                           #
+#############################################################
+
+################## Punctuation #################
+
+word FULLSTOP;
+word COMMA;
+word QUESTIONMARK;
+word EXCLAMATIONMARK;
+
+################## Social ######################
+
+word hello;
+word hi;
+word bye;
+word goodbye;
+word thanks;
+word okay;
+
+################## Determiners #################
+
+
+word def:Det {
+ the;
+}
+
+word indef:Det {
+ a: sg-2;
+ an: sg-2;
+ some: pl-2;
+}
+
+word dem-prox:Det {
+ this: sg-2;
+ these: pl-2;
+}
+
+word dem-nonprox:Det {
+ that: sg-2;
+ those: pl-2;
+}
+
+
+################## Prepositions #################
+
+def preposition(w) {
+  word w:PrepFiller;
+  word w:Prep;
+}
+
+word by:Prep-Actor;
+word by:Prep;
+
+preposition(for);
+preposition(to);
+preposition(on);
+preposition(in);
+preposition(into);
+preposition(through);
+preposition(onto);
+preposition(using);
+preposition(with);
+preposition(during);
+preposition(about);
+preposition(of);
+
+################## Conjunctions #################
+
+word and:Conj;
+word but:Conj;
+
+
+################## Comparators ###################
+
+word like:Comparator;
+word unlike:Comparator;
+
+
+################# Negation ################
+
+word not:Adv;
+#word not_features:Not-Features;
+
+################## Pronouns #################
+
+word pron:Pro(animate-being) {
+  I: 1st nom sg;
+  me: 1st acc sg;
+  we: 1st nom pl;
+  us: 1st acc pl;
+  you: 2nd;
+  she: 3rd nom sg fem;
+  her: 3rd acc sg fem;
+  he: 3rd nom sg masc;
+  him: 3rd acc sg masc;
+  they: 3rd nom pl;
+  them: 3rd acc pl;
+}
+
+word pron:Pro(thing) {
+  it: 3rd sg;
+  they: 3rd nom pl;
+  them: 3rd acc pl;
+  this: sg;
+  these: pl;
+  that: sg;
+  those: pl;
+}
+
+
+
+################## Relative Pronouns #####
+
+#word how:RelPro;
+#word why:RelPro;
+#word when:RelPro;
+#word where:RelPro;
+
+word which:RelPro {
+	which:X-thing;
+}
+
+word who:RelPro {
+	who:X-animate;
+}
+
+
+word quant:QuantPro {
+	where:X-location;
+	when:X-time;
+	what:X-thing;
+	who:X-animate;
+}
+
+#word complement-quant:CompQuantPro {
+#	who:X-animate sg nom 1st;
+#	who:X-animate sg nom 2nd;
+#	who:X-animate sg nom 3rd;
+#	who:X-animate sg acc 1st;
+#	who:X-animate sg acc 2nd;
+#	who:X-animate sg acc 3rd;
+#	who:X-animate pl nom 1st;
+#	who:X-animate pl nom 2nd;
+#	who:X-animate pl nom 3rd;
+#	who:X-animate pl acc 1st;
+#	who:X-animate pl acc 2nd;
+#	who:X-animate pl acc 3rd;
+#	whom:X-animate sg acc 1st;
+#	whom:X-animate sg acc 2nd;
+#	whom:X-animate sg acc 3rd;
+#	whom:X-animate pl acc 1st;
+#	whom:X-animate pl acc 2nd;
+#	whom:X-animate pl acc 3rd;
+#	what:X-thing sg nom 3rd;
+#	what:X-thing pl nom 3rd;
+#	what:X-thing sg acc 3rd;
+#	what:X-thing pl acc 3rd;
+#}
+
+	
+
+
+################## Nouns #################
+
+word conj_features:Conj-Features;
+
+def basic-noun(sing, plur, class) {
+  word sing . -np:N(class) {
+    sing: sg;
+    plur: pl;
+  }
+}
+
+def proper-noun(stem, name, class) {
+  word stem:NNP(class) {
+    name: sg;
+  }
+}
+
+def pluralize(word) {
+  ifmatch('^.*[aeiou][oy]$', word, word . s,
+    ifmatch('^.*([sxoy]|sh|ch)$', word, regsub('^(.*)y$', '\1i', word) . es,
+            word . s))
+}
+
+def noun(sing, class) basic-noun(sing, pluralize(sing), class)
+
+noun(amphora, amphora);
+noun(painter, person);
+proper-noun(painter-of-kleofrades, the_painter_of_Kleofrades, person);
+proper-noun(archaic-period, the_archaic_period, time);
+proper-noun(classical-period, the_classical_period, time);
+proper-noun(national-museum-athens, the_national_museum_of_athens, location);
+
+################## Adjectives #################
+
+def pred-adj(w) {
+  word w:Predicative-Adjective;
+}
+
+pred-adj(other);
+pred-adj(previous);
+pred-adj(last);
+pred-adj(recent);
+
+
+################## Verbs #################
+
+def 3singize(word) {
+  ifmatch('^.*[aeiou][oy]$', word, word . s,
+    ifmatch('^.*([sxoy]|sh|ch)$', word, regsub('^(.*)y$', '\1i', word) . es,
+            word . s))
+}
+
+def stemize(word) {
+  ifmatch('^.*([sxoy]|sh|ch)e[sd]$', word, regsub('^(.*)e[sd]$', '\1', word),
+    ifmatch('^(.*)[sd]$', word, regsub('^(.*)[sd]$', '\1', word),
+	 word))
+}
+
+def simplepastize(word) {
+  ifmatch('^.*[aeiou][oy]$', word, word . d,
+    ifmatch('^.*([sxoydtw]|sh|ch)$', word, regsub('^(.*)y$', '\1i', word) . ed,
+            word . d))
+}
+
+def very-simple-verb(stem, props) \
+  simple-verb(stem, simplepastize(stem), props)
+
+def simple-verb(stem, pastform, props) \
+  verb(stem, pastform, pastform, props)
+
+def verb(stem, pastform, ppartform, props) {
+  word stem . -verb:props {
+    stem: base;
+    stem: pres 1st-agr sg-agr active;
+    stem: pres 2nd-agr sg-agr active;
+    3singize(stem): pres 3rd-agr sg-agr active;
+    stem: pres pl-agr active;
+    pastform: past active;
+    ppartform: ppart passive;
+    ppartform: part passive;
+  }
+}
+
+def passive-past-verb(v) {
+  word v:TransV {
+    v: ppart passive;
+  }	
+}
+
+def passive-present-verb(v) {
+  word v:TransV {
+    v: part;
+  }
+}
+
+def active-present-verb(v) {
+ word v:TransV {
+   v: pres 3rd-agr sg-agr active;
+   stemize(v): pres 3rd-agr pl-agr active;
+  }
+}
+
+
+def active-past-verb(v) {
+ word v:TransV {
+   v: past active;
+  }
+}
+
+active-past-verb(lived);
+active-present-verb(dates);
+active-present-verb(shows);
+active-present-verb(watches);
+#passive-past-verb(painted);
+
+very-simple-verb(create, TransV);
+very-simple-verb(paint, TransV);
+very-simple-verb(locate, TransV);
+
+verb(know, knew, known, IntransV TransV);
+
+verb(have, had, had, TransV);
+
+verb(do, did, done, TransV Do-Support);
+
+verb(see, saw, seen, IntransV TransV);
+
+word be-verb:IntransV TransV Copula {
+   be: base;
+   be: imp;
+   am: pres 1st-agr sg-agr active;
+   are: pres 2nd-agr active;
+   is: pres 3rd-agr sg-agr active;
+   are: pres pl-agr active;
+   was: past 1st-agr sg-agr active;
+   was: past 3rd-agr sg-agr active;
+   were: past 2nd-agr active;
+   were: past pl-agr active;
+   been: ppart passive;
+   been: part passive;
+}
+
+word be-aux:BeAux {
+   be: base;
+   be: imp;
+   am: pres 1st-agr sg-agr ;
+   are: pres 2nd-agr ;
+   is: pres 3rd-agr sg-agr ;
+   are: pres pl-agr ;
+   was: past 1st-agr sg-agr ;
+   was: past 3rd-agr sg-agr ;
+   were: past 2nd-agr ;
+   were: past pl-agr ;
+}
+
+word have-aux: HaveAux {
+   have: presperf active sg-agr 1st-agr;
+   have: presperf active sg-agr 2nd-agr;
+   has: presperf active sg-agr 3rd-agr;
+   have: presperf active pl-agr;
+   had: pastperf active;
+}
+
+
+
+
+
+#############################################################
+#                                                           #
+#                           RULES                           #
+#                                                           #
+#############################################################
+
+
+rule {
+  # turn off forward cross-composition
+  no xcomp +;
+
+  # this is how we could turn off all type-raising rules.
+  # no typeraise;
+
+  # Declare a backward type-raising rule from pp to s$1\(s$1/pp).
+  # The $ causes a dollar-sign raise category to be created, as shown;
+  # without it, we'd just get s\(s/pp).
+  # typeraise - $: pp => s;
+
+  # Declare a type-changing rule to enable pro-drop (not useful in English!)
+  # typechange: s[finite]\np[nom]$1 => s[finite]$1 ;
+
+  typechange: np_conj<1> => np<~1>[num=pl];
+  typechange: s<1>[E form=imp] \ np[X nom 2nd] => s<1>[E];
+#  typechange: s<1>[E dcl] => s<1>[E] / pp[Z];
+}
+
+
+
+#############################################################
+#                                                           #
+#                         CATEGORIES                        #
+#                                                           #
+#############################################################
+
+###### conjunctions #####
+
+family Conj-Features {
+ entry : np_conj[num:num pers:pers case];
+ member: conj_features;
+}
+
+family Conj(Conj) {
+ entry SententialBinary: s<~1>[S] \ s<~1>[E1 num pers] / s<1>[E2]:
+  S:situation(* <Arg1>E1:situation <Arg2>E2:situation);
+ entry SententialBinarySameSubj: s<~1>[S]  \ np<2>[X nom] \ (s<~1>[E1] \ np<2>[X nom]) / (s<1>[E2] \ np<2>[X nom]) :
+  S:situation(* <Arg1>E1:situation <Arg2>E2:situation <ArgOne>X:animate-being);
+}
+
+
+family Comma-Conj {
+ entry : np_conj<~2>[C] \ np<~2>[X num pers]  / np_conj<2>[Y]:
+ C(* <Arg1>X:sem-obj <Arg2>Y:sem-obj);
+ member: COMMA;
+}
+
+family NP-Conj(Conj) {
+ entry : np_conj<~2>[C num=pl] \ np<2>[X]  / np<~2>[Y num pers]:
+ C(* <Arg1>X:sem-obj <Arg2>Y:sem-obj);
+ member: and;
+}
+
+##### verbs ########
+
+family Copula(V) {
+ entry Pred : s<1>[E num pers dcl] \ np<2>[X num pers nom] / (s[P adj] \! np<2>[X]):
+         E:state(* <Arg>X:sem-obj <Prop>P:proposition);
+ entry Pred-Inverted : s<1>[E num pers q] /(s[P adj] \! np<2>[X]) /  np<2>[X num pers nom] :
+         E:state(* <Arg>X:sem-obj <Prop>P:proposition);
+ entry NP: s<1>[E num pers dcl] \ np<2> [X num pers nom] / np<3>[Y case] :
+#         E:state(* <Arg>X:sem-obj <Pred>Y:sem-obj);
+         E:state(* <ArgOne>X:sem-obj <ArgTwo>Y:sem-obj);
+ entry NP-Inverted: s<1>[E num pers q] / np<3>[Y case] / np<2> [X num pers nom]  :
+#         E:state(* <Arg>X:sem-obj <Pred>Y:sem-obj);
+         E:state(* <ArgOne>X:sem-obj <ArgTwo>Y:sem-obj);
+}
+
+
+family Negation(Adv) {
+# entry Primary:
+#  s[S not] \ (s<1>[E pers num] \ np<2>[X nom pers num]):
+#  S:situation(* <Body>E);
+ entry Do:
+  s[S not] \ np<2>[X nom] /^ (s<1>[E base] \np<2>[X nom]):
+  S:situation(* <Body>E);
+  member: not;
+}
+
+
+family Do-Support(V indexRel=tense) {
+ entry Inverted(indexRel=tense) :s<1~2>[E form=q] /^ s<2>[E base];
+ entry Marking(indexRel=tense) : s<1>[E dcl] \ np<2>[X nom] /^ (s[E base] \ np<2>[X nom]):
+  E(<emph> marked);
+ entry Negative : s<1>[E dcl] \ np<2>[X nom] / (s[E not] \ np<2>[X nom]);
+}
+
+
+def verbcat(args, sem) {
+  s<1>[E form=dcl num pers active adjunct=none] \ np<2>[X num pers nom] args:
+#  s<1>[E form=dcl num pers active] \ np<2>[X num pers nom] args:
+     E:situation(* <ArgOne>X:sem-obj sem)
+}
+family IntransV(V) {
+  entry: verbcat(,);
+  entry Wh: s<1>[E quant num pers active adjunct=none] \ qnp<2>[X num pers nom]:
+     E:situation(* <ArgOne>X:phys-obj);
+}
+
+def before_transverbcat(args, sem) {
+  verbcat(args / np<3>[Y acc], <ArgTwo>Y:sem-obj sem)
+}
+
+def after_transverbcat(args, sem) {
+  verbcat(/ np<3>[Y acc] args, <ArgTwo>Y:sem-obj sem)
+}
+
+family TransV(V) {
+  entry Active: after_transverbcat(,);
+  entry Wh: s<1>[E quant num pers active adjunct=present] \ qnp<2>[X num pers nom] / np<3>[Y acc]:
+     E:situation(* <ArgOne>X:phys-obj <ArgTwo>Y:sem-obj);
+  entry Passive: s<1>[E num pers dcl passive adjunct=none] \ np<2>[X num pers nom]:
+     E:situation(* <ArgOne>X:sem-obj);
+  entry Passive-Actor: s<1>[E num pers dcl passive adjunct=present] \ np<2>[X num pers nom] / pp-by<3>[Y acc num:num pers:pers]:
+     E:situation(* <ArgOne>X:sem-obj <ArgTwo>Y:phys-obj);
+
+}
+
+family PrepFiller(Prep, indexRel="ArgTwo") {
+ entry: s<~1>[E adjunct=present] \. s<1>[E] /< np<3>[Y acc]: E:situation(<ArgTwo>Y:sem-obj) Y(<prep>*);
+# entry: s<1>[E] \. s<1>[E] /< np<3>[Y acc]: E:situation(<ArgTwo>Y:sem-obj) Y(<prep>*);
+}
+
+family DitransRecV(V) {
+  entry DTV:
+    after_transverbcat(/< np[Z acc], <Recipient>Z:animate-being);
+  entry NP-PPto:
+    before_transverbcat(/ pp[Z lex=to], <Recipient>Z:animate-being);
+}
+
+family ToInf(Prep, indexRel="*NoSem*") {
+  entry: s<~1>[form=inf] \! np<~2>[X case] /^ (s<1>[E form=base] \ np<2>[X]);
+  member: to;
+}
+
+family ObjectControlV(V) {
+ entry Object:
+   s<1>[E form=dcl num pers] \ np<2>[X num pers nom] / (s[E2 form=inf] \ np<3>[Y]) /< np<3>[Y acc]:
+     E(* <Actor>X:animate-being <Addressee>Y:animate-being <Situation>E2);
+}
+family SubjectControlV(V) {
+ entry Subject:
+   s<1>[E form=dcl num pers active] \ np<2>[X num pers nom] / (s[E2 form=inf] \ np<2>[X]):
+     E(* <Actor>X:animate-being <Situation>E2);
+}
+
+family ModalV(V) {
+ entry Primary:
+  s<1>[E dcl num pers active] \ np<2>[X num pers] /^ (s[E2 base] \ np<2>[X]):
+    E:state(* <Body>E2:situation);
+ entry Inverted:
+  s<1~2>[E q] /^ s<2>[E2 base]:
+    E:state(* <Body>E2:situation);
+}
+
+
+family HaveAux(V indexRel=tense) {
+ entry :
+  s<1>[E dcl active num pers] \ np<2>[X num pers] /^ (s[E part] \ np<2>[X nom]);
+}
+
+family BeAux(V indexRel=tense) {
+ entry Declarative:
+  s<~1>[E dcl passive] \ np<2>[X num pers nom] /^ (s<1>[E ppart  num pers passive] \ np<2>[X num pers nom]);
+ entry Interrogative:
+  s<~1>[E q passive]  /^ s<1>[E ppart passive];
+}
+  
+
+#### Social #######
+
+family Social {
+ entry : s[G form=dcl]: G:greeting(*);
+}
+
+#### Punctuation #####
+
+family Comma(COMMA, indexRel="*NoSem*") {
+ entry : punct[lex=COMMA];
+ member : COMMA;
+}
+
+
+family FullStop(FULLSTOP, indexRel=mood) {
+ entry Declare-Dcl : sent[E] \* s<1>[E form=dcl]:
+	E:sem-obj(<mood> dcl);
+ entry Declare-Marked : sent[E] \* s<1>[E form=marked]:
+	E:sem-obj(<mood> marked);
+ entry Declare-Imp : sent[E] \* s<1>[E form=imp]:
+	E:sem-obj(<mood> imp);
+ member: FULLSTOP;
+}
+
+family ExclamationMark(EXCLAMATIONMARK, indexRel=mood) {
+ entry Declare-Imp : sent[E] \* s<1>[E form=imp]:
+	E:sem-obj(<mood> imp);
+ member: EXCLAMATIONMARK;
+}
+
+family QuestionMark(QUESTIONMARK, indexRel=mood) {
+ entry Int : sent[E] \* s<1>[E form=q-base]:
+	E:sem-obj(<mood> int);
+ entry Quant : sent[E] \* s<1>[E form=quant] :
+	E:sem-obj(<mood> quant);
+#	E:sem-obj(<mood> int);
+ entry Passive-Comp-Quant : sent[E]  \* qpp-by<3>[Y acc num pers] \* s<1>[E form=q-base adjunct=none] :
+# entry Passive-Comp-Quant : sent[E]  \* qpp-by<3>[Y acc num pers] \* s<1>[E form=q-base] :
+#       E:sem-obj(<mood> quant <ArgTwo>Y:sem-obj);
+       E:sem-obj(<mood> quant <ArgTwo>Y:phys-obj);
+ entry Passive-Comp-Quant2 : sent[E]  \* qnp<3>[Y nom num pers] \* s<1>[E form=q-base adjunct=none] \ prep<2>[Y lex=by] :
+# entry Passive-Comp-Quant2 : sent[E]  \* qnp<3>[Y nom num pers] \* s<1>[E form=q-base] \ prep<2>[Y lex=by] :
+#       E:sem-obj(<mood> quant <ArgTwo>Y:awn-obj);
+       E:sem-obj(<mood> quant <ArgTwo>Y:phys-obj);
+ entry Passive-Adjunct-Quant : sent[E]  \* qnp<3>[Y] \* s<1>[E form=q-base adjunct=none] :
+# entry Passive-Adjunct-Quant : sent[E]  \* qnp<3>[Y] \* s<1>[E form=q-base] :
+#       E:sem-obj(<mood> quant <ArgTwo>Y:sem-obj);
+       E:sem-obj(<mood> quant <ArgTwo>Y:inanimate);
+ member: QUESTIONMARK;
+}
+
+
+##### Determiners ####
+
+family Det(indexRel=det) {
+  entry: np<2>[X pers=3rd] /^ n<2>[X]:
+         X:sem-obj(<det>*);
+}
+
+##### Prepositions ####
+
+family Prep-Nom(Prep, indexRel=prep) {
+  entry Nominal: pp<~3>[lex=*] /< np<3>[Y acc]:
+	Y(<prep>*);
+}
+
+family Prep-Actor(Prep, indexRel=prep) {
+  entry Nominal: pp-by<~3>[lex=*] /< np<3>[Y acc]:
+	Y(<prep>*);
+#  entry Quant: qpp-by<~3>[lex=*] /< cqnp<3>[Y acc]:
+  entry Quant: qpp-by<~3>[lex=*] /< qnp<3>[Y acc]:
+	Y(<prep>*);
+}
+
+family Prep(Prep, indexRel=prep) {
+  entry : prep<2>[X lex=*]: X:sem-obj(<prep> *);
+}
+
+
+#### Nouns ####
+
+family N {
+  entry: n<2>[X num]: X:sem-obj(*);
+}
+
+
+family QuantPro {
+  entry: qnp<2>[X num pers case]:
+         X:sem-obj(*);
+}
+
+family NNP {
+  entry: np<2>[X 3rd]: X:sem-obj(*);
+}
+
+family Pro {
+  entry: np<2>[X num pers case]:
+         X:sem-obj(*);
+}
+
+
+family RelPro {
+  entry Non-Restrictive(indexRel=CoreInv) :
+  np<~2>[X case] \* np<~2>[X case] \* punct[lex=COMMA] /* punct[lex=COMMA] /^ (s<1>[E dcl] \ np<2>[X]):
+  X(<CoreInv>P) P(elab-rel <Trib>E);
+  member: which who;
+}
+
+family NonfinHeadlessRelPro(RelPro) {
+  entry : np[Y] / (s<1>[E inf] \ np<2>[X nom]):
+  Y(* <Method>E);
+  member: which who;
+}
+
+##### Adjectives #####
+
+
+family Adjective(Adj) {
+ entry : n<2>[X] /^ n<2>[X]:
+  X:sem-obj(<HasProp>P:proposition) P:proposition(*);
+}
+
+family Predicative-Adjective(Adj) {
+ entry : s[P adj] \! np<2>[X]:
+      P:proposition(* <Of>X:sem-obj);
+}
+
+##### Comparators ####
+
+family Comparator(Comparator) {
+ entry : s<~1>[C] / s<1>[Y dcl] /* punct[lex=COMMA] / np<2>[X]:
+      C:situation(* <Comparator>X:sem-obj <Focus>Y:situation);
+}
+
+
+#############################################################
+#                                                           #
+#                           TESTBED                         #
+#                                                           #
+#############################################################
+
+# Statements to put in testbed.xml.  If you omit the number, it will omit
+# the corresponding numOfParses item in the XML; I think this currently
+# is equivalent to specifying 1 as the number.  If you put a ! before a
+# line, this indicates a "known failure" (known="true" in the XML).
+
+testbed {
+  the amphora was painted by the_painter_of_Kleofrades during the_archaic_period FULLSTOP: 1;
+  the amphora was painted during the_archaic_period FULLSTOP: 1;
+  was the amphora painted by the_painter_of_Kleofrades during the_archaic_period QUESTIONMARK: 1;
+  the amphora was painted by the_painter_of_Kleofrades FULLSTOP: 1;
+  the amphora was painted by the_painter_of_Kleofrades QUESTIONMARK: 0;
+  was the amphora painted by the_painter_of_Kleofrades QUESTIONMARK: 1;
+  the amphora is located in the_national_museum_of_athens FULLSTOP: 1;
+  the amphora is in the_national_museum_of_athens FULLSTOP: 1;
+  is the amphora located in the_national_museum_of_athens QUESTIONMARK: 1;
+  who was the amphora painted by QUESTIONMARK: 1;
+  who painted the amphora QUESTIONMARK: 1;
+  when painted the amphora QUESTIONMARK: 0;
+  who painted the amphora FULLSTOP: 0;
+  when was the amphora painted QUESTIONMARK: 1;
+  who was the amphora painted QUESTIONMARK: 0;
+  where is the amphora located QUESTIONMARK: 1;
+  where is the amphora located QUESTIONMARK: 1;
+  who is the amphora located QUESTIONMARK: 0;
+
+
+}
+
